@@ -1,0 +1,137 @@
+{
+  "topics": [
+    {
+      "id": "gan",
+      "name": "GAN",
+      "description": "Generative Adversarial Networks",
+      "cards": [
+        {
+          "id": "gan-001",
+          "question": "GAN이 무엇인지 설명해보세요.",
+          "answer": "Generator와 Discriminator 두 neural network가 경쟁하면서 real data와 유사한 synthetic data를 생성하는 generative model임."
+        },
+        {
+          "id": "gan-002",
+          "question": "GAN의 핵심 목적은 무엇인가요?",
+          "answer": "real data의 pattern과 structure를 모방하는 high-quality realistic synthetic data를 생성하는 것임."
+        },
+        {
+          "id": "gan-003",
+          "question": "GAN이 game-theoretical framework라고 불리는 이유는 무엇인가요?",
+          "answer": "Generator와 Discriminator가 서로 경쟁하며 성능을 개선하기 때문임. Generator는 속이려 하고 Discriminator는 구분하려 함."
+        },
+        {
+          "id": "gan-004",
+          "question": "Mode collapse가 무엇이고 왜 문제가 되나요?",
+          "answer": "Generator가 다양한 sample을 만들지 못하고 일부 pattern만 반복해서 생성하는 현상임. data diversity가 낮아져 실제 분포를 제대로 학습하지 못함."
+        },
+        {
+          "id": "gan-005",
+          "question": "Discriminator가 너무 강하면 GAN 학습에 어떤 문제가 생기나요?",
+          "answer": "Discriminator가 fake sample을 너무 쉽게 구분하면 Generator로 전달되는 gradient가 약해져 학습이 불안정해질 수 있음."
+        },
+        {
+          "id": "gan-006",
+          "question": "Conditional GAN은 일반 GAN과 무엇이 다른가요?",
+          "answer": "label, class, text, image 등 조건 정보를 Generator와 Discriminator에 함께 입력해 원하는 조건에 맞는 sample을 생성하는 GAN임."
+        }
+      ]
+    },
+    {
+      "id": "self-driving-car",
+      "name": "Self-driving Car",
+      "description": "Autonomous driving perception, planning, and control",
+      "cards": [
+        {
+          "id": "sdv-001",
+          "question": "자율주행 시스템의 perception 단계는 어떤 역할을 하나요?",
+          "answer": "camera, LiDAR, radar 등의 sensor data를 이용해 차선, 차량, 보행자, 신호등, 장애물 등 주변 환경의 의미 있는 객체와 상태를 인식하는 단계임."
+        },
+        {
+          "id": "sdv-002",
+          "question": "Sensor fusion이 자율주행에서 중요한 이유는 무엇인가요?",
+          "answer": "각 sensor의 장단점을 보완해 더 안정적인 환경 인식을 만들기 위해서임. 예를 들어 camera는 semantic 정보가 강하고 LiDAR는 거리와 geometry 정보가 강함."
+        },
+        {
+          "id": "sdv-003",
+          "question": "Localization과 mapping의 차이를 설명해보세요.",
+          "answer": "Localization은 차량이 map 또는 world 좌표계에서 어디에 있는지 추정하는 것이고, mapping은 주변 환경의 구조와 의미 정보를 map으로 구성하는 것임."
+        },
+        {
+          "id": "sdv-004",
+          "question": "Path planning과 motion planning은 어떻게 구분할 수 있나요?",
+          "answer": "Path planning은 주행 가능한 경로의 geometry를 정하는 것에 가깝고, motion planning은 속도, 가속도, 안전거리, 동역학 제약까지 고려해 시간에 따른 움직임을 정하는 것임."
+        },
+        {
+          "id": "sdv-005",
+          "question": "자율주행에서 fail-safe 설계가 필요한 이유는 무엇인가요?",
+          "answer": "sensor failure, model error, 통신 문제, 예측 불가능한 road user 등으로 인해 시스템이 정상 판단을 못할 수 있으므로 안전한 fallback behavior가 필요함."
+        }
+      ]
+    },
+    {
+      "id": "xai",
+      "name": "XAI",
+      "description": "Explainable Artificial Intelligence",
+      "cards": [
+        {
+          "id": "xai-001",
+          "question": "XAI가 필요한 대표적인 이유는 무엇인가요?",
+          "answer": "model decision의 근거를 이해해 신뢰성, debugging, regulatory compliance, domain expert 검증을 가능하게 하기 위해 필요함."
+        },
+        {
+          "id": "xai-002",
+          "question": "Local explanation과 global explanation의 차이는 무엇인가요?",
+          "answer": "Local explanation은 특정 sample 하나에 대한 예측 이유를 설명하고, global explanation은 model 전체가 어떤 feature나 pattern을 중요하게 사용하는지 설명함."
+        },
+        {
+          "id": "xai-003",
+          "question": "SHAP의 핵심 아이디어를 간단히 설명해보세요.",
+          "answer": "game theory의 Shapley value를 이용해 각 feature가 예측값에 기여한 정도를 공정하게 배분하려는 explanation 방법임."
+        },
+        {
+          "id": "xai-004",
+          "question": "LIME은 어떤 방식으로 model을 설명하나요?",
+          "answer": "설명하려는 sample 주변에서 perturbation data를 만들고 black-box model의 출력을 근사하는 simple interpretable model을 학습해 local behavior를 설명함."
+        },
+        {
+          "id": "xai-005",
+          "question": "Faithfulness와 plausibility는 XAI 평가에서 어떻게 다른가요?",
+          "answer": "Faithfulness는 explanation이 실제 model 내부 decision process를 얼마나 정확히 반영하는지이고, plausibility는 사람이 보기에 그 설명이 얼마나 그럴듯한지임."
+        }
+      ]
+    },
+    {
+      "id": "ai-mechanical-engineers",
+      "name": "AI for Mechanical Engineers",
+      "description": "AI applications for mechanical engineering workflows",
+      "cards": [
+        {
+          "id": "me-001",
+          "question": "기계공학에서 predictive maintenance에 AI를 적용하는 목적은 무엇인가요?",
+          "answer": "sensor signal, operation history, vibration, temperature 등의 data를 분석해 failure를 미리 예측하고 downtime과 maintenance cost를 줄이는 것임."
+        },
+        {
+          "id": "me-002",
+          "question": "Surrogate model은 engineering simulation에서 왜 유용한가요?",
+          "answer": "CFD나 FEM처럼 계산 비용이 큰 simulation을 빠르게 근사해 design exploration, optimization, uncertainty analysis를 효율적으로 수행할 수 있게 함."
+        },
+        {
+          "id": "me-003",
+          "question": "Physics-informed neural network, PINN의 장점은 무엇인가요?",
+          "answer": "data loss와 함께 governing equation, boundary condition, initial condition을 loss에 포함해 물리 법칙을 반영한 neural network solution을 학습할 수 있음."
+        },
+        {
+          "id": "me-004",
+          "question": "AI 기반 anomaly detection을 회전체 시스템에 적용할 때 어떤 feature가 유용할 수 있나요?",
+          "answer": "vibration RMS, frequency spectrum peak, bearing fault frequency, temperature trend, acoustic signal, motor current signature 등이 유용할 수 있음."
+        },
+        {
+          "id": "me-005",
+          "question": "기계 설계 최적화에서 generative model을 사용할 수 있는 사례를 말해보세요.",
+          "answer": "weight reduction, stiffness improvement, thermal performance 향상을 목표로 topology candidate나 shape variation을 생성하고 simulation 또는 surrogate model로 평가하는 방식이 가능함."
+        }
+      ]
+    }
+  ]
+}

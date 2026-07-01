@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Topic-based interview question flashcards for GitHub Pages."
+    >
+    <title>Interview Question Cards</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">IQ</span>
+          <div>
+            <h1>Interview Question Cards</h1>
+            <p id="deckSummary">Loading cards...</p>
+          </div>
+        </div>
+
+        <div class="quick-stats" aria-label="Study progress">
+          <div>
+            <span id="knownCount">0</span>
+            <small>Known</small>
+          </div>
+          <div>
+            <span id="reviewCount">0</span>
+            <small>Review</small>
+          </div>
+          <div>
+            <span id="newCount">0</span>
+            <small>New</small>
+          </div>
+        </div>
+      </header>
+
+      <div class="workspace">
+        <aside class="control-panel" aria-label="Study controls">
+          <section class="panel-section">
+            <div class="section-title">Topic</div>
+            <div id="topicTabs" class="topic-tabs" role="tablist"></div>
+          </section>
+
+          <section class="panel-section">
+            <div class="section-title">Mode</div>
+            <div class="segmented" role="radiogroup" aria-label="Card order">
+              <button class="segment is-active" type="button" data-mode="ordered">
+                Order
+              </button>
+              <button class="segment" type="button" data-mode="random">
+                Random
+              </button>
+            </div>
+          </section>
+
+          <section class="panel-section">
+            <div class="section-title">Progress</div>
+            <div class="meter" aria-hidden="true">
+              <span id="progressFill"></span>
+            </div>
+            <div class="progress-line">
+              <span id="progressLabel">0 of 0 known</span>
+              <button id="clearProgressBtn" class="text-button" type="button">
+                Clear
+              </button>
+            </div>
+          </section>
+        </aside>
+
+        <main class="study-area">
+          <div id="errorState" class="notice" hidden></div>
+
+          <section class="card-stack" aria-live="polite">
+            <div class="card-meta">
+              <span id="currentTopic">Topic</span>
+              <span id="cardPosition">0 / 0</span>
+            </div>
+
+            <div
+              id="flashcard"
+              class="flashcard"
+              role="button"
+              tabindex="0"
+              aria-label="Flip card"
+              aria-pressed="false"
+            >
+              <div class="flashcard-inner">
+                <article class="card-face card-front">
+                  <p class="face-label">Question</p>
+                  <h2 id="questionText"></h2>
+                </article>
+
+                <article class="card-face card-back">
+                  <p class="face-label">Answer</p>
+                  <p id="answerText"></p>
+                </article>
+              </div>
+            </div>
+
+            <div class="card-status">
+              <span id="cardMark" class="mark-pill">New</span>
+            </div>
+          </section>
+
+          <div class="action-bar" aria-label="Card actions">
+            <button id="prevBtn" class="icon-button" type="button" title="Previous" aria-label="Previous card">
+              <span aria-hidden="true">&lt;</span>
+            </button>
+            <button id="reviewBtn" class="action-button review" type="button">
+              Review
+            </button>
+            <button id="knownBtn" class="action-button known" type="button">
+              Know
+            </button>
+            <button id="nextBtn" class="icon-button" type="button" title="Next" aria-label="Next card">
+              <span aria-hidden="true">&gt;</span>
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
