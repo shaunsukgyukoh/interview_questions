@@ -1510,6 +1510,1381 @@
           "id": "me-005",
           "question": "기계 설계 최적화에서 generative model을 사용할 수 있는 사례를 말해보세요.",
           "answer": "weight reduction, stiffness improvement, thermal performance 향상을 목표로 topology candidate나 shape variation을 생성하고 simulation 또는 surrogate model로 평가하는 방식이 가능함."
+        },
+        {
+          "id": "me-006",
+          "question": "Machine Learning의 주요 학습 유형을 설명해보세요.",
+          "answer": "Supervised, Unsupervised, Semi-supervised, Reinforcement Learning으로 구분 가능함. 추가로 Self-supervised, Transfer, Ensemble Learning 등이 있음."
+        },
+        {
+          "id": "me-007",
+          "question": "Supervised Learning이 무엇인지 설명해보세요.",
+          "answer": "labeled data를 사용해 input-output 관계를 학습하고, 새로운 input에 대한 output을 예측하는 방식임."
+        },
+        {
+          "id": "me-008",
+          "question": "Supervised Learning이 적합한 문제는 무엇인가요?",
+          "answer": "정답 label이 있는 classification, regression 문제에 적합함. 예: 이미지 분류, 결함 탐지, 의료 진단."
+        },
+        {
+          "id": "me-009",
+          "question": "Supervised Learning에서 label 품질이 중요한 이유는 무엇인가요?",
+          "answer": "model이 label을 기준으로 학습하기 때문임. label 오류 → 잘못된 pattern 학습 → 성능 저하."
+        },
+        {
+          "id": "me-010",
+          "question": "Supervised Learning의 대표 알고리즘은 무엇인가요?",
+          "answer": "linear regression, logistic regression, decision tree, SVM, neural network."
+        },
+        {
+          "id": "me-011",
+          "question": "Linear regression은 어떤 문제에 사용하나요?",
+          "answer": "연속값 예측 문제에 사용함. 예: 가격, 온도, 수명, 성능 수치 예측."
+        },
+        {
+          "id": "me-012",
+          "question": "Logistic regression은 어떤 문제에 사용하나요?",
+          "answer": "주로 binary 또는 multi-class classification 문제에 사용함."
+        },
+        {
+          "id": "me-013",
+          "question": "Decision tree의 장점은 무엇인가요?",
+          "answer": "의사결정 구조가 직관적이고 해석이 쉬움."
+        },
+        {
+          "id": "me-014",
+          "question": "SVM은 어떤 특징이 있나요?",
+          "answer": "class 간 margin을 최대화하는 decision boundary를 찾는 방식임."
+        },
+        {
+          "id": "me-015",
+          "question": "Neural network는 왜 많이 사용되나요?",
+          "answer": "복잡한 비선형 pattern을 학습할 수 있어 image, speech, NLP 등에서 강력함."
+        },
+        {
+          "id": "me-016",
+          "question": "Unsupervised Learning이 무엇인지 설명해보세요.",
+          "answer": "label 없는 data에서 숨겨진 구조, pattern, relationship을 찾는 방식임."
+        },
+        {
+          "id": "me-017",
+          "question": "Unsupervised Learning이 필요한 상황은 언제인가요?",
+          "answer": "label 확보가 어렵거나 데이터 구조를 먼저 파악해야 할 때 필요함."
+        },
+        {
+          "id": "me-018",
+          "question": "Unsupervised Learning의 대표 활용 사례는 무엇인가요?",
+          "answer": "anomaly detection, fault diagnosis, predictive maintenance, customer/data clustering."
+        },
+        {
+          "id": "me-019",
+          "question": "Clustering이 무엇인가요?",
+          "answer": "유사한 data point끼리 group으로 묶는 기법임."
+        },
+        {
+          "id": "me-020",
+          "question": "K-means clustering의 핵심 개념은 무엇인가요?",
+          "answer": "데이터를 K개의 cluster로 나누고 각 point를 가장 가까운 중심점에 할당함."
+        },
+        {
+          "id": "me-021",
+          "question": "Hierarchical clustering은 어떤 방식인가요?",
+          "answer": "data 간 유사도를 기준으로 계층적 cluster 구조를 만드는 방식임."
+        },
+        {
+          "id": "me-022",
+          "question": "PCA는 왜 사용하나요?",
+          "answer": "고차원 data를 저차원으로 축소해 계산 효율, 시각화, noise 감소에 도움을 줌."
+        },
+        {
+          "id": "me-023",
+          "question": "Dimensionality reduction의 장점은 무엇인가요?",
+          "answer": "feature 수를 줄여 overfitting과 계산 비용을 줄이고 핵심 pattern을 보기 쉽게 함."
+        },
+        {
+          "id": "me-024",
+          "question": "Supervised Learning과 Unsupervised Learning의 차이는 무엇인가요?",
+          "answer": "Supervised는 label 기반 학습, Unsupervised는 label 없이 data structure를 탐색함."
+        },
+        {
+          "id": "me-025",
+          "question": "Semi-supervised Learning이 무엇인지 설명해보세요.",
+          "answer": "소량 labeled data와 대량 unlabeled data를 함께 활용하는 학습 방식임."
+        },
+        {
+          "id": "me-026",
+          "question": "Semi-supervised Learning이 실무에서 중요한 이유는 무엇인가요?",
+          "answer": "labeling 비용이 크기 때문에 unlabeled data를 활용해 성능과 효율을 높일 수 있음."
+        },
+        {
+          "id": "me-027",
+          "question": "Semi-supervised Learning은 어떤 분야에 적합한가요?",
+          "answer": "speech recognition, natural language processing 등 label 확보가 어려운 대규모 data 분야."
+        },
+        {
+          "id": "me-028",
+          "question": "Reinforcement Learning이 무엇인지 설명해보세요.",
+          "answer": "agent가 environment에서 action을 수행하고 reward/penalty를 받아 최적 policy를 학습하는 방식임."
+        },
+        {
+          "id": "me-029",
+          "question": "Reinforcement Learning의 핵심 구성요소는 무엇인가요?",
+          "answer": "agent, environment, action, reward, penalty, policy."
+        },
+        {
+          "id": "me-030",
+          "question": "Reinforcement Learning의 목표는 무엇인가요?",
+          "answer": "누적 보상, 즉 cumulative reward를 최대화하는 전략을 학습하는 것임."
+        },
+        {
+          "id": "me-031",
+          "question": "Reinforcement Learning이 trial and error 방식인 이유는 무엇인가요?",
+          "answer": "agent가 여러 행동을 시도하고 feedback을 통해 더 나은 행동을 학습하기 때문임."
+        },
+        {
+          "id": "me-032",
+          "question": "Reinforcement Learning의 대표 알고리즘은 무엇인가요?",
+          "answer": "Q-learning, Deep Q-learning, Actor-Critic methods."
+        },
+        {
+          "id": "me-033",
+          "question": "Q-learning의 핵심 아이디어는 무엇인가요?",
+          "answer": "state-action 조합의 가치를 학습해 장기 reward가 큰 action을 선택하는 방식임."
+        },
+        {
+          "id": "me-034",
+          "question": "Deep Q-learning은 Q-learning과 무엇이 다른가요?",
+          "answer": "Q-value를 neural network로 근사해 복잡한 state space를 다룰 수 있음."
+        },
+        {
+          "id": "me-035",
+          "question": "Actor-Critic method의 개념은 무엇인가요?",
+          "answer": "Actor는 action을 선택하고, Critic은 그 action의 가치를 평가하는 구조임."
+        },
+        {
+          "id": "me-036",
+          "question": "Reinforcement Learning이 robotics에 적합한 이유는 무엇인가요?",
+          "answer": "robot이 환경과 상호작용하며 feedback 기반으로 control strategy를 개선할 수 있기 때문임."
+        },
+        {
+          "id": "me-037",
+          "question": "Reinforcement Learning이 autonomous driving에 활용될 수 있는 이유는 무엇인가요?",
+          "answer": "주행은 연속적 의사결정 문제이며, action 결과에 따른 reward 설계가 가능하기 때문임."
+        },
+        {
+          "id": "me-038",
+          "question": "Self-supervised Learning이 무엇인지 설명해보세요.",
+          "answer": "data 자체에서 학습 신호를 만들어 input 일부로 다른 일부를 예측하는 방식임."
+        },
+        {
+          "id": "me-039",
+          "question": "Self-supervised Learning의 예시는 무엇인가요?",
+          "answer": "문장의 next word prediction, 이미지의 missing part prediction."
+        },
+        {
+          "id": "me-040",
+          "question": "Self-supervised Learning이 중요한 이유는 무엇인가요?",
+          "answer": "사람이 직접 label을 만들지 않아도 대규모 data를 학습에 활용할 수 있음."
+        },
+        {
+          "id": "me-041",
+          "question": "GPT와 BERT는 어떤 학습 방식과 관련이 있나요?",
+          "answer": "Self-supervised Learning 기반 NLP model의 대표 사례임."
+        },
+        {
+          "id": "me-042",
+          "question": "Self-supervised Learning과 Unsupervised Learning의 관계는 무엇인가요?",
+          "answer": "Self-supervised Learning은 넓게 보면 Unsupervised Learning의 한 유형임."
+        },
+        {
+          "id": "me-043",
+          "question": "Transfer Learning이 무엇인지 설명해보세요.",
+          "answer": "large dataset으로 학습된 pre-trained model을 새로운 task에 맞게 fine-tuning하는 방식임."
+        },
+        {
+          "id": "me-044",
+          "question": "Transfer Learning이 유리한 상황은 언제인가요?",
+          "answer": "target task의 data가 적고, pre-trained model의 기존 task와 관련성이 있을 때 유리함."
+        },
+        {
+          "id": "me-045",
+          "question": "Fine-tuning이 무엇인가요?",
+          "answer": "pre-trained model의 parameter를 새로운 task-specific data에 맞게 추가 학습하는 과정임."
+        },
+        {
+          "id": "me-046",
+          "question": "Transfer Learning의 장점은 무엇인가요?",
+          "answer": "적은 data와 짧은 학습 시간으로도 높은 성능을 기대할 수 있음."
+        },
+        {
+          "id": "me-047",
+          "question": "Transfer Learning 사용 시 주의할 점은 무엇인가요?",
+          "answer": "source task와 target task의 관련성이 낮으면 성능 향상이 제한될 수 있음."
+        },
+        {
+          "id": "me-048",
+          "question": "Ensemble Learning이 무엇인지 설명해보세요.",
+          "answer": "여러 model의 예측을 결합해 성능과 안정성을 높이는 방식임."
+        },
+        {
+          "id": "me-049",
+          "question": "Ensemble Learning이 효과적인 이유는 무엇인가요?",
+          "answer": "개별 model의 약점을 서로 보완하고 variance를 줄일 수 있기 때문임."
+        },
+        {
+          "id": "me-050",
+          "question": "Ensemble Learning의 단점은 무엇인가요?",
+          "answer": "계산 비용 증가, 모델 복잡도 증가, 해석 난이도 증가."
+        },
+        {
+          "id": "me-051",
+          "question": "Defect detection에는 어떤 학습 방식을 적용할 수 있나요?",
+          "answer": "label이 충분하면 Supervised Learning, label이 부족하면 Unsupervised 또는 Semi-supervised Learning 적용 가능함."
+        },
+        {
+          "id": "me-052",
+          "question": "Fault diagnosis에는 어떤 접근이 적합한가요?",
+          "answer": "고장 label이 있으면 Supervised Learning, 비정상 pattern 탐색이 목적이면 Unsupervised Learning이 적합함."
+        },
+        {
+          "id": "me-053",
+          "question": "Predictive maintenance에 ML을 어떻게 적용할 수 있나요?",
+          "answer": "sensor data와 장비 상태 data를 분석해 고장 가능성 또는 이상 징후를 예측할 수 있음."
+        },
+        {
+          "id": "me-054",
+          "question": "Medical diagnosis에서 Supervised Learning이 많이 쓰이는 이유는 무엇인가요?",
+          "answer": "진단 결과라는 label을 기반으로 질병 여부나 상태를 예측할 수 있기 때문임."
+        },
+        {
+          "id": "me-055",
+          "question": "Label이 부족한 제조 data를 다룬다면 어떤 방법을 고려하겠습니까?",
+          "answer": "Semi-supervised Learning, Self-supervised Learning, Transfer Learning을 고려함."
+        },
+        {
+          "id": "me-056",
+          "question": "Data가 많지만 정답이 없다면 어떤 분석부터 시작하겠습니까?",
+          "answer": "Unsupervised Learning으로 clustering, anomaly detection, dimensionality reduction을 수행함."
+        },
+        {
+          "id": "me-057",
+          "question": "고차원 sensor data를 분석할 때 PCA를 쓰는 이유는 무엇인가요?",
+          "answer": "주요 variance를 유지하면서 feature dimension을 줄여 해석성과 계산 효율을 높일 수 있음."
+        },
+        {
+          "id": "me-058",
+          "question": "Anomaly detection에는 어떤 학습 방식이 적합한가요?",
+          "answer": "정상/비정상 label이 없으면 Unsupervised Learning, label이 있으면 Supervised Learning이 가능함."
+        },
+        {
+          "id": "me-059",
+          "question": "ML 모델 선택 시 가장 먼저 확인할 것은 무엇인가요?",
+          "answer": "문제 유형과 data 상태임. label 유무, 예측 대상, data 규모, 실시간성, 해석 필요성을 확인해야 함."
+        },
+        {
+          "id": "me-060",
+          "question": "Classification과 regression의 차이는 무엇인가요?",
+          "answer": "Classification은 class label 예측, regression은 연속값 예측 문제임."
+        },
+        {
+          "id": "me-061",
+          "question": "Mechanical Engineering에서 ML이 중요한 이유는 무엇인가요?",
+          "answer": "설계 최적화, 결함 탐지, 고장 진단, 예측 정비, 자동화에 활용 가능하기 때문임."
+        },
+        {
+          "id": "me-062",
+          "question": "ML이 설계 최적화에 어떻게 기여할 수 있나요?",
+          "answer": "설계 변수와 성능 결과 간 관계를 학습해 더 좋은 설계 조건을 빠르게 탐색할 수 있음."
+        },
+        {
+          "id": "me-063",
+          "question": "제조 현장에서 ML 적용 시 가장 큰 어려움은 무엇인가요?",
+          "answer": "data 품질, label 부족, noise, domain shift, 해석 가능성, 안전성 검증."
+        },
+        {
+          "id": "me-064",
+          "question": "Rule-based system과 ML system의 차이는 무엇인가요?",
+          "answer": "Rule-based는 사람이 규칙을 직접 정의하고, ML은 data에서 pattern을 학습함."
+        },
+        {
+          "id": "me-065",
+          "question": "ML 모델이 좋은 성능을 냈더라도 실제 적용 전 확인해야 할 것은 무엇인가요?",
+          "answer": "test data 성능, generalization, safety, robustness, inference speed, domain 적합성."
+        },
+        {
+          "id": "me-066",
+          "question": "Mechanical Engineer가 ML을 사용할 때 domain knowledge가 중요한 이유는 무엇인가요?",
+          "answer": "data 해석, feature 선택, 결과 검증, 물리적 타당성 판단에 필요함."
+        },
+        {
+          "id": "me-067",
+          "question": "ML만으로 기계공학 문제를 해결할 수 있나요?",
+          "answer": "어려움. 물리 법칙, 실험 검증, domain knowledge와 함께 사용해야 신뢰성 확보 가능함."
+        },
+        {
+          "id": "me-068",
+          "question": "Deep Learning이 무엇인지 설명해보세요.",
+          "answer": "여러 layer를 가진 neural network로 복잡한 pattern을 학습해 예측, 분류, 의사결정을 수행하는 AI 기법임."
+        },
+        {
+          "id": "me-069",
+          "question": "Neural Network의 기본 구조를 설명해보세요.",
+          "answer": "input layer, hidden layer, output layer로 구성되며 각 layer의 neuron들이 연결되어 정보를 전달함."
+        },
+        {
+          "id": "me-070",
+          "question": "Neuron 하나가 수행하는 연산을 설명해보세요.",
+          "answer": "input에 weight를 곱해 합산하고 bias를 더한 뒤 activation function을 적용함."
+        },
+        {
+          "id": "me-071",
+          "question": "Weight와 bias의 역할은 무엇인가요?",
+          "answer": "weight는 input의 중요도를 조절하고, bias는 activation 기준을 이동시켜 model 표현력을 높임."
+        },
+        {
+          "id": "me-072",
+          "question": "Activation function이 필요한 이유는 무엇인가요?",
+          "answer": "nonlinearity를 추가해 복잡한 pattern을 학습하기 위함임."
+        },
+        {
+          "id": "me-073",
+          "question": "Activation function이 없다면 어떤 문제가 생기나요?",
+          "answer": "여러 layer를 쌓아도 선형 변환과 같아져 복잡한 비선형 관계를 학습하기 어려움."
+        },
+        {
+          "id": "me-074",
+          "question": "Forward propagation이 무엇인가요?",
+          "answer": "input data가 layer를 거쳐 output prediction으로 변환되는 과정임."
+        },
+        {
+          "id": "me-075",
+          "question": "Loss function의 역할은 무엇인가요?",
+          "answer": "prediction과 ground truth의 차이를 수치화해 model error를 측정함."
+        },
+        {
+          "id": "me-076",
+          "question": "Mean Squared Error는 어떤 문제에 주로 사용하나요?",
+          "answer": "prediction과 실제값의 차이를 제곱해 평균내므로 regression 문제에 주로 사용함."
+        },
+        {
+          "id": "me-077",
+          "question": "Backpropagation이 무엇인가요?",
+          "answer": "loss를 기준으로 역방향 gradient를 계산해 weights와 biases를 업데이트하는 과정임."
+        },
+        {
+          "id": "me-078",
+          "question": "Gradient descent가 하는 일은 무엇인가요?",
+          "answer": "loss를 줄이는 방향으로 parameter를 반복적으로 조정함."
+        },
+        {
+          "id": "me-079",
+          "question": "Epoch이란 무엇인가요?",
+          "answer": "전체 training data를 한 번 모두 학습한 주기를 의미함."
+        },
+        {
+          "id": "me-080",
+          "question": "Epoch을 너무 적게 돌리면 어떤 문제가 생기나요?",
+          "answer": "충분히 학습하지 못해 underfitting이 발생할 수 있음."
+        },
+        {
+          "id": "me-081",
+          "question": "Epoch을 너무 많이 돌리면 어떤 문제가 생기나요?",
+          "answer": "training data에 과도하게 맞춰져 overfitting이 발생할 수 있음."
+        },
+        {
+          "id": "me-082",
+          "question": "ANN이 무엇인지 설명해보세요.",
+          "answer": "Artificial Neural Network로, 생물학적 신경망에서 영감을 받은 fully connected 기반 neural network임."
+        },
+        {
+          "id": "me-083",
+          "question": "ANN은 어떤 문제에 사용할 수 있나요?",
+          "answer": "pattern recognition, data interpretation, classification, regression, decision-making에 사용 가능함."
+        },
+        {
+          "id": "me-084",
+          "question": "Fully connected layer란 무엇인가요?",
+          "answer": "이전 layer의 모든 neuron이 다음 layer의 모든 neuron과 연결된 구조임."
+        },
+        {
+          "id": "me-085",
+          "question": "CNN이 무엇인지 설명해보세요.",
+          "answer": "Convolutional Neural Network로, image처럼 grid 구조를 가진 data에서 feature를 추출하는 deep neural network임."
+        },
+        {
+          "id": "me-086",
+          "question": "CNN이 image task에 적합한 이유는 무엇인가요?",
+          "answer": "convolution filter가 edge, texture, shape 같은 spatial feature를 효과적으로 추출하기 때문임."
+        },
+        {
+          "id": "me-087",
+          "question": "CNN의 주요 layer는 무엇인가요?",
+          "answer": "convolutional layer, pooling layer, fully connected layer."
+        },
+        {
+          "id": "me-088",
+          "question": "Convolutional layer의 역할은 무엇인가요?",
+          "answer": "filter를 적용해 feature map을 만들고 중요한 visual feature를 탐지함."
+        },
+        {
+          "id": "me-089",
+          "question": "Filter 또는 kernel의 역할은 무엇인가요?",
+          "answer": "image의 특정 pattern, edge, texture 등을 감지하는 작은 weight matrix 역할을 함."
+        },
+        {
+          "id": "me-090",
+          "question": "Feature map이란 무엇인가요?",
+          "answer": "filter가 input에서 특정 feature를 감지한 결과 map임."
+        },
+        {
+          "id": "me-091",
+          "question": "Pooling layer의 목적은 무엇인가요?",
+          "answer": "feature map 크기를 줄여 계산량과 parameter 수를 감소시키고 overfitting을 완화함."
+        },
+        {
+          "id": "me-092",
+          "question": "Max pooling과 average pooling의 차이는 무엇인가요?",
+          "answer": "Max pooling은 가장 큰 값을 유지해 핵심 feature를 보존하고, average pooling은 평균값으로 noise를 줄임."
+        },
+        {
+          "id": "me-093",
+          "question": "CNN에서 ReLU를 사용하는 이유는 무엇인가요?",
+          "answer": "nonlinearity를 추가해 더 복잡한 pattern을 학습하게 하기 위함임."
+        },
+        {
+          "id": "me-094",
+          "question": "CNN에서 flatten 과정은 왜 필요한가요?",
+          "answer": "convolution/pooling 결과를 fully connected layer에 입력하기 위해 1차원 vector로 변환함."
+        },
+        {
+          "id": "me-095",
+          "question": "CNN의 fully connected layer는 어떤 역할을 하나요?",
+          "answer": "추출된 feature를 바탕으로 최종 classification 또는 regression을 수행함."
+        },
+        {
+          "id": "me-096",
+          "question": "Object detection과 image classification의 차이는 무엇인가요?",
+          "answer": "Classification은 image 전체 class를 예측하고, object detection은 object 위치와 class를 함께 예측함."
+        },
+        {
+          "id": "me-097",
+          "question": "RNN이 무엇인지 설명해보세요.",
+          "answer": "Recurrent Neural Network로, sequence data를 step별로 처리하며 이전 정보를 memory로 활용하는 neural network임."
+        },
+        {
+          "id": "me-098",
+          "question": "RNN이 sequence data에 적합한 이유는 무엇인가요?",
+          "answer": "이전 time step의 hidden state를 현재 input과 함께 사용해 순서 정보를 반영할 수 있기 때문임."
+        },
+        {
+          "id": "me-099",
+          "question": "RNN의 주요 layer는 무엇인가요?",
+          "answer": "input layer, recurrent layer, output layer."
+        },
+        {
+          "id": "me-100",
+          "question": "Hidden state의 역할은 무엇인가요?",
+          "answer": "이전 step의 정보를 저장해 현재 step의 output 계산에 활용함."
+        },
+        {
+          "id": "me-101",
+          "question": "RNN이 feedforward neural network와 다른 점은 무엇인가요?",
+          "answer": "RNN은 recurrent connection을 통해 이전 정보를 기억하지만, feedforward network는 한 방향으로만 data를 처리함."
+        },
+        {
+          "id": "me-102",
+          "question": "Backpropagation Through Time이란 무엇인가요?",
+          "answer": "sequence를 시간축으로 펼친 뒤 각 step의 error를 역전파해 parameter를 업데이트하는 RNN 학습 방법임."
+        },
+        {
+          "id": "me-103",
+          "question": "RNN의 대표적인 문제는 무엇인가요?",
+          "answer": "긴 sequence에서 vanishing gradient 또는 exploding gradient가 발생할 수 있음."
+        },
+        {
+          "id": "me-104",
+          "question": "Vanishing gradient가 발생하면 어떤 문제가 생기나요?",
+          "answer": "먼 과거 정보의 영향이 거의 사라져 long-range dependency를 학습하기 어려움."
+        },
+        {
+          "id": "me-105",
+          "question": "Exploding gradient가 발생하면 어떤 문제가 생기나요?",
+          "answer": "gradient가 과도하게 커져 학습이 불안정해질 수 있음."
+        },
+        {
+          "id": "me-106",
+          "question": "LSTM은 왜 등장했나요?",
+          "answer": "standard RNN의 long sequence 학습 한계를 개선하고 long-range dependency를 잘 다루기 위해 등장함."
+        },
+        {
+          "id": "me-107",
+          "question": "GRU는 어떤 목적의 모델인가요?",
+          "answer": "RNN의 장기 의존성 문제를 완화하면서 LSTM보다 단순한 구조로 sequence를 학습하기 위한 모델임."
+        },
+        {
+          "id": "me-108",
+          "question": "CNN과 RNN의 가장 큰 차이는 무엇인가요?",
+          "answer": "CNN은 spatial feature 추출에 강하고, RNN은 temporal/sequential dependency 학습에 강함."
+        },
+        {
+          "id": "me-109",
+          "question": "이미지 결함 탐지에는 어떤 network가 적합한가요?",
+          "answer": "image pattern, edge, texture를 학습해야 하므로 CNN이 적합함."
+        },
+        {
+          "id": "me-110",
+          "question": "센서 시계열 데이터 분석에는 어떤 network가 적합한가요?",
+          "answer": "시간 순서와 이전 상태 정보가 중요하므로 RNN, LSTM, GRU가 적합함."
+        },
+        {
+          "id": "me-111",
+          "question": "의료 영상 분석에는 어떤 network가 적합한가요?",
+          "answer": "image feature 추출이 중요하므로 CNN 기반 model이 적합함."
+        },
+        {
+          "id": "me-112",
+          "question": "자연어 처리에는 어떤 network 구조가 활용될 수 있나요?",
+          "answer": "sequence 처리가 필요하므로 RNN, LSTM, GRU가 활용될 수 있음."
+        },
+        {
+          "id": "me-113",
+          "question": "Classification 문제에서 output layer는 어떻게 구성될 수 있나요?",
+          "answer": "class별 probability를 출력하도록 구성할 수 있음."
+        },
+        {
+          "id": "me-114",
+          "question": "Regression 문제에서 output layer는 어떻게 구성될 수 있나요?",
+          "answer": "연속값을 직접 출력하도록 구성할 수 있음."
+        },
+        {
+          "id": "me-115",
+          "question": "Neural Network 학습에서 ground truth가 중요한 이유는 무엇인가요?",
+          "answer": "prediction error를 계산하는 기준이 되기 때문임."
+        },
+        {
+          "id": "me-116",
+          "question": "Model이 학습 중 개선되는 원리는 무엇인가요?",
+          "answer": "loss를 줄이는 방향으로 weights와 biases를 반복 업데이트하기 때문임."
+        },
+        {
+          "id": "me-117",
+          "question": "Overfitting을 줄이기 위한 방법은 무엇인가요?",
+          "answer": "pooling, regularization, data augmentation, early stopping, dropout 등을 사용할 수 있음."
+        },
+        {
+          "id": "me-118",
+          "question": "CNN에서 pooling이 overfitting 방지에 도움되는 이유는 무엇인가요?",
+          "answer": "feature map 크기와 parameter 수를 줄여 model complexity를 낮추기 때문임."
+        },
+        {
+          "id": "me-119",
+          "question": "Deep Learning model을 실제 제품에 적용할 때 고려할 점은 무엇인가요?",
+          "answer": "정확도, inference speed, 계산 자원, robustness, data 품질, 안전성 검증을 고려해야 함."
+        },
+        {
+          "id": "me-120",
+          "question": "Mechanical Engineering에서 Deep Learning을 어떻게 활용할 수 있나요?",
+          "answer": "결함 탐지, 고장 진단, 예측 정비, 영상 분석, 센서 data 분석, 자동화 판단에 활용 가능함."
+        },
+        {
+          "id": "me-121",
+          "question": "Neural Network 결과를 신뢰하기 위해 무엇을 확인해야 하나요?",
+          "answer": "validation/test 성능, 실제 환경 data 성능, error case, generalization, 안정성을 확인해야 함."
+        },
+        {
+          "id": "me-122",
+          "question": "AI와 Machine Learning이 설계 최적화에 어떻게 기여할 수 있나요?",
+          "answer": "대규모 dataset을 분석해 복잡한 design의 성능을 빠르게 예측하고, 반복 simulation 부담을 줄이며, 최적 설계 조건 탐색을 효율화함."
+        },
+        {
+          "id": "me-123",
+          "question": "기존 simulation 기반 최적화의 한계는 무엇인가요?",
+          "answer": "CFD나 physics-based simulation은 정확하지만 계산 비용과 시간이 커서 많은 design parameter를 반복 평가하기 어려움."
+        },
+        {
+          "id": "me-124",
+          "question": "ML 기반 surrogate model이 필요한 이유는 무엇인가요?",
+          "answer": "고비용 simulation을 대체하거나 보완해 빠른 성능 예측이 가능하기 때문임. ∴ optimization iteration을 크게 늘릴 수 있음."
+        },
+        {
+          "id": "me-125",
+          "question": "Surrogate model이란 무엇인가요?",
+          "answer": "복잡한 simulation이나 실험 결과를 근사하는 대체 model임. 입력 design parameter에 대해 성능 값을 빠르게 예측함."
+        },
+        {
+          "id": "me-126",
+          "question": "Gas turbine blade 최적화에서 ML을 어떻게 활용할 수 있나요?",
+          "answer": "blade geometry parameter를 입력으로, CFD에서 얻은 efficiency와 power를 출력으로 학습한 ANN을 사용해 다양한 blade profile을 빠르게 평가할 수 있음."
+        },
+        {
+          "id": "me-127",
+          "question": "Turbine blade 최적화에서 입력 변수와 출력 변수는 무엇인가요?",
+          "answer": "입력은 blade geometric parameters이고, 출력은 efficiency, power 같은 CFD 기반 performance metrics임."
+        },
+        {
+          "id": "me-128",
+          "question": "Turbine blade 설계에서 2D cross-section parameterization이 필요한 이유는 무엇인가요?",
+          "answer": "blade 형상을 수치화해 optimization algorithm이 thickness, twist, lean 등 design variation을 체계적으로 탐색할 수 있게 하기 위함임."
+        },
+        {
+          "id": "me-129",
+          "question": "Turbine blade 최적화에서 3D CFD simulation의 역할은 무엇인가요?",
+          "answer": "실제 3D flow field를 해석해 설계안의 aerodynamic performance를 평가하는 역할임."
+        },
+        {
+          "id": "me-130",
+          "question": "Nested optimization이란 무엇인가요?",
+          "answer": "inner loop에서 blade cross-sectional profile을 최적화하고, outer/global optimization에서 3D geometry parameter까지 포함해 전체 설계를 반복 개선하는 방식임."
+        },
+        {
+          "id": "me-131",
+          "question": "Turbine blade에서 efficiency 중심 설계와 power 중심 설계는 어떻게 다를 수 있나요?",
+          "answer": "objective function이 다르기 때문에 최적 profile 형상과 pressure distribution이 달라질 수 있음."
+        },
+        {
+          "id": "me-132",
+          "question": "Pressure coefficient distribution을 보는 이유는 무엇인가요?",
+          "answer": "blade 표면의 압력 변화와 aerodynamic loading을 확인해 설계 개선 여부를 판단할 수 있기 때문임."
+        },
+        {
+          "id": "me-133",
+          "question": "Optimized turbine blade에서 negative pressure 영역이 줄어드는 것은 어떤 의미인가요?",
+          "answer": "suction-side의 과도한 pressure drop이 완화되어 aerodynamic performance가 개선될 가능성을 의미함."
+        },
+        {
+          "id": "me-134",
+          "question": "Battery electrode 설계에 ML을 적용하는 이유는 무엇인가요?",
+          "answer": "electrode 구조와 parameter가 battery performance에 복잡하게 영향을 주며, physics-based simulation 비용이 크기 때문임."
+        },
+        {
+          "id": "me-135",
+          "question": "Battery electrode 최적화의 주요 목표는 무엇인가요?",
+          "answer": "specific energy와 specific power를 향상시키는 설계 parameter를 찾는 것임."
+        },
+        {
+          "id": "me-136",
+          "question": "Battery electrode 최적화에서 ANN 입력 변수는 무엇인가요?",
+          "answer": "electrode thickness, solid volume ratio, Bruggeman constant, particle radius, electrolyte concentration, C-rate임."
+        },
+        {
+          "id": "me-137",
+          "question": "Battery electrode 최적화에서 ANN 출력 변수는 무엇인가요?",
+          "answer": "specific energy와 specific power임."
+        },
+        {
+          "id": "me-138",
+          "question": "Electrode thickness가 중요한 이유는 무엇인가요?",
+          "answer": "electrode 구조와 반응 영역에 영향을 주어 specific energy와 specific power에 큰 영향을 줄 수 있기 때문임."
+        },
+        {
+          "id": "me-139",
+          "question": "Solid volume ratio가 중요한 이유는 무엇인가요?",
+          "answer": "active material 비율과 porous structure 특성에 영향을 주어 battery 성능을 좌우할 수 있기 때문임."
+        },
+        {
+          "id": "me-140",
+          "question": "Porous electrode structure가 battery performance에 유리한 이유는 무엇인가요?",
+          "answer": "electrochemical reaction을 위한 surface area를 증가시키고 전체 효율을 높일 수 있기 때문임."
+        },
+        {
+          "id": "me-141",
+          "question": "Electrolyte dry out이 발생하면 왜 문제가 되나요?",
+          "answer": "battery cell이 요구 C-rate를 유지하지 못해 비정상적으로 낮은 specific energy 결과를 만들고 training data를 왜곡할 수 있음."
+        },
+        {
+          "id": "me-142",
+          "question": "Abnormal case가 training data에 섞이면 어떤 문제가 생기나요?",
+          "answer": "model이 정상 설계의 성능 관계를 정확히 학습하지 못해 prediction reliability가 낮아질 수 있음."
+        },
+        {
+          "id": "me-143",
+          "question": "Battery optimization에서 classifier와 calculator를 나누는 이유는 무엇인가요?",
+          "answer": "classifier가 normal/abnormal case를 먼저 구분하고, calculator는 normal case만 학습해 성능 예측 정확도를 높이기 위함임."
+        },
+        {
+          "id": "me-144",
+          "question": "2-network architecture의 장점은 무엇인가요?",
+          "answer": "abnormal data의 영향을 줄이고, 정상 설계 영역에서 더 reliable한 prediction을 제공할 수 있음."
+        },
+        {
+          "id": "me-145",
+          "question": "Global sensitivity analysis는 왜 수행하나요?",
+          "answer": "어떤 design variable이 output performance에 가장 큰 영향을 주는지 파악하기 위함임."
+        },
+        {
+          "id": "me-146",
+          "question": "Sensitivity analysis 결과를 설계에 어떻게 활용할 수 있나요?",
+          "answer": "영향도가 큰 변수에 집중해 최적화 효율을 높이고, 설계 기준을 만족하는 parameter range를 좁힐 수 있음."
+        },
+        {
+          "id": "me-147",
+          "question": "Design map이란 무엇인가요?",
+          "answer": "design parameter 조합에 따른 성능 분포를 시각화해 feasible region과 optimal region을 찾는 도구임."
+        },
+        {
+          "id": "me-148",
+          "question": "Feasible region이란 무엇인가요?",
+          "answer": "설정한 성능 기준을 모두 만족하는 설계 가능 영역임."
+        },
+        {
+          "id": "me-149",
+          "question": "Specific energy와 specific power 조건을 동시에 만족시키는 것이 어려운 이유는 무엇인가요?",
+          "answer": "두 성능 지표가 서로 다른 design parameter에 민감하거나 trade-off 관계를 가질 수 있기 때문임."
+        },
+        {
+          "id": "me-150",
+          "question": "ML 기반 design map의 장점은 무엇인가요?",
+          "answer": "빠른 예측으로 많은 parameter 조합을 평가할 수 있어 설계자가 조건 만족 영역을 직관적으로 찾을 수 있음."
+        },
+        {
+          "id": "me-151",
+          "question": "Design of Experiments는 왜 필요한가요?",
+          "answer": "training data를 만들기 위해 design space를 체계적으로 샘플링하고, simulation/experiment case를 효율적으로 구성하기 위함임."
+        },
+        {
+          "id": "me-152",
+          "question": "Physics-based simulation과 ML model을 함께 쓰는 이유는 무엇인가요?",
+          "answer": "simulation은 정확한 training data를 제공하고, ML은 학습 후 빠른 prediction과 optimization을 가능하게 함."
+        },
+        {
+          "id": "me-153",
+          "question": "Low-fidelity simulation data도 활용할 수 있는 이유는 무엇인가요?",
+          "answer": "완전한 고정밀 해석보다 비용이 낮고, 기존 knowledge와 함께 model 학습 및 초기 탐색에 도움을 줄 수 있기 때문임."
+        },
+        {
+          "id": "me-154",
+          "question": "ML 기반 최적화에서 데이터 품질이 중요한 이유는 무엇인가요?",
+          "answer": "model은 data에서 pattern을 학습하므로 noise, abnormal case, 편향된 sample이 있으면 최적화 결과도 왜곡될 수 있음."
+        },
+        {
+          "id": "me-155",
+          "question": "Material optimization에서 active learning이 유용한 이유는 무엇인가요?",
+          "answer": "model이 불확실하거나 성능 향상이 기대되는 실험 조건을 우선 선택해 실험 횟수를 줄일 수 있음."
+        },
+        {
+          "id": "me-156",
+          "question": "Data augmentation은 설계 최적화에서 어떤 역할을 하나요?",
+          "answer": "제한된 data를 보완해 model의 일반화 성능을 높이는 데 도움을 줌."
+        },
+        {
+          "id": "me-157",
+          "question": "Robot-human collaboration이 material optimization에 도움이 되는 이유는 무엇인가요?",
+          "answer": "robot은 반복 실험을 빠르게 수행하고, human은 domain knowledge 기반으로 방향성을 판단해 효율적인 탐색이 가능함."
+        },
+        {
+          "id": "me-158",
+          "question": "AI/ML 기반 설계 최적화를 실제 산업에 적용할 때 고려할 점은 무엇인가요?",
+          "answer": "data 품질, simulation 신뢰성, abnormal case 처리, model generalization, 물리적 타당성, 검증 실험이 중요함."
+        },
+        {
+          "id": "me-159",
+          "question": "ML prediction 결과를 그대로 설계에 적용해도 되나요?",
+          "answer": "안 됨. validation data, 실제 simulation, 실험 검증을 통해 물리적 타당성과 안전성을 확인해야 함."
+        },
+        {
+          "id": "me-160",
+          "question": "Mechanical engineer가 ML 기반 최적화를 사용할 때 중요한 역량은 무엇인가요?",
+          "answer": "design variable 정의, simulation 이해, data 해석, model 결과 검증, domain knowledge 기반 판단 능력임."
+        },
+        {
+          "id": "me-161",
+          "question": "AI/ML이 mechanical engineering design에 주는 가장 큰 가치는 무엇인가요?",
+          "answer": "반복 설계와 평가를 빠르게 수행해 더 효율적이고 정확하며 창의적인 design exploration을 가능하게 하는 점임."
+        },
+        {
+          "id": "me-162",
+          "question": "Overfitting이 무엇인지 설명해보세요.",
+          "answer": "model이 training data를 지나치게 잘 학습해 noise까지 memorization하고, unseen data에는 일반화하지 못하는 현상임."
+        },
+        {
+          "id": "me-163",
+          "question": "Underfitting이 무엇인지 설명해보세요.",
+          "answer": "model이 너무 단순해 data의 underlying pattern을 제대로 학습하지 못하는 현상임."
+        },
+        {
+          "id": "me-164",
+          "question": "Overfitting의 대표적인 증상은 무엇인가요?",
+          "answer": "training 성능은 매우 높지만 validation/test 성능은 낮음."
+        },
+        {
+          "id": "me-165",
+          "question": "Underfitting의 대표적인 증상은 무엇인가요?",
+          "answer": "training data와 validation/test data 모두에서 성능이 낮음."
+        },
+        {
+          "id": "me-166",
+          "question": "Overfitting은 bias-variance 관점에서 어떻게 설명할 수 있나요?",
+          "answer": "low bias, high variance 상태임. training data에는 잘 맞지만 data 변화에 민감함."
+        },
+        {
+          "id": "me-167",
+          "question": "Underfitting은 bias-variance 관점에서 어떻게 설명할 수 있나요?",
+          "answer": "high bias, low variance 상태임. model이 너무 단순해 train/test 모두에서 error가 큼."
+        },
+        {
+          "id": "me-168",
+          "question": "Overfitting이 발생하는 주요 원인은 무엇인가요?",
+          "answer": "model complexity가 너무 크거나, training data가 부족하거나, regularization이 부족할 때 발생함."
+        },
+        {
+          "id": "me-169",
+          "question": "Underfitting이 발생하는 주요 원인은 무엇인가요?",
+          "answer": "model이 너무 단순하거나, feature가 부족하거나, 충분히 학습되지 않았을 때 발생함."
+        },
+        {
+          "id": "me-170",
+          "question": "Neural network에서 overfitting이 발생하는 경우는 언제인가요?",
+          "answer": "layer나 neuron 수가 너무 많고 data가 부족하거나 regularization이 없을 때 발생하기 쉬움."
+        },
+        {
+          "id": "me-171",
+          "question": "Neural network에서 underfitting이 발생하는 경우는 언제인가요?",
+          "answer": "layer나 neuron 수가 너무 적거나 epoch이 부족해 pattern을 충분히 학습하지 못할 때 발생함."
+        },
+        {
+          "id": "me-172",
+          "question": "Overfitting을 줄이는 방법은 무엇인가요?",
+          "answer": "model 단순화, training data 증가, L1/L2 regularization, dropout, data augmentation, cross-validation을 사용할 수 있음."
+        },
+        {
+          "id": "me-173",
+          "question": "Underfitting을 줄이는 방법은 무엇인가요?",
+          "answer": "model complexity 증가, feature 추가, preprocessing 개선, epoch 증가, feature engineering을 적용할 수 있음."
+        },
+        {
+          "id": "me-174",
+          "question": "Regularization이 overfitting 방지에 도움이 되는 이유는 무엇인가요?",
+          "answer": "parameter가 과도하게 커지거나 복잡한 pattern에 맞춰지는 것을 제한해 model generalization을 높이기 때문임."
+        },
+        {
+          "id": "me-175",
+          "question": "Dropout이 overfitting을 줄이는 원리는 무엇인가요?",
+          "answer": "training 중 일부 neuron을 무작위로 비활성화해 특정 neuron 조합에 과도하게 의존하는 것을 방지함."
+        },
+        {
+          "id": "me-176",
+          "question": "Data augmentation이 overfitting 방지에 효과적인 이유는 무엇인가요?",
+          "answer": "training data의 다양성을 늘려 model이 특정 sample을 암기하지 않고 일반적인 pattern을 학습하게 함."
+        },
+        {
+          "id": "me-177",
+          "question": "Cross-validation을 사용하는 이유는 무엇인가요?",
+          "answer": "여러 validation split에서 성능을 확인해 model이 특정 data split에만 잘 맞는지 검증하기 위함임."
+        },
+        {
+          "id": "me-178",
+          "question": "Training accuracy는 높은데 test accuracy가 낮다면 어떤 문제를 의심하겠습니까?",
+          "answer": "overfitting을 의심함. model이 training data에는 잘 맞지만 unseen data에 일반화하지 못하는 상태임."
+        },
+        {
+          "id": "me-179",
+          "question": "Training accuracy와 test accuracy가 모두 낮다면 어떤 문제를 의심하겠습니까?",
+          "answer": "underfitting을 의심함. model이 data pattern을 충분히 학습하지 못한 상태임."
+        },
+        {
+          "id": "me-180",
+          "question": "Model complexity를 줄여야 하는 상황은 언제인가요?",
+          "answer": "overfitting이 발생해 train-test 성능 차이가 클 때 complexity를 줄이는 것이 필요함."
+        },
+        {
+          "id": "me-181",
+          "question": "Model complexity를 높여야 하는 상황은 언제인가요?",
+          "answer": "underfitting이 발생해 train/test 모두 성능이 낮을 때 complexity를 높이는 것이 필요함."
+        },
+        {
+          "id": "me-182",
+          "question": "Feature engineering이 underfitting 해결에 도움이 되는 이유는 무엇인가요?",
+          "answer": "model이 학습할 수 있는 유의미한 정보를 추가해 underlying pattern을 더 잘 포착하게 하기 때문임."
+        },
+        {
+          "id": "me-183",
+          "question": "Training epoch을 늘리면 항상 좋은가요?",
+          "answer": "아님. underfitting에는 도움이 될 수 있지만, 너무 많이 학습하면 overfitting이 발생할 수 있음."
+        },
+        {
+          "id": "me-184",
+          "question": "Overfitting과 underfitting 중 어느 쪽이 더 좋은 상태인가요?",
+          "answer": "둘 다 좋지 않음. 목표는 train/test 모두에서 안정적인 성능을 내는 적절한 generalization 상태임."
+        },
+        {
+          "id": "me-185",
+          "question": "좋은 모델인지 판단할 때 training 성능만 보면 안 되는 이유는 무엇인가요?",
+          "answer": "training 성능만 높으면 overfitting일 수 있음. 실제 목적은 unseen data에서의 generalization 성능이기 때문임."
+        },
+        {
+          "id": "me-186",
+          "question": "Overfitting을 발견했을 때 가장 먼저 확인할 것은 무엇인가요?",
+          "answer": "train-validation 성능 차이, data size, model complexity, regularization 적용 여부를 확인함."
+        },
+        {
+          "id": "me-187",
+          "question": "Underfitting을 발견했을 때 가장 먼저 확인할 것은 무엇인가요?",
+          "answer": "model complexity, feature 정보량, preprocessing 품질, epoch 수를 확인함."
+        },
+        {
+          "id": "me-188",
+          "question": "실제 산업 데이터에서 overfitting이 위험한 이유는 무엇인가요?",
+          "answer": "현장 data는 training data와 다를 수 있으므로, overfitted model은 실제 환경에서 성능이 급격히 떨어질 수 있음."
+        },
+        {
+          "id": "me-189",
+          "question": "Validation set이 필요한 이유는 무엇인가요?",
+          "answer": "training 중 model의 generalization 성능을 확인하고 overfitting 여부를 판단하기 위해 필요함."
+        },
+        {
+          "id": "me-190",
+          "question": "Test set은 언제 사용해야 하나요?",
+          "answer": "최종 model 성능을 객관적으로 평가할 때 사용해야 함. training이나 hyperparameter tuning에 직접 사용하면 안 됨."
+        },
+        {
+          "id": "me-191",
+          "question": "Bias와 variance의 trade-off를 설명해보세요.",
+          "answer": "model이 너무 단순하면 bias가 높아 underfitting되고, 너무 복잡하면 variance가 높아 overfitting됨. 적절한 균형이 필요함."
+        },
+        {
+          "id": "me-192",
+          "question": "Generative AI가 무엇인지 설명해보세요.",
+          "answer": "기존 data의 pattern과 structure를 학습해 사람처럼 보이는 새로운 content를 생성하는 AI 분야임."
+        },
+        {
+          "id": "me-193",
+          "question": "Generative Design이 무엇인지 설명해보세요.",
+          "answer": "design parameters와 constraints를 입력하면 algorithm이 다양한 design option을 생성·평가해 최적 설계안을 찾는 방식임."
+        },
+        {
+          "id": "me-194",
+          "question": "Generative AI와 Generative Design의 차이는 무엇인가요?",
+          "answer": "Generative AI는 text/image/music 등 content 생성 전반을 의미하고, Generative Design은 engineering/product design 최적화에 특화된 응용임."
+        },
+        {
+          "id": "me-195",
+          "question": "Generative Design을 사용하는 이유는 무엇인가요?",
+          "answer": "사람이 직관적으로 찾기 어려운 innovative design을 빠르게 탐색하고, 효율·비용·성능을 동시에 개선할 수 있기 때문임."
+        },
+        {
+          "id": "me-196",
+          "question": "Generative Design에서 design parameter란 무엇인가요?",
+          "answer": "설계 알고리즘의 입력값으로, load condition, boundary condition, material property, cost, performance goal 등이 포함됨."
+        },
+        {
+          "id": "me-197",
+          "question": "Load condition이 중요한 이유는 무엇인가요?",
+          "answer": "부품이 실제로 받는 힘과 하중 조건을 반영해야 구조적 안전성과 성능을 만족할 수 있기 때문임."
+        },
+        {
+          "id": "me-198",
+          "question": "Boundary condition이 중요한 이유는 무엇인가요?",
+          "answer": "부품이 고정되거나 연결되는 조건을 정의해 실제 사용 환경과 유사한 해석을 가능하게 함."
+        },
+        {
+          "id": "me-199",
+          "question": "Material property가 Generative Design에 중요한 이유는 무엇인가요?",
+          "answer": "강도, 밀도, 열전도율 등 물성에 따라 최적 형상과 성능이 달라지기 때문임."
+        },
+        {
+          "id": "me-200",
+          "question": "Algorithmic generation이란 무엇인가요?",
+          "answer": "알고리즘이 입력 조건을 기반으로 여러 설계 후보를 자동 생성하는 과정임."
+        },
+        {
+          "id": "me-201",
+          "question": "Generative Design에 사용되는 대표 algorithm은 무엇인가요?",
+          "answer": "GAN, VAE, topology optimization, evolutionary algorithm 등이 있음."
+        },
+        {
+          "id": "me-202",
+          "question": "Topology optimization이란 무엇인가요?",
+          "answer": "주어진 설계 공간에서 불필요한 material을 제거해 강도나 강성을 유지하면서 무게를 줄이는 최적화 기법임."
+        },
+        {
+          "id": "me-203",
+          "question": "Evolutionary algorithm은 어떤 방식인가요?",
+          "answer": "자연 선택처럼 여러 설계 후보를 생성하고, 성능이 좋은 후보를 선택·변형하며 반복 개선하는 방식임."
+        },
+        {
+          "id": "me-204",
+          "question": "GAN은 Generative Design에서 어떻게 활용될 수 있나요?",
+          "answer": "기존 설계 data의 pattern을 학습해 새로운 design candidate를 생성하는 데 활용 가능함."
+        },
+        {
+          "id": "me-205",
+          "question": "VAE는 Generative Design에서 어떻게 활용될 수 있나요?",
+          "answer": "설계 data를 latent space로 표현하고, 그 공간에서 새로운 설계 variation을 생성하는 데 활용 가능함."
+        },
+        {
+          "id": "me-206",
+          "question": "Iteration and evolution이 중요한 이유는 무엇인가요?",
+          "answer": "한 번에 최적안을 찾기 어렵기 때문에 반복 생성·평가·개선을 통해 더 좋은 설계안을 찾기 위함임."
+        },
+        {
+          "id": "me-207",
+          "question": "Multi-objective optimization이란 무엇인가요?",
+          "answer": "cost, weight, strength, sustainability처럼 여러 목표를 동시에 고려해 균형 잡힌 설계를 찾는 과정임."
+        },
+        {
+          "id": "me-208",
+          "question": "Multi-objective optimization이 어려운 이유는 무엇인가요?",
+          "answer": "목표들이 trade-off 관계를 가질 수 있기 때문임. 예: weight 감소와 strength 확보는 충돌 가능함."
+        },
+        {
+          "id": "me-209",
+          "question": "Generative Design에서 LLM은 어떤 역할을 할 수 있나요?",
+          "answer": "design 직접 생성보다는 ideation, documentation, user interaction, data analysis를 지원해 workflow 효율을 높임."
+        },
+        {
+          "id": "me-210",
+          "question": "LLM이 설계 workflow에 도움이 되는 이유는 무엇인가요?",
+          "answer": "요구사항 정리, 설계 아이디어 확장, 결과 문서화, 사용자와의 상호작용을 빠르게 처리할 수 있기 때문임."
+        },
+        {
+          "id": "me-211",
+          "question": "Lightweight structure 설계에 Generative Design이 유리한 이유는 무엇인가요?",
+          "answer": "필요한 강도는 유지하면서 불필요한 material을 줄일 수 있어 weight reduction에 효과적임."
+        },
+        {
+          "id": "me-212",
+          "question": "자동차나 항공 분야에서 lightweight design이 중요한 이유는 무엇인가요?",
+          "answer": "무게 감소가 fuel efficiency, performance, energy efficiency 향상으로 이어지기 때문임."
+        },
+        {
+          "id": "me-213",
+          "question": "Heat exchanger 설계에 Generative Design을 적용하면 어떤 장점이 있나요?",
+          "answer": "thermal performance를 높이고 material usage를 줄여 cooling efficiency를 개선할 수 있음."
+        },
+        {
+          "id": "me-214",
+          "question": "Mechanical part optimization에 Generative Design을 어떻게 적용할 수 있나요?",
+          "answer": "engine component나 transmission part의 형상·구조를 최적화해 성능, 내구성, 효율을 높일 수 있음."
+        },
+        {
+          "id": "me-215",
+          "question": "Structural component 설계에서 Generative Design의 목표는 무엇인가요?",
+          "answer": "strength를 최대화하면서 material usage와 cost를 최소화하는 것임."
+        },
+        {
+          "id": "me-216",
+          "question": "Fluid dynamics 분야에서 Generative Design은 어떻게 활용되나요?",
+          "answer": "유동 경로를 개선하고 pressure drop을 줄여 pump, valve 등 fluid handling equipment의 효율을 높임."
+        },
+        {
+          "id": "me-217",
+          "question": "Pressure drop 감소가 중요한 이유는 무엇인가요?",
+          "answer": "유체 시스템의 에너지 손실을 줄이고 전체 효율을 향상시키기 때문임."
+        },
+        {
+          "id": "me-218",
+          "question": "Robotics 분야에서 Generative Design은 어떻게 활용될 수 있나요?",
+          "answer": "특정 작업에 맞는 robotic gripper나 end-effector를 설계해 정밀도와 작업 효율을 높일 수 있음."
+        },
+        {
+          "id": "me-219",
+          "question": "Consumer product 설계에서 Generative Design의 장점은 무엇인가요?",
+          "answer": "household appliance나 electronics의 성능, 내구성, energy efficiency를 개선할 수 있음."
+        },
+        {
+          "id": "me-220",
+          "question": "Generative Design이 sustainable design에 기여하는 방식은 무엇인가요?",
+          "answer": "material usage와 production cost를 줄이고 효율적인 구조를 만들어 자원 낭비를 줄일 수 있음."
+        },
+        {
+          "id": "me-221",
+          "question": "Generative Design 결과를 바로 생산에 적용해도 되나요?",
+          "answer": "안 됨. 해석 검증, 제조 가능성, 비용, 안전성, 실제 사용 조건 검토가 필요함."
+        },
+        {
+          "id": "me-222",
+          "question": "Generative Design에서 constraints 설정이 중요한 이유는 무엇인가요?",
+          "answer": "constraints가 부정확하면 실제 사용 불가능하거나 제조 불가능한 설계안이 나올 수 있기 때문임."
+        },
+        {
+          "id": "me-223",
+          "question": "좋은 Generative Design 문제 정의에 필요한 요소는 무엇인가요?",
+          "answer": "설계 목표, design space, load/boundary condition, material property, manufacturing constraints, 성능 기준이 필요함."
+        },
+        {
+          "id": "me-224",
+          "question": "Generative Design이 전통적 설계 방식보다 유리한 점은 무엇인가요?",
+          "answer": "더 넓은 design space를 빠르게 탐색하고, 사람이 생각하기 어려운 형상을 제안할 수 있음."
+        },
+        {
+          "id": "me-225",
+          "question": "Generative Design의 한계는 무엇인가요?",
+          "answer": "입력 조건과 constraints 품질에 의존하며, 제조 가능성·해석 신뢰성·후처리 검토가 필요함."
+        },
+        {
+          "id": "me-226",
+          "question": "Mechanical engineer가 Generative Design을 사용할 때 중요한 역량은 무엇인가요?",
+          "answer": "문제 정의, boundary/load condition 설정, material 이해, simulation 검증, 제조 가능성 판단 능력임."
+        },
+        {
+          "id": "me-227",
+          "question": "Generative Design에서 알고리즘을 선택할 때 어떤 기준을 보겠습니까?",
+          "answer": "design space 크기, objective function 평가 비용, local optima 여부, data 보유 여부, 제약조건, 제조 가능성을 기준으로 선택함."
+        },
+        {
+          "id": "me-228",
+          "question": "Evolutionary Algorithm은 어떤 문제에 유리한가요?",
+          "answer": "설계 공간이 넓고 복잡하며, 명확한 gradient나 수식 모델이 없을 때 유리함."
+        },
+        {
+          "id": "me-229",
+          "question": "Genetic Algorithm의 핵심 연산은 무엇인가요?",
+          "answer": "selection, crossover, mutation임. 좋은 후보를 선택하고 조합·변형하며 세대별로 개선함."
+        },
+        {
+          "id": "me-230",
+          "question": "Genetic Algorithm은 언제 사용하면 좋나요?",
+          "answer": "다양한 설계 후보를 탐색해야 하고, local optimum을 피하면서 global optimum을 찾고 싶을 때 적합함."
+        },
+        {
+          "id": "me-231",
+          "question": "Topology Optimization은 어떤 설계 문제에 적합한가요?",
+          "answer": "구조물 경량화 문제에 적합함. material을 줄이면서 strength 또는 stiffness를 유지해야 할 때 유리함."
+        },
+        {
+          "id": "me-232",
+          "question": "GAN은 Generative Design에서 어떻게 활용할 수 있나요?",
+          "answer": "기존 설계 data의 pattern을 학습해 새로운 design candidate나 synthetic design data를 생성하는 데 활용 가능함."
+        },
+        {
+          "id": "me-233",
+          "question": "VAE는 어떤 상황에서 유리한가요?",
+          "answer": "설계 data를 latent space로 압축해 표현하고, 그 공간에서 다양한 design variation을 생성할 때 유리함."
+        },
+        {
+          "id": "me-234",
+          "question": "Stochastic Optimization은 왜 local optima가 많은 문제에 유리한가요?",
+          "answer": "randomness를 이용해 탐색하므로 특정 local optimum에 고정될 가능성을 줄일 수 있음."
+        },
+        {
+          "id": "me-235",
+          "question": "Particle Swarm Optimization은 어떤 문제에 적합한가요?",
+          "answer": "여러 후보가 동시에 탐색하면서 best solution을 공유하므로, 복잡한 연속 변수 최적화 문제에 적합함."
+        },
+        {
+          "id": "me-236",
+          "question": "MCMC는 언제 유용한가요?",
+          "answer": "직접 최적화가 어렵거나 design space를 확률적으로 sampling해 탐색해야 할 때 유용함."
+        },
+        {
+          "id": "me-237",
+          "question": "Bayesian Optimization은 어떤 문제에 가장 적합한가요?",
+          "answer": "CFD, 실험, 고정밀 simulation처럼 한 번 평가하는 비용이 큰 objective function 최적화에 적합함."
+        },
+        {
+          "id": "me-238",
+          "question": "Bayesian Optimization에서 exploration과 exploitation은 무엇인가요?",
+          "answer": "exploration은 불확실한 새 영역 탐색, exploitation은 성능이 좋을 가능성이 높은 영역 집중 탐색임."
+        },
+        {
+          "id": "me-239",
+          "question": "Gaussian Process는 Bayesian Optimization에서 어떤 역할을 하나요?",
+          "answer": "objective function을 확률적으로 근사하고 예측값과 불확실성을 함께 제공함."
+        },
+        {
+          "id": "me-240",
+          "question": "Expected Improvement는 무엇을 결정하나요?",
+          "answer": "현재 best solution보다 개선 가능성이 큰 다음 평가 후보를 선택하는 기준임."
+        },
+        {
+          "id": "me-241",
+          "question": "CFD 기반 설계 최적화에는 어떤 알고리즘이 적합한가요?",
+          "answer": "평가 비용이 크므로 Bayesian Optimization이나 ML surrogate model이 적합함."
+        },
+        {
+          "id": "me-242",
+          "question": "구조 경량화 문제에는 어떤 알고리즘이 적합한가요?",
+          "answer": "Topology Optimization이 적합함. material distribution을 최적화해 무게를 줄이고 구조 성능을 유지할 수 있음."
+        },
+        {
+          "id": "me-243",
+          "question": "새로운 설계 후보를 많이 생성해야 한다면 어떤 방법을 고려하겠습니까?",
+          "answer": "GAN, VAE, Evolutionary Algorithm을 고려함. 후보 생성과 design variation 탐색에 유리하기 때문임."
+        },
+        {
+          "id": "me-244",
+          "question": "최적화 결과를 신뢰하기 위해 무엇을 확인해야 하나요?",
+          "answer": "simulation 검증, 실험 검증, 제약조건 만족 여부, 제조 가능성, sensitivity analysis를 확인해야 함."
+        },
+        {
+          "id": "me-245",
+          "question": "GAN이 무엇인지 설명해보세요.",
+          "answer": "Generator와 Discriminator 두 neural network가 경쟁하면서 real data와 유사한 synthetic data를 생성하는 generative model임."
+        },
+        {
+          "id": "me-246",
+          "question": "GAN의 핵심 목적은 무엇인가요?",
+          "answer": "real data의 pattern과 structure를 모방하는 high-quality realistic synthetic data를 생성하는 것임."
+        },
+        {
+          "id": "me-247",
+          "question": "GAN이 game-theoretical framework라고 불리는 이유는 무엇인가요?",
+          "answer": "Generator와 Discriminator가 서로 경쟁하며 성능을 개선하기 때문임. Generator는 속이려 하고 Discriminator는 구분하려 함."
+        },
+        {
+          "id": "me-248",
+          "question": "Generator의 역할은 무엇인가요?",
+          "answer": "random noise vector를 입력받아 real data처럼 보이는 fake data sample을 생성함."
+        },
+        {
+          "id": "me-249",
+          "question": "Discriminator의 역할은 무엇인가요?",
+          "answer": "real data와 generated data를 입력받아 각각 real인지 fake인지 판별함."
+        },
+        {
+          "id": "me-250",
+          "question": "Generator의 입력은 무엇인가요?",
+          "answer": "보통 Gaussian 또는 uniform distribution에서 sampling한 random noise vector임."
+        },
+        {
+          "id": "me-251",
+          "question": "Generator가 random noise를 사용하는 이유는 무엇인가요?",
+          "answer": "noise를 다양한 synthetic sample로 변환해 여러 variation을 생성하기 위함임."
+        },
+        {
+          "id": "me-252",
+          "question": "Generator의 학습 목표는 무엇인가요?",
+          "answer": "Discriminator가 generated sample을 real로 판단하도록 더 realistic한 sample을 생성하는 것임."
+        },
+        {
+          "id": "me-253",
+          "question": "Discriminator의 학습 목표는 무엇인가요?",
+          "answer": "real sample은 real로, generated sample은 fake로 정확히 분류하는 것임."
+        },
+        {
+          "id": "me-254",
+          "question": "GAN training process를 설명해보세요.",
+          "answer": "Generator가 fake sample을 만들고, Discriminator가 real/fake를 판별함. 이후 Discriminator는 판별 정확도를 높이고, Generator는 Discriminator를 속이도록 번갈아 update됨."
+        },
+        {
+          "id": "me-255",
+          "question": "GAN에서 feedback은 어떻게 사용되나요?",
+          "answer": "Discriminator의 판별 결과가 Generator에게 feedback으로 작용해 real data의 pattern을 더 잘 모방하도록 학습함."
+        },
+        {
+          "id": "me-256",
+          "question": "Generator loss는 어떤 방향으로 설계되나요?",
+          "answer": "Discriminator가 generated sample을 fake로 구분하지 못하게 만드는 방향, 즉 Discriminator를 속이는 방향으로 최소화됨."
+        },
+        {
+          "id": "me-257",
+          "question": "Discriminator loss는 어떤 방향으로 설계되나요?",
+          "answer": "real sample은 real로, fake sample은 fake로 정확히 분류하도록 최적화됨."
+        },
+        {
+          "id": "me-258",
+          "question": "GAN에서 두 network를 동시에 학습시키는 이유는 무엇인가요?",
+          "answer": "Generator가 좋아지면 Discriminator도 더 정교해지고, Discriminator가 좋아지면 Generator도 더 realistic한 sample을 만들도록 개선되기 때문임."
+        },
+        {
+          "id": "me-259",
+          "question": "GAN이 realistic data 생성에 강한 이유는 무엇인가요?",
+          "answer": "Discriminator와의 경쟁을 통해 Generator가 real data의 세부 pattern과 structure를 계속 개선하기 때문임."
+        },
+        {
+          "id": "me-260",
+          "question": "GAN을 Generative Design에 적용할 수 있는 이유는 무엇인가요?",
+          "answer": "기존 design data의 pattern을 학습해 새로운 design prototype, scenario, concept을 생성할 수 있기 때문임."
+        },
+        {
+          "id": "me-261",
+          "question": "Generative Design workflow에서 GAN의 장점은 무엇인가요?",
+          "answer": "넓은 design space를 빠르게 탐색하고, 사람이 생각하기 어려운 creative design candidate를 생성할 수 있음."
+        },
+        {
+          "id": "me-262",
+          "question": "GAN이 design prototype 생성에 유리한 이유는 무엇인가요?",
+          "answer": "실제 설계 data와 유사한 synthetic design을 생성해 초기 concept exploration 속도를 높일 수 있기 때문임."
+        },
+        {
+          "id": "me-263",
+          "question": "GAN이 design scenario simulation에 활용될 수 있는 이유는 무엇인가요?",
+          "answer": "다양한 조건과 design variation을 synthetic data로 생성해 여러 설계 가능성을 검토할 수 있기 때문임."
+        },
+        {
+          "id": "me-264",
+          "question": "GAN이 새로운 design concept 생성에 유리한 이유는 무엇인가요?",
+          "answer": "기존 data distribution을 학습한 뒤 새로운 조합과 variation을 생성할 수 있기 때문임."
+        },
+        {
+          "id": "me-265",
+          "question": "GAN을 사용할 때 design specification이 중요한 이유는 무엇인가요?",
+          "answer": "생성된 design이 desired specification을 만족해야 실제 설계 후보로 활용될 수 있기 때문임."
+        },
+        {
+          "id": "me-266",
+          "question": "GAN의 대표 활용 분야는 무엇인가요?",
+          "answer": "image generation, data augmentation, style transfer, resolution improvement, video generation 등이 있음."
+        },
+        {
+          "id": "me-267",
+          "question": "Image generation에서 GAN은 어떻게 사용되나요?",
+          "answer": "face, landscape, artwork처럼 real image와 유사한 synthetic image를 생성하는 데 사용됨."
+        },
+        {
+          "id": "me-268",
+          "question": "Data augmentation에서 GAN이 유리한 이유는 무엇인가요?",
+          "answer": "부족한 training dataset을 synthetic sample로 보강해 ML model 성능 향상에 도움을 줄 수 있음."
+        },
+        {
+          "id": "me-269",
+          "question": "Style transfer에서 GAN은 어떻게 활용되나요?",
+          "answer": "photograph를 painting style로 바꾸는 것처럼 image의 content는 유지하면서 style을 변환할 수 있음."
+        },
+        {
+          "id": "me-270",
+          "question": "Resolution improvement에서 GAN은 어떻게 활용되나요?",
+          "answer": "low-quality image를 더 선명하고 high-resolution처럼 보이도록 enhancement하는 데 사용됨."
+        },
+        {
+          "id": "me-271",
+          "question": "Video generation에서 GAN은 어떻게 활용되나요?",
+          "answer": "realistic video frame이나 animation을 생성하는 데 활용 가능함."
+        },
+        {
+          "id": "me-272",
+          "question": "GAN을 실제 engineering design에 적용할 때 주의할 점은 무엇인가요?",
+          "answer": "생성 결과가 realistic해 보여도 물리적 타당성, 제조 가능성, 성능 조건, 안전성 검증이 필요함."
+        },
+        {
+          "id": "me-273",
+          "question": "GAN이 생성한 design을 바로 사용할 수 없는 이유는 무엇인가요?",
+          "answer": "GAN은 data pattern을 모방할 뿐 실제 구조 강도, 열 성능, 유동 성능, 제조 제약을 자동 보장하지 않기 때문임."
+        },
+        {
+          "id": "me-274",
+          "question": "GAN 기반 synthetic data의 품질을 어떻게 평가할 수 있나요?",
+          "answer": "real data와의 유사성, 다양성, downstream model 성능 향상 여부, domain constraint 만족 여부를 확인함."
+        },
+        {
+          "id": "me-275",
+          "question": "GAN이 data augmentation에 항상 좋은 결과를 내나요?",
+          "answer": "아님. synthetic data 품질이 낮거나 편향되면 model 성능을 오히려 악화시킬 수 있음."
+        },
+        {
+          "id": "me-276",
+          "question": "GAN과 VAE의 차이를 설명해보세요.",
+          "answer": "GAN은 Generator-Discriminator 경쟁 구조이고, VAE는 Encoder-Decoder 구조로 latent distribution을 학습해 data를 생성함."
+        },
+        {
+          "id": "me-277",
+          "question": "GAN과 일반 supervised model의 차이는 무엇인가요?",
+          "answer": "Supervised model은 input-output mapping을 학습해 예측하는 반면, GAN은 real data distribution을 모방해 새로운 data를 생성함."
+        },
+        {
+          "id": "me-278",
+          "question": "GAN이 창의적인 설계 탐색에 도움이 되는 이유는 무엇인가요?",
+          "answer": "기존 design pattern을 기반으로 새로운 variation을 만들어 design space exploration을 확장할 수 있기 때문임."
+        },
+        {
+          "id": "me-279",
+          "question": "GAN을 기계공학 분야에 적용한다면 어떤 사례가 가능할까요?",
+          "answer": "부품 형상 후보 생성, 결함 이미지 augmentation, 저해상도 검사 이미지 개선, 설계 concept exploration 등에 활용 가능함."
+        },
+        {
+          "id": "me-280",
+          "question": "GAN 기반 설계 결과의 신뢰성을 확보하려면 무엇이 필요한가요?",
+          "answer": "simulation 검증, 실험 검증, constraint check, expert review, manufacturing feasibility 검토가 필요함."
         }
       ]
     }
