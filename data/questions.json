@@ -1,43 +1,6 @@
 {
   "topics": [
     {
-      "id": "gan",
-      "name": "GAN",
-      "description": "Generative Adversarial Networks",
-      "cards": [
-        {
-          "id": "gan-001",
-          "question": "GAN이 무엇인지 설명해보세요.",
-          "answer": "Generator와 Discriminator 두 neural network가 경쟁하면서 real data와 유사한 synthetic data를 생성하는 generative model임."
-        },
-        {
-          "id": "gan-002",
-          "question": "GAN의 핵심 목적은 무엇인가요?",
-          "answer": "real data의 pattern과 structure를 모방하는 high-quality realistic synthetic data를 생성하는 것임."
-        },
-        {
-          "id": "gan-003",
-          "question": "GAN이 game-theoretical framework라고 불리는 이유는 무엇인가요?",
-          "answer": "Generator와 Discriminator가 서로 경쟁하며 성능을 개선하기 때문임. Generator는 속이려 하고 Discriminator는 구분하려 함."
-        },
-        {
-          "id": "gan-004",
-          "question": "Mode collapse가 무엇이고 왜 문제가 되나요?",
-          "answer": "Generator가 다양한 sample을 만들지 못하고 일부 pattern만 반복해서 생성하는 현상임. data diversity가 낮아져 실제 분포를 제대로 학습하지 못함."
-        },
-        {
-          "id": "gan-005",
-          "question": "Discriminator가 너무 강하면 GAN 학습에 어떤 문제가 생기나요?",
-          "answer": "Discriminator가 fake sample을 너무 쉽게 구분하면 Generator로 전달되는 gradient가 약해져 학습이 불안정해질 수 있음."
-        },
-        {
-          "id": "gan-006",
-          "question": "Conditional GAN은 일반 GAN과 무엇이 다른가요?",
-          "answer": "label, class, text, image 등 조건 정보를 Generator와 Discriminator에 함께 입력해 원하는 조건에 맞는 sample을 생성하는 GAN임."
-        }
-      ]
-    },
-    {
       "id": "self-driving-car",
       "name": "Self-driving Car",
       "description": "Autonomous driving perception, planning, and control",
@@ -2885,6 +2848,2121 @@
           "id": "me-280",
           "question": "GAN 기반 설계 결과의 신뢰성을 확보하려면 무엇이 필요한가요?",
           "answer": "simulation 검증, 실험 검증, constraint check, expert review, manufacturing feasibility 검토가 필요함."
+        },
+        {
+          "id": "me-281",
+          "question": "Optimization이 무엇인지 설명해보세요.",
+          "answer": "여러 가능한 선택지 중 objective function을 최대화 또는 최소화하는 best solution을 찾는 과정임."
+        },
+        {
+          "id": "me-282",
+          "question": "Optimization이 중요한 이유는 무엇인가요?",
+          "answer": "efficiency 향상, cost 감소, performance 개선에 직접적으로 기여하기 때문임."
+        },
+        {
+          "id": "me-283",
+          "question": "Optimization problem의 핵심 구성요소는 무엇인가요?",
+          "answer": "objective function, decision variables, constraints, feasible region, optimal solution임."
+        },
+        {
+          "id": "me-284",
+          "question": "Objective function이란 무엇인가요?",
+          "answer": "최적화에서 최대화하거나 최소화하려는 목표 함수임."
+        },
+        {
+          "id": "me-285",
+          "question": "Objective function의 예시는 무엇이 있을까요?",
+          "answer": "cost 최소화, weight 최소화, efficiency 최대화, power 최대화, error 최소화 등이 있음."
+        },
+        {
+          "id": "me-286",
+          "question": "Decision variable이란 무엇인가요?",
+          "answer": "최적해를 찾기 위해 조정할 수 있는 변수임."
+        },
+        {
+          "id": "me-287",
+          "question": "Heat transfer 문제에서 decision variable 예시는 무엇인가요?",
+          "answer": "insulation thickness, material type 등이 decision variable이 될 수 있음."
+        },
+        {
+          "id": "me-288",
+          "question": "Constraint란 무엇인가요?",
+          "answer": "decision variable이 반드시 만족해야 하는 제한 조건임."
+        },
+        {
+          "id": "me-289",
+          "question": "Constraint는 어떤 형태로 표현될 수 있나요?",
+          "answer": "equation 또는 inequality 형태로 표현 가능함."
+        },
+        {
+          "id": "me-290",
+          "question": "Optimal solution이란 무엇인가요?",
+          "answer": "feasible region 안에서 objective function을 가장 좋게 만드는 해임."
+        },
+        {
+          "id": "me-291",
+          "question": "Feasible region이 중요한 이유는 무엇인가요?",
+          "answer": "실제로 허용 가능한 해의 범위를 정의하기 때문임. feasible region 밖의 해는 성능이 좋아도 사용할 수 없음."
+        },
+        {
+          "id": "me-292",
+          "question": "Objective function과 constraint의 차이는 무엇인가요?",
+          "answer": "objective function은 최적화할 목표이고, constraint는 반드시 지켜야 하는 제한 조건임."
+        },
+        {
+          "id": "me-293",
+          "question": "Linear Optimization이란 무엇인가요?",
+          "answer": "objective function과 constraints가 decision variable에 대해 모두 linear인 최적화 문제임."
+        },
+        {
+          "id": "me-294",
+          "question": "Linear Optimization은 언제 유리한가요?",
+          "answer": "변수 간 관계가 선형이고 빠르고 안정적인 계산이 필요할 때 유리함."
+        },
+        {
+          "id": "me-295",
+          "question": "Nonlinear Optimization이란 무엇인가요?",
+          "answer": "objective function 또는 constraints 중 하나 이상이 nonlinear인 최적화 문제임."
+        },
+        {
+          "id": "me-296",
+          "question": "Nonlinear Optimization이 필요한 이유는 무엇인가요?",
+          "answer": "실제 engineering system은 변수 간 관계가 비선형인 경우가 많기 때문임."
+        },
+        {
+          "id": "me-297",
+          "question": "Linear Optimization과 Nonlinear Optimization의 차이는 무엇인가요?",
+          "answer": "Linear는 목표와 제약이 선형이고, Nonlinear는 목표나 제약 중 하나 이상이 비선형임."
+        },
+        {
+          "id": "me-298",
+          "question": "Unconstrained Optimization이란 무엇인가요?",
+          "answer": "decision variable에 constraints가 없고 objective function만 기준으로 최적해를 찾는 문제임."
+        },
+        {
+          "id": "me-299",
+          "question": "Unconstrained Optimization은 언제 사용할 수 있나요?",
+          "answer": "제한 조건이 없거나 무시 가능하고, 목표 함수만 최적화하면 되는 경우에 사용함."
+        },
+        {
+          "id": "me-300",
+          "question": "Constrained Optimization이란 무엇인가요?",
+          "answer": "decision variable이 하나 이상의 constraints를 만족해야 하는 최적화 문제임."
+        },
+        {
+          "id": "me-301",
+          "question": "Constrained Optimization이 실무에서 중요한 이유는 무엇인가요?",
+          "answer": "실제 설계는 안전, 비용, 재료, 공간, 성능 제한을 반드시 만족해야 하기 때문임."
+        },
+        {
+          "id": "me-302",
+          "question": "Continuous Optimization이란 무엇인가요?",
+          "answer": "decision variable이 주어진 범위 안에서 연속값을 가질 수 있는 최적화 문제임."
+        },
+        {
+          "id": "me-303",
+          "question": "Continuous Optimization의 예시는 무엇인가요?",
+          "answer": "두께, 길이, 온도, 속도, 압력 같은 연속값 설계 변수 최적화임."
+        },
+        {
+          "id": "me-304",
+          "question": "Discrete Optimization이란 무엇인가요?",
+          "answer": "decision variable이 정수 또는 제한된 선택값만 가질 수 있는 최적화 문제임."
+        },
+        {
+          "id": "me-305",
+          "question": "Discrete Optimization의 예시는 무엇인가요?",
+          "answer": "부품 개수, material type 선택, 장비 배치, route 선택 등이 있음."
+        },
+        {
+          "id": "me-306",
+          "question": "Continuous Optimization과 Discrete Optimization의 차이는 무엇인가요?",
+          "answer": "Continuous는 변수 값이 연속적이고, Discrete는 정수나 선택 가능한 값으로 제한됨."
+        },
+        {
+          "id": "me-307",
+          "question": "Single-objective Optimization이란 무엇인가요?",
+          "answer": "하나의 objective function만 최적화하는 문제임."
+        },
+        {
+          "id": "me-308",
+          "question": "Single-objective Optimization은 언제 적합한가요?",
+          "answer": "cost 최소화나 efficiency 최대화처럼 목표가 하나로 명확할 때 적합함."
+        },
+        {
+          "id": "me-309",
+          "question": "Multi-objective Optimization의 예시는 무엇인가요?",
+          "answer": "weight 최소화, strength 최대화, cost 최소화, sustainability 향상을 동시에 고려하는 설계 문제임."
+        },
+        {
+          "id": "me-310",
+          "question": "Trade-off란 무엇인가요?",
+          "answer": "하나의 목표를 개선하면 다른 목표가 악화될 수 있는 관계임."
+        },
+        {
+          "id": "me-311",
+          "question": "Engineering design에서 Optimization은 어떻게 활용되나요?",
+          "answer": "구조, 형상, 재료, 성능 조건을 조정해 더 좋은 설계안을 찾는 데 활용됨."
+        },
+        {
+          "id": "me-312",
+          "question": "Logistics에서 Optimization은 어떻게 활용되나요?",
+          "answer": "supply chain efficiency, transportation route, resource allocation을 개선하는 데 활용됨."
+        },
+        {
+          "id": "me-313",
+          "question": "Machine Learning에서 Optimization은 어떻게 활용되나요?",
+          "answer": "training 중 loss function을 최소화하도록 model parameter를 조정하는 데 사용됨."
+        },
+        {
+          "id": "me-314",
+          "question": "Energy Management에서 Optimization은 어떻게 활용되나요?",
+          "answer": "energy storage lifetime 향상, energy system efficiency 개선에 활용됨."
+        },
+        {
+          "id": "me-315",
+          "question": "Optimization에서 objective function을 잘 정의해야 하는 이유는 무엇인가요?",
+          "answer": "objective가 잘못 정의되면 최적해가 실제 목적과 맞지 않을 수 있기 때문임."
+        },
+        {
+          "id": "me-316",
+          "question": "Decision variable을 잘못 설정하면 어떤 문제가 생기나요?",
+          "answer": "중요한 변수를 놓치거나 불필요한 변수를 포함해 최적화 결과의 품질과 효율이 떨어질 수 있음."
+        },
+        {
+          "id": "me-317",
+          "question": "Constraint를 너무 강하게 설정하면 어떤 문제가 생기나요?",
+          "answer": "feasible region이 지나치게 작아져 좋은 해를 찾기 어렵거나 feasible solution이 없을 수 있음."
+        },
+        {
+          "id": "me-318",
+          "question": "Constraint를 너무 약하게 설정하면 어떤 문제가 생기나요?",
+          "answer": "실제 사용 조건을 만족하지 못하는 비현실적인 해가 나올 수 있음."
+        },
+        {
+          "id": "me-319",
+          "question": "Feasible solution과 optimal solution의 차이는 무엇인가요?",
+          "answer": "feasible solution은 constraints를 만족하는 해이고, optimal solution은 그중 objective function을 가장 좋게 만드는 해임."
+        },
+        {
+          "id": "me-320",
+          "question": "Optimization 문제를 정의할 때 가장 먼저 해야 할 일은 무엇인가요?",
+          "answer": "최적화 목표, decision variables, constraints를 명확히 정의해야 함."
+        },
+        {
+          "id": "me-321",
+          "question": "좋은 Optimization 문제 정의의 조건은 무엇인가요?",
+          "answer": "objective가 명확하고, decision variables가 조정 가능하며, constraints가 실제 조건을 잘 반영해야 함."
+        },
+        {
+          "id": "me-322",
+          "question": "실제 설계 문제에서 objective와 constraints를 구분하는 예를 들어보세요.",
+          "answer": "weight 최소화는 objective가 될 수 있고, 최소 강도 만족 조건은 constraint가 될 수 있음."
+        },
+        {
+          "id": "me-323",
+          "question": "Optimization 결과를 바로 적용해도 되나요?",
+          "answer": "안 됨. 해석 검증, 실험 검증, 제약조건 만족 여부, 실제 환경 적합성을 확인해야 함."
+        },
+        {
+          "id": "me-324",
+          "question": "Optimization이 innovation에 기여하는 이유는 무엇인가요?",
+          "answer": "기존 설계를 단순 개선하는 것을 넘어 새로운 design option과 더 나은 solution을 탐색할 수 있기 때문임."
+        },
+        {
+          "id": "me-325",
+          "question": "Mechanical engineer가 Optimization을 이해해야 하는 이유는 무엇인가요?",
+          "answer": "설계 성능 향상, 비용 절감, 구조 최적화, 에너지 효율 개선 등 실무 문제 대부분이 최적화 문제로 표현될 수 있기 때문임."
+        },
+        {
+          "id": "me-326",
+          "question": "Topology Optimization이 무엇인지 설명해보세요.",
+          "answer": "주어진 design space 안에서 material distribution을 최적화해 constraints를 만족하면서 성능을 높이는 설계 방법임."
+        },
+        {
+          "id": "me-327",
+          "question": "Topology Optimization의 핵심 아이디어는 무엇인가요?",
+          "answer": "제한된 material을 어디에 배치하고 어디를 비울지 결정해 weight, strength, stiffness 등의 목표를 최적화하는 것임."
+        },
+        {
+          "id": "me-328",
+          "question": "Topology Optimization에서 design space란 무엇인가요?",
+          "answer": "material을 배치할 수 있는 설계 가능 영역임."
+        },
+        {
+          "id": "me-329",
+          "question": "Topology Optimization에서 objective function의 역할은 무엇인가요?",
+          "answer": "설계가 달성해야 할 목표를 수치화함. 예: stiffness 최대화, compliance 최소화."
+        },
+        {
+          "id": "me-330",
+          "question": "Topology Optimization에서 constraints가 필요한 이유는 무엇인가요?",
+          "answer": "최적 설계가 성능뿐 아니라 실제 사용 조건, 하중 조건, 안전 기준을 만족해야 하기 때문임."
+        },
+        {
+          "id": "me-331",
+          "question": "Topology Optimization의 기본 절차를 설명해보세요.",
+          "answer": "design space 정의 → objective function 설정 → constraints 설정 → element 분할 → initial guess 설정 → material distribution 반복 업데이트 → 수렴 확인 순서임."
+        },
+        {
+          "id": "me-332",
+          "question": "Design space를 작은 element로 나누는 이유는 무엇인가요?",
+          "answer": "각 element에 material을 둘지 비울지 판단하며 material distribution을 계산하기 위함임."
+        },
+        {
+          "id": "me-333",
+          "question": "Initial guess는 어떻게 설정할 수 있나요?",
+          "answer": "보통 material을 design space에 균일하게 분포시킨 상태에서 시작할 수 있음."
+        },
+        {
+          "id": "me-334",
+          "question": "Topology Optimization에서 iterative update가 필요한 이유는 무엇인가요?",
+          "answer": "한 번에 최적 material distribution을 찾기 어렵기 때문에 objective와 constraints를 기준으로 반복 개선해야 함."
+        },
+        {
+          "id": "me-335",
+          "question": "Convergence는 무엇을 의미하나요?",
+          "answer": "반복 과정에서 design 변화가 매우 작아져 optimum 또는 near-optimum design에 도달했음을 의미함."
+        },
+        {
+          "id": "me-336",
+          "question": "SIMP 방법이 무엇인지 설명해보세요.",
+          "answer": "Solid Isotropic Material with Penalization으로, element density에 따라 stiffness를 조정하고 intermediate density를 penalize해 material/void가 명확한 구조를 유도하는 방법임."
+        },
+        {
+          "id": "me-337",
+          "question": "SIMP에서 intermediate density를 penalize하는 이유는 무엇인가요?",
+          "answer": "애매한 회색 영역 대신 material이 있거나 없는 명확한 구조를 만들기 위함임."
+        },
+        {
+          "id": "me-338",
+          "question": "Topology Optimization에 사용되는 방법에는 무엇이 있나요?",
+          "answer": "gradient-based algorithm, genetic algorithm, heuristic approach, SIMP 등이 있음."
+        },
+        {
+          "id": "me-339",
+          "question": "Compliance minimization은 무엇을 의미하나요?",
+          "answer": "구조의 변형을 줄이고 stiffness를 높이는 방향으로 최적화하는 것임."
+        },
+        {
+          "id": "me-340",
+          "question": "Stiffness maximization은 왜 중요한가요?",
+          "answer": "하중을 받을 때 구조가 덜 변형되도록 해 구조 성능과 안정성을 높이기 위함임."
+        },
+        {
+          "id": "me-341",
+          "question": "Weight 또는 volume minimization의 목적은 무엇인가요?",
+          "answer": "material 사용량을 줄여 weight와 cost를 감소시키는 것임."
+        },
+        {
+          "id": "me-342",
+          "question": "Natural frequency maximization은 왜 필요한가요?",
+          "answer": "resonance와 dynamic instability를 피하기 위함임."
+        },
+        {
+          "id": "me-343",
+          "question": "Stress minimization의 목적은 무엇인가요?",
+          "answer": "stress level을 safe limit 안에 유지해 structural failure를 방지하는 것임."
+        },
+        {
+          "id": "me-344",
+          "question": "Displacement minimization은 왜 필요한가요?",
+          "answer": "deformation을 제한해 structure integrity를 유지하기 위함임."
+        },
+        {
+          "id": "me-345",
+          "question": "Thermal compliance minimization은 어떤 목적의 최적화인가요?",
+          "answer": "thermal load 조건에서 구조 또는 시스템의 thermal performance를 최적화하는 것임."
+        },
+        {
+          "id": "me-346",
+          "question": "Multi-objective optimization은 무엇인가요?",
+          "answer": "stiffness, thermal performance, low weight처럼 여러 성능 기준을 동시에 균형화하는 최적화임."
+        },
+        {
+          "id": "me-347",
+          "question": "Structural constraint에는 어떤 것이 포함될 수 있나요?",
+          "answer": "stress와 displacement가 allowable limit 안에 있어야 한다는 조건이 포함될 수 있음."
+        },
+        {
+          "id": "me-348",
+          "question": "Boundary and loading constraint는 무엇을 정의하나요?",
+          "answer": "support 위치와 방식, load의 크기와 방향을 정의함."
+        },
+        {
+          "id": "me-349",
+          "question": "Fixed support와 load condition을 잘못 정의하면 어떤 문제가 생기나요?",
+          "answer": "실제 사용 조건과 다른 최적 설계가 나와 성능과 안전성을 신뢰하기 어려움."
+        },
+        {
+          "id": "me-350",
+          "question": "Frequency and vibration constraint는 왜 필요한가요?",
+          "answer": "natural frequency resonance를 피하고 vibration amplitude를 제한하기 위함임."
+        },
+        {
+          "id": "me-351",
+          "question": "Thermal constraint는 무엇을 관리하나요?",
+          "answer": "thermal expansion과 temperature distribution이 허용 범위 안에 있도록 관리함."
+        },
+        {
+          "id": "me-352",
+          "question": "Multi-physics constraint는 어떤 상황에서 필요한가요?",
+          "answer": "fluid-structure interaction이나 electromagnetic effect처럼 여러 물리 현상이 동시에 영향을 줄 때 필요함."
+        },
+        {
+          "id": "me-353",
+          "question": "Vehicle component 설계에서 Topology Optimization은 어떻게 활용될 수 있나요?",
+          "answer": "component performance를 향상시키고 weight를 줄이는 데 활용 가능함."
+        },
+        {
+          "id": "me-354",
+          "question": "Bridge나 building 구조 설계에서 Topology Optimization은 어떤 장점이 있나요?",
+          "answer": "load carrying capacity를 높이고 material use를 줄이는 데 도움됨."
+        },
+        {
+          "id": "me-355",
+          "question": "Implant 설계에서 Topology Optimization은 어떻게 활용될 수 있나요?",
+          "answer": "biological structure와 function을 모방한 implant design에 활용될 수 있음."
+        },
+        {
+          "id": "me-356",
+          "question": "Topology Optimization 결과를 바로 제조에 적용해도 되나요?",
+          "answer": "바로 적용하기보다 constraints 만족, 구조 성능, 실제 기능성을 검토해야 함."
+        },
+        {
+          "id": "me-357",
+          "question": "Topology Optimization 문제를 정의할 때 가장 중요한 입력은 무엇인가요?",
+          "answer": "design space, objective function, constraints가 핵심 입력임."
+        },
+        {
+          "id": "me-358",
+          "question": "Topology Optimization에서 objective와 constraint를 구분해보세요.",
+          "answer": "objective는 최적화하려는 목표이고, constraint는 반드시 만족해야 하는 제한 조건임."
+        },
+        {
+          "id": "me-359",
+          "question": "Weight minimization과 stiffness maximization이 동시에 필요하면 어떻게 접근하겠습니까?",
+          "answer": "multi-objective optimization으로 두 목표를 동시에 고려해 균형 잡힌 설계를 찾음."
+        },
+        {
+          "id": "me-360",
+          "question": "Topology Optimization이 material usage 절감에 기여하는 이유는 무엇인가요?",
+          "answer": "성능에 필요한 영역에만 material을 배치하고 불필요한 영역을 제거할 수 있기 때문임."
+        },
+        {
+          "id": "me-361",
+          "question": "Topology Optimization이 engineering design에서 중요한 이유는 무엇인가요?",
+          "answer": "weight, strength, stiffness, thermal performance 등 여러 성능 기준을 고려해 효율적인 구조를 만들 수 있기 때문임."
+        },
+        {
+          "id": "me-362",
+          "question": "Topology optimization에서 machine learning을 적용하려는 이유는 무엇인가요?",
+          "answer": "topology optimization은 design variable이 많고 FEM 계산이 반복적으로 필요해 계산 시간이 매우 크기 때문임. ML을 활용하면 objective function 근사와 계산 가속을 기대할 수 있음."
+        },
+        {
+          "id": "me-363",
+          "question": "기존 FEM 기반 topology optimization의 한계는 무엇인가요?",
+          "answer": "수백~수천 개 design variable을 다뤄야 하며, 수많은 FEM calculation이 필요해 시간 소모가 크고 비실용적일 수 있음."
+        },
+        {
+          "id": "me-364",
+          "question": "FEM calculation이 topology optimization에서 부담이 되는 이유는 무엇인가요?",
+          "answer": "각 material distribution 후보의 performance를 평가하기 위해 FEM을 반복 수행해야 하기 때문임."
+        },
+        {
+          "id": "me-365",
+          "question": "단순히 ML model로 FEM을 대체하는 접근의 문제점은 무엇인가요?",
+          "answer": "FEM을 모방하려면 수만 번의 FEM simulation으로 training data를 만들어야 하므로 계산 부담이 사라지지 않고 training 단계로 이동함."
+        },
+        {
+          "id": "me-366",
+          "question": "Offline ML surrogate가 design space 변경에 취약한 이유는 무엇인가요?",
+          "answer": "square design space에서 학습한 model은 circular design space에 바로 적용하기 어렵기 때문에 새로운 training data를 다시 생성해야 함."
+        },
+        {
+          "id": "me-367",
+          "question": "SOLO가 무엇인지 설명해보세요.",
+          "answer": "Self-directed Online Learning Optimization으로, DNN surrogate model과 FEM calculation, heuristic optimization을 online loop로 결합한 topology optimization 방법임."
+        },
+        {
+          "id": "me-368",
+          "question": "SOLO의 핵심 목적은 무엇인가요?",
+          "answer": "FEM 계산 부담을 줄이면서 topology optimization의 속도와 효율을 높이는 것임."
+        },
+        {
+          "id": "me-369",
+          "question": "SOLO가 기존 heuristic method보다 빠를 수 있는 이유는 무엇인가요?",
+          "answer": "모든 후보를 FEM으로 평가하지 않고, DNN surrogate가 objective function을 빠르게 근사하며 필요한 영역만 FEM으로 보강하기 때문임."
+        },
+        {
+          "id": "me-370",
+          "question": "SOLO에서 DNN의 역할은 무엇인가요?",
+          "answer": "design variable 또는 material distribution ρ를 입력받아 objective value F(ρ)를 예측하는 surrogate model 역할임."
+        },
+        {
+          "id": "me-371",
+          "question": "SOLO에서 FEM의 역할은 무엇인가요?",
+          "answer": "새로 생성된 training data의 objective value를 정확히 계산해 DNN을 개선하는 기준 data를 제공함."
+        },
+        {
+          "id": "me-372",
+          "question": "SOLO에서 heuristic optimization algorithm의 역할은 무엇인가요?",
+          "answer": "DNN이 근사한 objective function에서 global minimum 후보를 탐색함."
+        },
+        {
+          "id": "me-373",
+          "question": "SOLO의 기본 workflow를 설명해보세요.",
+          "answer": "random ρ 생성 → FEM으로 F(ρ) 계산 → DNN 학습 → heuristic optimization → ρ* 주변 data 생성 → FEM 평가 → DNN 재학습 → convergence까지 반복함."
+        },
+        {
+          "id": "me-374",
+          "question": "SOLO에서 initial training data는 어떻게 생성되나요?",
+          "answer": "constraints를 만족하는 small batch의 random vector ρ를 생성하고, FEM으로 objective value F(ρ)를 계산해 만듦."
+        },
+        {
+          "id": "me-375",
+          "question": "SOLO에서 ρ는 무엇을 의미하나요?",
+          "answer": "material distribution을 나타내는 design variable vector임."
+        },
+        {
+          "id": "me-376",
+          "question": "SOLO에서 F(ρ)는 무엇을 의미하나요?",
+          "answer": "주어진 material distribution ρ에 대한 objective function value임."
+        },
+        {
+          "id": "me-377",
+          "question": "SOLO에서 ρ*는 무엇인가요?",
+          "answer": "DNN approximation 기반 optimization을 통해 얻은 optimized material distribution 후보임."
+        },
+        {
+          "id": "me-378",
+          "question": "Online learning이 필요한 이유는 무엇인가요?",
+          "answer": "처음부터 전체 design space를 정확히 학습하기보다, 최적해가 있을 가능성이 큰 영역에 data를 추가하며 DNN을 점진적으로 개선하기 위함임."
+        },
+        {
+          "id": "me-379",
+          "question": "SOLO에서 minimum 근처에 training data를 추가하는 이유는 무엇인가요?",
+          "answer": "최적해 탐색에 중요한 영역의 DNN 예측 정확도를 높이기 위함임."
+        },
+        {
+          "id": "me-380",
+          "question": "SOLO에서 f1과 f2의 차이는 무엇인가요?",
+          "answer": "f1은 초기 random data로 학습된 rough approximation이고, f2는 minimum 근처 추가 data로 개선된 DNN approximation임."
+        },
+        {
+          "id": "me-381",
+          "question": "SOLO가 전체 영역이 아니라 관심 영역을 더 정확히 학습하는 이유는 무엇인가요?",
+          "answer": "optimization에서 중요한 것은 global minimum 근처의 정확도이므로, 그 영역에 data를 집중하는 것이 효율적이기 때문임."
+        },
+        {
+          "id": "me-382",
+          "question": "SOLO에서 new training data는 어떻게 생성되나요?",
+          "answer": "optimized array ρ*를 기준으로 mutation, crossover, convolution을 적용해 추가 data를 생성함."
+        },
+        {
+          "id": "me-383",
+          "question": "Mutation은 무엇인가요?",
+          "answer": "하나 또는 여러 design variable을 random number로 교체하는 방식임."
+        },
+        {
+          "id": "me-384",
+          "question": "Crossover는 무엇인가요?",
+          "answer": "array 내 여러 값을 서로 교환해 새로운 design variation을 만드는 방식임."
+        },
+        {
+          "id": "me-385",
+          "question": "Convolution은 무엇인가요?",
+          "answer": "design variable에 convolution filter를 적용해 새로운 material distribution variation을 만드는 방식임."
+        },
+        {
+          "id": "me-386",
+          "question": "추가 data 생성 후 constraints를 확인하는 이유는 무엇인가요?",
+          "answer": "생성된 design candidate가 optimization problem의 constraints를 만족해야 실제 후보로 사용할 수 있기 때문임."
+        },
+        {
+          "id": "me-387",
+          "question": "SOLO의 종료 조건은 무엇인가요?",
+          "answer": "objective function이 안정화되거나 convergence에 도달하거나 computational budget이 소진되면 종료함."
+        },
+        {
+          "id": "me-388",
+          "question": "SOLO가 계산 효율을 높이는 핵심 원리는 무엇인가요?",
+          "answer": "비싼 FEM 계산을 모든 후보에 수행하지 않고, DNN surrogate와 필요한 FEM 보강을 반복적으로 결합하는 것임."
+        },
+        {
+          "id": "me-389",
+          "question": "SOLO가 modeling accuracy를 유지할 수 있는 이유는 무엇인가요?",
+          "answer": "DNN 예측만 사용하는 것이 아니라 FEM으로 새 data를 계속 평가해 surrogate model을 업데이트하기 때문임."
+        },
+        {
+          "id": "me-390",
+          "question": "SOLO가 topology optimization에 적합한 이유는 무엇인가요?",
+          "answer": "design variable이 많고 FEM 계산이 비싼 문제에서 DNN approximation과 online FEM update를 통해 탐색 효율을 높일 수 있기 때문임."
+        },
+        {
+          "id": "me-391",
+          "question": "단순 ML surrogate와 SOLO의 차이는 무엇인가요?",
+          "answer": "단순 ML surrogate는 대량 data로 먼저 학습한 뒤 고정적으로 사용하는 방식이고, SOLO는 optimization 중 FEM data를 동적으로 추가해 DNN을 계속 개선함."
+        },
+        {
+          "id": "me-392",
+          "question": "Physics-based calculation과 ML을 결합하는 장점은 무엇인가요?",
+          "answer": "physics-based calculation의 정확성과 ML의 빠른 예측 능력을 함께 활용해 accuracy와 efficiency를 동시에 높일 수 있음."
+        },
+        {
+          "id": "me-393",
+          "question": "SOLO 적용 시 중요한 점은 무엇인가요?",
+          "answer": "초기 data, DNN approximation 품질, heuristic optimization, 추가 data 생성 방식, constraint enforcement, convergence 판단이 중요함."
+        },
+        {
+          "id": "me-394",
+          "question": "복잡한 engineering optimization에서 ML만 사용하는 것이 위험한 이유는 무엇인가요?",
+          "answer": "ML은 training data 범위와 품질에 의존하므로 FEM 같은 physics-based 검증 없이 사용하면 정확성과 신뢰성이 떨어질 수 있음."
+        },
+        {
+          "id": "me-395",
+          "question": "SOLO의 가장 큰 장점은 무엇인가요?",
+          "answer": "FEM 계산량을 크게 줄이면서도 optimization 과정에서 필요한 data를 계속 보강해 복잡한 문제를 효율적으로 해결할 수 있다는 점임."
+        },
+        {
+          "id": "me-396",
+          "question": "SOLO method를 case study에서 어떤 목적에 적용했나요?",
+          "answer": "복잡한 topology optimization 문제를 더 빠르고 정확하게 해결하기 위해 적용함."
+        },
+        {
+          "id": "me-397",
+          "question": "Compliance minimization 문제의 목표는 무엇인가요?",
+          "answer": "beam의 material distribution을 최적화해 stiffness를 높이고 elastic energy E를 최소화하는 것임."
+        },
+        {
+          "id": "me-398",
+          "question": "Beam design에서 elastic energy를 최소화한다는 것은 어떤 의미인가요?",
+          "answer": "beam이 더 stiff해져 load에 의한 deformation이 줄어든다는 의미임."
+        },
+        {
+          "id": "me-399",
+          "question": "Compliance minimization과 stiffness maximization은 어떤 관계인가요?",
+          "answer": "compliance를 줄이면 구조가 더 stiff해지는 방향으로 최적화됨."
+        },
+        {
+          "id": "me-400",
+          "question": "Beam case에서 ρ(x)는 무엇을 의미하나요?",
+          "answer": "design domain 내 material distribution을 의미함."
+        },
+        {
+          "id": "me-401",
+          "question": "Beam case에서 ρ(x)=0과 ρ(x)=1은 각각 무엇인가요?",
+          "answer": "ρ(x)=0은 material 없음, ρ(x)=1은 full material 상태임."
+        },
+        {
+          "id": "me-402",
+          "question": "Beam case에서 material constraint는 무엇인가요?",
+          "answer": "사용 가능한 total material이 domain size의 절반을 넘지 않는 조건임."
+        },
+        {
+          "id": "me-403",
+          "question": "FEM 계산을 위해 ρ를 continuous variable로 변환한 이유는 무엇인가요?",
+          "answer": "continuous density를 이용해 Young’s modulus를 계산하고 FEM 해석에 사용하기 위함임."
+        },
+        {
+          "id": "me-404",
+          "question": "Beam case에서 symmetry를 사용한 이유는 무엇인가요?",
+          "answer": "대칭성을 이용해 전체가 아닌 절반만 해석하여 계산을 효율화하기 위함임."
+        },
+        {
+          "id": "me-405",
+          "question": "Beam case의 design domain은 어떻게 구성되나요?",
+          "answer": "10×10 grid로 나뉘어 있음."
+        },
+        {
+          "id": "me-406",
+          "question": "Beam case에서 load는 어디에 적용되나요?",
+          "answer": "top-right corner에 downward force가 적용됨."
+        },
+        {
+          "id": "me-407",
+          "question": "Beam case의 boundary condition은 어떻게 설정되나요?",
+          "answer": "bottom-left edge는 vertical movement가 제한되고, right edge는 symmetry condition으로 설정됨."
+        },
+        {
+          "id": "me-408",
+          "question": "Beam case에서 design variable 수는 몇 개인가요?",
+          "answer": "121개의 nodal design variables가 사용됨."
+        },
+        {
+          "id": "me-409",
+          "question": "Beam optimization 결과는 어떤 형태를 보였나요?",
+          "answer": "applied load를 지지하기 위한 triangular configuration 형태의 optimized beam이 생성됨."
+        },
+        {
+          "id": "me-410",
+          "question": "Beam case에서 SOLO 성능은 어땠나요?",
+          "answer": "비교한 5개 algorithm보다 accuracy와 speed 측면에서 우수했음."
+        },
+        {
+          "id": "me-411",
+          "question": "Phase change material optimization의 목표는 무엇인가요?",
+          "answer": "energy storage를 최적화하고, 지정된 heat Q0를 charge하는 데 필요한 time T를 최소화하는 것임."
+        },
+        {
+          "id": "me-412",
+          "question": "Phase change material은 어떤 원리로 열을 저장하나요?",
+          "answer": "solid-liquid 상태 변화 과정에서 latent heat를 흡수하거나 방출함."
+        },
+        {
+          "id": "me-413",
+          "question": "Phase change material의 예시는 무엇인가요?",
+          "answer": "wax가 대표적인 예시임."
+        },
+        {
+          "id": "me-414",
+          "question": "Phase change material은 어떤 분야에 활용되나요?",
+          "answer": "building temperature regulation, refrigeration, solar energy systems, electronic cooling, spacecraft 등에 활용됨."
+        },
+        {
+          "id": "me-415",
+          "question": "Phase change material의 주요 한계는 무엇인가요?",
+          "answer": "thermal conductivity가 낮다는 점임."
+        },
+        {
+          "id": "me-416",
+          "question": "PCM의 낮은 thermal conductivity 문제를 어떻게 개선하나요?",
+          "answer": "copper 같은 high-conductivity material을 fin으로 추가해 heat transfer를 개선함."
+        },
+        {
+          "id": "me-417",
+          "question": "Heat absorption case에서 topology optimization의 역할은 무엇인가요?",
+          "answer": "heat transfer를 개선하기 위한 fin의 최적 configuration을 설계하는 것임."
+        },
+        {
+          "id": "me-418",
+          "question": "Heat absorption case에서 traditional gradient-based method의 한계는 무엇인가요?",
+          "answer": "fixed time period와 boundary condition으로 문제를 단순화하는 경향이 있어 실제 변화 조건을 충분히 반영하기 어려움."
+        },
+        {
+          "id": "me-419",
+          "question": "Heat absorption case에서 real-world condition이 어려운 이유는 무엇인가요?",
+          "answer": "user needs와 environmental factors에 따라 time period나 boundary condition이 달라질 수 있기 때문임."
+        },
+        {
+          "id": "me-420",
+          "question": "Heat absorption case의 objective는 무엇인가요?",
+          "answer": "지정된 heat Q0를 charge하는 데 필요한 time T를 최소화하는 것임."
+        },
+        {
+          "id": "me-421",
+          "question": "Heat absorption case의 constraints는 무엇인가요?",
+          "answer": "boundary heat flux의 upper limit q0, domain temperature의 upper limit T0가 있음."
+        },
+        {
+          "id": "me-422",
+          "question": "Heat absorption case 결과에서 black color는 무엇을 의미하나요?",
+          "answer": "copper distribution을 의미함."
+        },
+        {
+          "id": "me-423",
+          "question": "Heat absorption case의 optimized geometry가 중요한 이유는 무엇인가요?",
+          "answer": "계산 전에는 상상하기 어려운 complex geometry를 optimization으로 도출할 수 있기 때문임."
+        },
+        {
+          "id": "me-424",
+          "question": "Truss optimization의 목표는 무엇인가요?",
+          "answer": "각 bar size를 최적화해 total weight W를 최소화하는 것임."
+        },
+        {
+          "id": "me-425",
+          "question": "Truss structure는 어떤 곳에 많이 사용되나요?",
+          "answer": "bridges, towers, buildings 등에 사용됨."
+        },
+        {
+          "id": "me-426",
+          "question": "Truss case에서 ρi는 무엇인가요?",
+          "answer": "i번째 bar의 cross-sectional area를 의미함."
+        },
+        {
+          "id": "me-427",
+          "question": "Truss case에서 Li는 무엇인가요?",
+          "answer": "i번째 bar의 length를 의미함."
+        },
+        {
+          "id": "me-428",
+          "question": "Truss case에서 Yi는 무엇인가요?",
+          "answer": "i번째 bar의 unit weight를 의미함."
+        },
+        {
+          "id": "me-429",
+          "question": "Truss case에서 N은 무엇인가요?",
+          "answer": "bars의 개수를 의미함."
+        },
+        {
+          "id": "me-430",
+          "question": "Truss case에서 각 bar의 cross-sectional area는 어떻게 선택되나요?",
+          "answer": "a1부터 a16까지 16개 discrete cross-sectional area value 중 하나를 선택함."
+        },
+        {
+          "id": "me-431",
+          "question": "Truss case에서 discrete area value를 사용하는 이유는 무엇인가요?",
+          "answer": "engineering application에서 standardized components를 표현하기 위함임."
+        },
+        {
+          "id": "me-432",
+          "question": "Truss optimization의 stress constraint는 무엇인가요?",
+          "answer": "모든 bar의 stress가 maximum stress σ0를 넘지 않아야 함."
+        },
+        {
+          "id": "me-433",
+          "question": "Truss optimization의 displacement constraint는 무엇인가요?",
+          "answer": "각 connection의 모든 방향 displacement가 threshold Δ0보다 작아야 함."
+        },
+        {
+          "id": "me-434",
+          "question": "Truss case에서 Nc는 무엇을 의미하나요?",
+          "answer": "bar connection의 개수를 의미함."
+        },
+        {
+          "id": "me-435",
+          "question": "Truss scalability test에는 어떤 규모의 구조가 사용되나요?",
+          "answer": "72, 432, 1,008 bars를 가진 세 가지 truss structure가 사용됨."
+        },
+        {
+          "id": "me-436",
+          "question": "Truss case에서 SOLO는 어떤 성능을 보였나요?",
+          "answer": "total weight를 최소화하면서 displacement limit을 만족하는 optimum design을 생성함."
+        },
+        {
+          "id": "me-437",
+          "question": "Truss case에서 SOLO의 계산 효율은 어느 정도 개선되었나요?",
+          "answer": "heuristic method를 직접 사용하는 것 대비 computational time이 최대 5 orders of magnitude 감소함."
+        },
+        {
+          "id": "me-438",
+          "question": "Case studies가 보여주는 SOLO의 핵심 장점은 무엇인가요?",
+          "answer": "복잡한 real-world optimization problem에서 높은 정확도와 큰 계산 효율 개선을 동시에 보여줌."
+        },
+        {
+          "id": "me-439",
+          "question": "ML method가 topology optimization에서 실용적인 이유는 무엇인가요?",
+          "answer": "단순 이론이 아니라 compliance minimization, heat absorption, large-scale truss처럼 복잡한 실제 optimization 문제에 적용 가능하기 때문임."
+        },
+        {
+          "id": "me-440",
+          "question": "Robotics가 최근 빠르게 발전하는 이유는 무엇인가요?",
+          "answer": "AI, sensor technology, material science 발전으로 robot의 navigation, manipulation, human interaction, swarm behavior 능력이 확장되고 있기 때문임."
+        },
+        {
+          "id": "me-441",
+          "question": "Robotics가 산업에서 중요한 이유는 무엇인가요?",
+          "answer": "automation, efficiency, precision, adaptability를 높여 manufacturing, healthcare, agriculture, space exploration 등 다양한 산업에 기여하기 때문임."
+        },
+        {
+          "id": "me-442",
+          "question": "Industrial robot의 대표 유형을 설명해보세요.",
+          "answer": "articulated robot, SCARA robot, Delta robot, Cartesian robot이 있음."
+        },
+        {
+          "id": "me-443",
+          "question": "Articulated robot은 어떤 특징이 있나요?",
+          "answer": "flexible multi-jointed arm을 가진 robot으로, 복잡하고 정밀한 움직임이 가능함."
+        },
+        {
+          "id": "me-444",
+          "question": "Articulated robot은 어떤 작업에 적합한가요?",
+          "answer": "precision welding, high-speed painting, automated assembly에 적합함."
+        },
+        {
+          "id": "me-445",
+          "question": "SCARA robot은 어떤 특징이 있나요?",
+          "answer": "selective compliance를 가져 수평 방향 작업에서 빠르고 정확한 동작에 강함."
+        },
+        {
+          "id": "me-446",
+          "question": "SCARA robot은 어떤 작업에 적합한가요?",
+          "answer": "high-accuracy pick-and-place operation에 적합함."
+        },
+        {
+          "id": "me-447",
+          "question": "Delta robot은 어떤 특징이 있나요?",
+          "answer": "parallel-link structure를 가진 robot으로 빠른 반복 동작에 강함."
+        },
+        {
+          "id": "me-448",
+          "question": "Delta robot은 어떤 작업에 적합한가요?",
+          "answer": "fast-paced sorting과 packaging에 적합함."
+        },
+        {
+          "id": "me-449",
+          "question": "Cartesian robot은 어떤 특징이 있나요?",
+          "answer": "orthogonal axis를 따라 linear movement를 수행하는 robot임."
+        },
+        {
+          "id": "me-450",
+          "question": "Cartesian robot은 어떤 작업에 적합한가요?",
+          "answer": "precision과 reliability가 중요한 CNC machining, additive manufacturing에 적합함."
+        },
+        {
+          "id": "me-451",
+          "question": "Mobile robot의 대표 유형을 설명해보세요.",
+          "answer": "AMR/AGV, drone/UAV, legged robot, underwater robot이 있음."
+        },
+        {
+          "id": "me-452",
+          "question": "AMR과 AGV는 어떤 분야에 활용되나요?",
+          "answer": "logistics와 warehouse management에 활용됨."
+        },
+        {
+          "id": "me-453",
+          "question": "AMR/AGV가 물류 분야에 유용한 이유는 무엇인가요?",
+          "answer": "advanced path planning과 real-time navigation으로 warehouse operation을 자동화할 수 있기 때문임."
+        },
+        {
+          "id": "me-454",
+          "question": "Drone 또는 UAV는 어떤 작업에 적합한가요?",
+          "answer": "aerial surveying, geospatial mapping, precision delivery에 적합함."
+        },
+        {
+          "id": "me-455",
+          "question": "Drone이 aerial task를 수행할 수 있는 핵심 기술은 무엇인가요?",
+          "answer": "real-time sensor fusion과 computer vision algorithm임."
+        },
+        {
+          "id": "me-456",
+          "question": "Legged robot은 어떤 환경에 적합한가요?",
+          "answer": "rugged terrain처럼 바퀴형 robot이 이동하기 어려운 환경에 적합함."
+        },
+        {
+          "id": "me-457",
+          "question": "Legged robot이 exploration mission에 적합한 이유는 무엇인가요?",
+          "answer": "stability와 adaptability가 뛰어나 험지 이동에 유리하기 때문임."
+        },
+        {
+          "id": "me-458",
+          "question": "Underwater robot의 대표 유형은 무엇인가요?",
+          "answer": "remotely operated vehicle과 autonomous underwater vehicle이 있음."
+        },
+        {
+          "id": "me-459",
+          "question": "Underwater robot은 어떤 작업에 활용되나요?",
+          "answer": "deep-sea exploration과 subsea infrastructure inspection에 활용됨."
+        },
+        {
+          "id": "me-460",
+          "question": "Underwater robot에 필요한 핵심 기술은 무엇인가요?",
+          "answer": "sonar와 advanced imaging technology임."
+        },
+        {
+          "id": "me-461",
+          "question": "Service robot이란 무엇인가요?",
+          "answer": "사람을 직접 보조하는 task를 수행하도록 설계된 robot임."
+        },
+        {
+          "id": "me-462",
+          "question": "Home service robot의 예시는 무엇인가요?",
+          "answer": "autonomous vacuum cleaner와 robotic lawn mower가 있음."
+        },
+        {
+          "id": "me-463",
+          "question": "Home service robot에서 SLAM이 중요한 이유는 무엇인가요?",
+          "answer": "robot이 동시에 위치를 추정하고 지도를 만들며 효율적으로 area를 navigation/coverage하기 위함임."
+        },
+        {
+          "id": "me-464",
+          "question": "Healthcare robot의 대표 사례는 무엇인가요?",
+          "answer": "surgical robot과 rehabilitation robot이 있음."
+        },
+        {
+          "id": "me-465",
+          "question": "Surgical robot의 장점은 무엇인가요?",
+          "answer": "minimally invasive procedure를 high precision으로 수행할 수 있음."
+        },
+        {
+          "id": "me-466",
+          "question": "Rehabilitation robot은 어떤 역할을 하나요?",
+          "answer": "real-time biomechanical modeling을 사용해 physical therapy 중 adaptive support를 제공함."
+        },
+        {
+          "id": "me-467",
+          "question": "Hospitality robot은 어떤 작업을 수행하나요?",
+          "answer": "room service와 guest interaction을 수행함."
+        },
+        {
+          "id": "me-468",
+          "question": "Hospitality robot이 고객 경험을 개선하는 기술은 무엇인가요?",
+          "answer": "natural language processing과 gesture recognition임."
+        },
+        {
+          "id": "me-469",
+          "question": "Security robot은 어떤 역할을 하나요?",
+          "answer": "autonomous patrolling과 real-time surveillance로 safety를 향상시킴."
+        },
+        {
+          "id": "me-470",
+          "question": "Security robot에서 AI-driven anomaly detection이 중요한 이유는 무엇인가요?",
+          "answer": "potential threat에 빠르게 대응하기 위해 이상 상황을 실시간으로 탐지해야 하기 때문임."
+        },
+        {
+          "id": "me-471",
+          "question": "Humanoid robot은 어떤 특징이 있나요?",
+          "answer": "human biomechanics와 social behavior를 모방함."
+        },
+        {
+          "id": "me-472",
+          "question": "Humanoid robot은 어떤 분야에 가치가 있나요?",
+          "answer": "research, education, human-robot interaction 분야에 가치가 있음."
+        },
+        {
+          "id": "me-473",
+          "question": "Bipedal robot은 무엇을 모방하나요?",
+          "answer": "human locomotion을 모방함."
+        },
+        {
+          "id": "me-474",
+          "question": "Exoskeleton의 목적은 무엇인가요?",
+          "answer": "human physical capability를 향상시키는 것임."
+        },
+        {
+          "id": "me-475",
+          "question": "Social robot은 어떤 기술을 활용하나요?",
+          "answer": "advanced emotion recognition과 interactive AI를 활용함."
+        },
+        {
+          "id": "me-476",
+          "question": "Social robot의 목적은 무엇인가요?",
+          "answer": "사람과 더 자연스럽게 engage하고 interaction하는 것임."
+        },
+        {
+          "id": "me-477",
+          "question": "Telepresence robot은 무엇인가요?",
+          "answer": "remote location에서 virtual presence와 interaction을 가능하게 하는 robot임."
+        },
+        {
+          "id": "me-478",
+          "question": "Telepresence robot은 어떤 정보를 활용하나요?",
+          "answer": "real-time video, audio, environmental feedback을 활용함."
+        },
+        {
+          "id": "me-479",
+          "question": "Telepresence robot은 어떤 분야에서 활용되나요?",
+          "answer": "education, healthcare, business에서 physical distance를 bridge하는 데 사용됨."
+        },
+        {
+          "id": "me-480",
+          "question": "Soft robot은 어떤 재료 특성을 가지나요?",
+          "answer": "compliant material로 만들어져 유연하고 안전한 interaction이 가능함."
+        },
+        {
+          "id": "me-481",
+          "question": "Soft robot이 사람 가까이에서 작업하기 좋은 이유는 무엇인가요?",
+          "answer": "flexibility와 safety feature가 있어 safe human interaction에 적합하기 때문임."
+        },
+        {
+          "id": "me-482",
+          "question": "Soft robot에 자주 포함되는 기술적 특징은 무엇인가요?",
+          "answer": "pneumatic actuation과 bio-inspired design이 포함될 수 있음."
+        },
+        {
+          "id": "me-483",
+          "question": "Soft robot은 어떤 환경에 적합한가요?",
+          "answer": "unstructured environment와 사람 가까이에서 수행하는 task에 적합함."
+        },
+        {
+          "id": "me-484",
+          "question": "Swarm robotics란 무엇인가요?",
+          "answer": "multiple robots가 distributed intelligence로 shared goal을 달성하는 접근임."
+        },
+        {
+          "id": "me-485",
+          "question": "Swarm robotics는 무엇에서 영감을 받았나요?",
+          "answer": "ants 같은 social insects의 behavior에서 영감을 받음."
+        },
+        {
+          "id": "me-486",
+          "question": "Swarm robotics의 핵심 장점은 무엇인가요?",
+          "answer": "여러 robot의 collective behavior를 통해 단일 robot보다 효과적으로 목표를 수행할 수 있음."
+        },
+        {
+          "id": "me-487",
+          "question": "Micro/Nano robot은 어떤 분야에 가능성이 있나요?",
+          "answer": "targeted drug delivery와 environmental monitoring에 가능성이 있음."
+        },
+        {
+          "id": "me-488",
+          "question": "Robotics가 human-robot collaboration에 기여하는 방식은 무엇인가요?",
+          "answer": "복잡한 task를 자동화하면서 사람이 robot과 협력할 수 있는 새로운 기회를 만들기 때문임."
+        },
+        {
+          "id": "me-489",
+          "question": "Manufacturing에서 robot이 중요한 이유는 무엇인가요?",
+          "answer": "precision, speed, repeatability가 필요한 welding, painting, assembly, machining 등에 효과적이기 때문임."
+        },
+        {
+          "id": "me-490",
+          "question": "Healthcare에서 robot이 중요한 이유는 무엇인가요?",
+          "answer": "수술 정밀도 향상, rehabilitation support, remote interaction 등 사람을 직접 보조하는 가치가 크기 때문임."
+        },
+        {
+          "id": "me-491",
+          "question": "Robotics system을 설계할 때 고려해야 할 핵심 요소는 무엇인가요?",
+          "answer": "task type, operating environment, sensor requirement, navigation/control method, human interaction level을 고려해야 함."
+        },
+        {
+          "id": "me-492",
+          "question": "Robot type을 선택할 때 가장 먼저 확인할 것은 무엇인가요?",
+          "answer": "수행할 task와 operating environment임. 예: 고속 sorting은 Delta, 험지 탐사는 legged robot, 정밀 machining은 Cartesian robot이 적합함."
+        },
+        {
+          "id": "me-493",
+          "question": "Self-driving car가 무엇인지 설명해보세요.",
+          "answer": "AI, sensor technology, complex algorithm을 이용해 human intervention 없이 주변 환경을 인식하고 판단하며 주행하는 차량임."
+        },
+        {
+          "id": "me-494",
+          "question": "Self-driving car의 핵심 기능 흐름을 설명해보세요.",
+          "answer": "sensor로 environment를 perceive하고, AI/ML이 data를 해석한 뒤, onboard computer가 real-time decision을 내려 autonomous driving을 수행함."
+        },
+        {
+          "id": "me-495",
+          "question": "Self-driving car가 제공할 수 있는 주요 장점은 무엇인가요?",
+          "answer": "human error로 인한 사고 감소, optimized route 기반 traffic flow 개선, 운전이 어려운 사람의 accessibility 향상, fuel efficiency 향상, parking need 감소 등이 있음."
+        },
+        {
+          "id": "me-496",
+          "question": "Self-driving car에 필요한 핵심 기술은 무엇인가요?",
+          "answer": "sensors and hardware, AI/ML, mapping and localization, real-time processing and decision making이 필요함."
+        },
+        {
+          "id": "me-497",
+          "question": "LiDAR는 자율주행에서 어떤 역할을 하나요?",
+          "answer": "주변 환경의 detailed 3D map을 생성해 차량이 주변 구조를 인식하도록 도움."
+        },
+        {
+          "id": "me-498",
+          "question": "Camera는 자율주행에서 어떤 역할을 하나요?",
+          "answer": "visual data를 수집해 object recognition과 lane detection에 사용됨."
+        },
+        {
+          "id": "me-499",
+          "question": "Radar는 자율주행에서 어떤 역할을 하나요?",
+          "answer": "다른 vehicle의 speed와 distance를 감지하는 데 사용됨."
+        },
+        {
+          "id": "me-500",
+          "question": "Ultrasonic sensor는 자율주행에서 어떤 역할을 하나요?",
+          "answer": "차량 주변의 close-range object detection에 사용되며 parking 같은 작업에 도움됨."
+        },
+        {
+          "id": "me-501",
+          "question": "여러 sensor를 함께 사용하는 이유는 무엇인가요?",
+          "answer": "각 sensor가 잘 감지하는 정보가 다르기 때문에 주변 환경을 더 정확하고 안정적으로 이해하기 위함임."
+        },
+        {
+          "id": "me-502",
+          "question": "AI와 ML은 self-driving car에서 어떤 역할을 하나요?",
+          "answer": "sensor data를 처리하고 object recognition, scene understanding, road user behavior prediction을 수행함."
+        },
+        {
+          "id": "me-503",
+          "question": "Deep learning model이 자율주행에 중요한 이유는 무엇인가요?",
+          "answer": "복잡한 sensor data에서 object, lane, scene pattern을 인식하고 traffic scenario를 이해하는 데 활용되기 때문임."
+        },
+        {
+          "id": "me-504",
+          "question": "Self-driving car는 어떤 driving decision을 내려야 하나요?",
+          "answer": "accelerating, braking, steering, navigation decision을 실시간으로 내려야 함."
+        },
+        {
+          "id": "me-505",
+          "question": "Mapping and localization이 중요한 이유는 무엇인가요?",
+          "answer": "차량이 자신의 precise location을 파악하고 도로 구조에 맞게 정확히 navigation해야 하기 때문임."
+        },
+        {
+          "id": "me-506",
+          "question": "HD map은 어떤 정보를 제공하나요?",
+          "answer": "road layout, traffic signal, critical infrastructure에 대한 detailed information을 제공함."
+        },
+        {
+          "id": "me-507",
+          "question": "GPS와 IMU는 mapping/localization에서 어떤 역할을 하나요?",
+          "answer": "HD map과 결합해 차량의 precise location을 추정하고 challenging environment에서도 navigation을 돕는 역할임."
+        },
+        {
+          "id": "me-508",
+          "question": "Real-time processing이 자율주행에서 중요한 이유는 무엇인가요?",
+          "answer": "dynamic environment 변화에 즉시 반응해야 안전하고 효율적인 주행이 가능하기 때문임."
+        },
+        {
+          "id": "me-509",
+          "question": "Onboard computer는 어떤 역할을 하나요?",
+          "answer": "sensor data를 처리하고 immediate driving decision을 내려 vehicle이 적절히 반응하도록 함."
+        },
+        {
+          "id": "me-510",
+          "question": "Complex driving scenario의 예시는 무엇인가요?",
+          "answer": "highway merging, heavy traffic navigation, unpredictable driver behavior 대응 등이 있음."
+        },
+        {
+          "id": "me-511",
+          "question": "Complex driving scenario가 어려운 이유는 무엇인가요?",
+          "answer": "다른 road user의 행동이 예측 불가능하고 상황 변화가 빠르기 때문에 reliable algorithm 설계가 어렵기 때문임."
+        },
+        {
+          "id": "me-512",
+          "question": "Weather condition이 자율주행에 문제가 되는 이유는 무엇인가요?",
+          "answer": "rain, fog, snow, strong light에서 LiDAR와 camera가 환경을 정확히 perception하기 어려울 수 있기 때문임."
+        },
+        {
+          "id": "me-513",
+          "question": "Adverse weather에서 어떤 sensor가 영향을 받을 수 있나요?",
+          "answer": "LiDAR와 camera가 rain, fog, snow 조건에서 성능 저하를 겪을 수 있음."
+        },
+        {
+          "id": "me-514",
+          "question": "Sensor fusion이란 무엇인가요?",
+          "answer": "LiDAR, radar, camera, ultrasonic sensor 등 여러 sensor data를 통합해 하나의 coherent environment understanding을 만드는 과정임."
+        },
+        {
+          "id": "me-515",
+          "question": "Sensor fusion이 어려운 이유는 무엇인가요?",
+          "answer": "여러 sensor data를 real time으로 빠르고 정확하게 결합해야 reliable driving decision이 가능하기 때문임."
+        },
+        {
+          "id": "me-516",
+          "question": "Sensor fusion을 위해 필요한 것은 무엇인가요?",
+          "answer": "highly efficient algorithm과 robust hardware가 필요함."
+        },
+        {
+          "id": "me-517",
+          "question": "Ethical decision making이 자율주행에서 어려운 이유는 무엇인가요?",
+          "answer": "unavoidable collision처럼 두 가지 harmful outcome 중 선택해야 하는 상황이 발생할 수 있고, 이를 societal values와 맞추는 것이 기술적·윤리적으로 복잡하기 때문임."
+        },
+        {
+          "id": "me-518",
+          "question": "Level 5 autonomous vehicle은 무엇을 의미하나요?",
+          "answer": "완전 자율주행 차량을 의미하며, 모든 상황에서 human intervention 없이 주행 가능한 수준임."
+        },
+        {
+          "id": "me-519",
+          "question": "Level 5 상용화가 아직 어려운 이유는 무엇인가요?",
+          "answer": "complex driving scenarios, adverse weather, sensor fusion, ethical decision making 등 해결해야 할 기술적·윤리적 문제가 남아 있기 때문임."
+        },
+        {
+          "id": "me-520",
+          "question": "Level 4 vehicle은 어떤 분야에서 먼저 영향을 줄 가능성이 있나요?",
+          "answer": "ride-hailing service와 commercial transportation에서 영향 가능성이 큼."
+        },
+        {
+          "id": "me-521",
+          "question": "Self-driving car가 smart city에 기여하는 방식은 무엇인가요?",
+          "answer": "traffic flow 최적화, congestion 감소, urban mobility 개선을 통해 더 효율적이고 친환경적인 도시 운영에 기여할 수 있음."
+        },
+        {
+          "id": "me-522",
+          "question": "Autonomous vehicle이 logistics에 줄 수 있는 영향은 무엇인가요?",
+          "answer": "운송 자동화와 route optimization을 통해 logistics industry를 변화시킬 수 있음."
+        },
+        {
+          "id": "me-523",
+          "question": "Autonomous vehicle이 public transportation에 줄 수 있는 영향은 무엇인가요?",
+          "answer": "이동 서비스의 효율성과 접근성을 높이고 urban mobility 구조를 바꿀 수 있음."
+        },
+        {
+          "id": "me-524",
+          "question": "Autonomous vehicle이 urban planning에 영향을 줄 수 있는 이유는 무엇인가요?",
+          "answer": "parking need, road infrastructure, traffic pattern, vehicle ownership 방식이 달라질 수 있기 때문임."
+        },
+        {
+          "id": "me-525",
+          "question": "V2X communication이 중요한 이유는 무엇인가요?",
+          "answer": "vehicle과 주변 infrastructure/object 간 정보 교환을 통해 autonomous system의 safety와 reliability를 높일 수 있기 때문임."
+        },
+        {
+          "id": "me-526",
+          "question": "자율주행 시스템의 reliability를 높이기 위해 발전해야 하는 기술은 무엇인가요?",
+          "answer": "AI, sensor technology, V2X communication, real-time decision algorithm이 발전해야 함."
+        },
+        {
+          "id": "me-527",
+          "question": "Self-driving car 개발에서 가장 큰 기술적 병목은 무엇이라고 볼 수 있나요?",
+          "answer": "복잡한 실제 도로 상황과 악천후에서도 안정적으로 perception, prediction, decision making을 수행하는 것임."
+        },
+        {
+          "id": "me-528",
+          "question": "Self-driving car의 안전성을 검증할 때 무엇을 확인해야 하나요?",
+          "answer": "sensor perception 성능, weather robustness, sensor fusion 정확도, real-time decision 안정성, complex scenario 대응 능력을 확인해야 함."
+        },
+        {
+          "id": "me-529",
+          "question": "Optimization algorithm이 무엇인지 설명해보세요.",
+          "answer": "objective function을 maximize 또는 minimize하면서 constraints를 만족하는 best solution을 찾는 알고리즘임."
+        },
+        {
+          "id": "me-530",
+          "question": "Optimization algorithm은 크게 어떻게 분류할 수 있나요?",
+          "answer": "traditional optimization algorithms와 machine learning-based optimization algorithms로 분류 가능함."
+        },
+        {
+          "id": "me-531",
+          "question": "Traditional optimization algorithm에는 어떤 것들이 있나요?",
+          "answer": "linear programming, nonlinear programming, integer programming, quadratic programming, dynamic programming, stochastic programming, evolutionary algorithms, simulated annealing 등이 있음."
+        },
+        {
+          "id": "me-532",
+          "question": "ML-based optimization algorithm에는 어떤 것들이 있나요?",
+          "answer": "gradient-based optimization, Bayesian optimization, reinforcement learning, neural architecture search 등이 있음."
+        },
+        {
+          "id": "me-533",
+          "question": "Linear Programming은 어떤 문제에 적합한가요?",
+          "answer": "objective function과 constraints가 linear인 문제에 적합함. 자원 배분, 생산 계획, 비용 최소화 문제에 유리함."
+        },
+        {
+          "id": "me-534",
+          "question": "Nonlinear Programming은 언제 필요하나요?",
+          "answer": "objective function이나 constraints가 nonlinear일 때 필요함. 실제 engineering system은 비선형 관계가 많아 자주 사용됨."
+        },
+        {
+          "id": "me-535",
+          "question": "Integer Programming은 어떤 상황에서 사용하나요?",
+          "answer": "decision variable이 정수나 선택값이어야 할 때 사용함. 예: 부품 개수, 장비 선택, 일정 배치, route 선택."
+        },
+        {
+          "id": "me-536",
+          "question": "Quadratic Programming은 어떤 문제에 쓰이나요?",
+          "answer": "objective function이 quadratic 형태인 최적화에 사용함. control, portfolio optimization, constrained least-squares 등에 적합함."
+        },
+        {
+          "id": "me-537",
+          "question": "Dynamic Programming은 어떤 문제에 유리한가요?",
+          "answer": "큰 문제를 작은 subproblem으로 나눌 수 있고, 단계별 의사결정이 필요한 문제에 유리함."
+        },
+        {
+          "id": "me-538",
+          "question": "Dynamic Programming의 활용 예시는 무엇인가요?",
+          "answer": "path planning, scheduling, resource allocation, sequence decision problem 등에 사용 가능함."
+        },
+        {
+          "id": "me-539",
+          "question": "Stochastic Programming은 언제 사용하나요?",
+          "answer": "uncertainty가 있는 문제에 사용함. 예: 수요 변동, 재료 공급 불확실성, 환경 조건 변화."
+        },
+        {
+          "id": "me-540",
+          "question": "Evolutionary Algorithm이 무엇인지 설명해보세요.",
+          "answer": "natural evolution 원리를 모방해 solution population을 세대별로 개선하는 최적화 기법임."
+        },
+        {
+          "id": "me-541",
+          "question": "Evolutionary Algorithm은 어떤 문제에 적합한가요?",
+          "answer": "nonlinear하고 복잡하며 multiple solution이 존재하는 문제에 적합함."
+        },
+        {
+          "id": "me-542",
+          "question": "Evolutionary Algorithm이 전통적 gradient 기반 방법보다 유리한 경우는 언제인가요?",
+          "answer": "gradient 계산이 어렵거나 objective function이 복잡하고 local optima가 많은 경우 유리함."
+        },
+        {
+          "id": "me-543",
+          "question": "Genetic Algorithm이 무엇인지 설명해보세요.",
+          "answer": "natural selection과 genetics를 모방해 population, fitness, selection, crossover, mutation을 반복하며 optimal solution을 찾는 알고리즘임."
+        },
+        {
+          "id": "me-544",
+          "question": "Genetic Algorithm의 핵심 단계는 무엇인가요?",
+          "answer": "population 생성 → fitness 평가 → selection → crossover → mutation → new generation 생성 → 반복 개선."
+        },
+        {
+          "id": "me-545",
+          "question": "Genetic Algorithm에서 population이란 무엇인가요?",
+          "answer": "여러 potential solutions의 집합임. 각 solution은 candidate design 또는 chromosome처럼 표현됨."
+        },
+        {
+          "id": "me-546",
+          "question": "Genetic Algorithm에서 fitness function의 역할은 무엇인가요?",
+          "answer": "각 solution이 문제를 얼마나 잘 해결하는지 평가하는 기준임."
+        },
+        {
+          "id": "me-547",
+          "question": "Genetic Algorithm에서 selection은 왜 필요한가요?",
+          "answer": "fitness가 높은 solution을 다음 generation에 더 많이 반영해 좋은 특성이 유지되도록 하기 위함임."
+        },
+        {
+          "id": "me-548",
+          "question": "Genetic Algorithm에서 crossover는 무엇인가요?",
+          "answer": "두 parent solution의 feature/gene을 섞어 child solution을 만드는 과정임."
+        },
+        {
+          "id": "me-549",
+          "question": "Genetic Algorithm에서 mutation은 왜 필요한가요?",
+          "answer": "solution 일부를 무작위로 변경해 탐색 다양성을 유지하고 local optimum에 갇히는 것을 방지함."
+        },
+        {
+          "id": "me-550",
+          "question": "Genetic Algorithm은 어떤 분야에 활용되나요?",
+          "answer": "engineering design, finance investment strategy optimization, AI의 feature selection 등에 활용됨."
+        },
+        {
+          "id": "me-551",
+          "question": "Genetic Algorithm이 complex engineering design에 적합한 이유는 무엇인가요?",
+          "answer": "많은 설계 후보를 동시에 탐색하고 조합·변형하면서 복잡한 solution space를 넓게 탐색할 수 있기 때문임."
+        },
+        {
+          "id": "me-552",
+          "question": "Particle Swarm Optimization이 무엇인지 설명해보세요.",
+          "answer": "bird flocking이나 fish schooling에서 영감을 받은 stochastic optimization 기법으로, particle들이 solution space를 이동하며 best solution을 찾음."
+        },
+        {
+          "id": "me-553",
+          "question": "PSO에서 particle은 무엇을 의미하나요?",
+          "answer": "solution space 안에서 움직이는 candidate solution을 의미함."
+        },
+        {
+          "id": "me-554",
+          "question": "PSO에서 particle은 어떤 기준으로 이동하나요?",
+          "answer": "자신의 best position과 swarm 전체의 best position을 균형 있게 참고해 position을 조정함."
+        },
+        {
+          "id": "me-555",
+          "question": "PSO가 multidimensional problem에 유리한 이유는 무엇인가요?",
+          "answer": "여러 particle이 동시에 solution space를 탐색해 복잡한 고차원 공간에서도 global optimum을 찾을 가능성을 높이기 때문임."
+        },
+        {
+          "id": "me-556",
+          "question": "PSO는 어떤 분야에 사용되나요?",
+          "answer": "neural network training, clustering, function optimization 등에 사용됨."
+        },
+        {
+          "id": "me-557",
+          "question": "Genetic Algorithm과 PSO의 차이를 설명해보세요.",
+          "answer": "GA는 selection/crossover/mutation으로 generation을 진화시키고, PSO는 particle들이 personal/global best를 참고해 위치를 이동하며 탐색함."
+        },
+        {
+          "id": "me-558",
+          "question": "Simulated Annealing이 무엇인지 설명해보세요.",
+          "answer": "material science의 annealing process에서 영감을 받은 probabilistic optimization 기법으로, 작은 random perturbation을 통해 solution space를 탐색함."
+        },
+        {
+          "id": "me-559",
+          "question": "Simulated Annealing에서 temperature parameter는 어떤 역할을 하나요?",
+          "answer": "worse solution을 accept할 확률을 조절함. 시간이 지나며 temperature가 감소하면 worse solution 수용 가능성이 낮아짐."
+        },
+        {
+          "id": "me-560",
+          "question": "Simulated Annealing이 worse solution을 허용하는 이유는 무엇인가요?",
+          "answer": "local optimum에서 빠져나와 더 넓은 solution space를 탐색하기 위함임."
+        },
+        {
+          "id": "me-561",
+          "question": "Simulated Annealing은 어떤 문제에 유리한가요?",
+          "answer": "local optima가 많은 복잡한 optimization problem에 유리함."
+        },
+        {
+          "id": "me-562",
+          "question": "Simulated Annealing의 활용 예시는 무엇인가요?",
+          "answer": "manufacturing process scheduling, mechanical component design, path planning 등에 활용 가능함."
+        },
+        {
+          "id": "me-563",
+          "question": "Local optimum이란 무엇인가요?",
+          "answer": "주변에서는 가장 좋은 solution이지만 전체 solution space에서 가장 좋은 global optimum은 아닌 해임."
+        },
+        {
+          "id": "me-564",
+          "question": "Global optimum이란 무엇인가요?",
+          "answer": "전체 feasible solution space에서 objective function을 가장 좋게 만드는 해임."
+        },
+        {
+          "id": "me-565",
+          "question": "Stochastic optimization이 deterministic optimization보다 유리한 경우는 언제인가요?",
+          "answer": "local optima가 많거나 search space가 복잡해 deterministic method가 특정 해에 갇힐 가능성이 클 때 유리함."
+        },
+        {
+          "id": "me-566",
+          "question": "Gradient-based Optimization이 무엇인지 설명해보세요.",
+          "answer": "objective function의 gradient 방향을 이용해 parameter를 반복적으로 update하며 minimize/maximize하는 방법임."
+        },
+        {
+          "id": "me-567",
+          "question": "Gradient Descent는 어떤 원리로 작동하나요?",
+          "answer": "loss가 감소하는 방향으로 parameter를 조금씩 update함."
+        },
+        {
+          "id": "me-568",
+          "question": "Stochastic Gradient Descent는 일반 Gradient Descent와 무엇이 다른가요?",
+          "answer": "전체 data 대신 일부 sample을 사용해 빠르게 parameter를 update함."
+        },
+        {
+          "id": "me-569",
+          "question": "Mini-batch Gradient Descent는 왜 많이 사용되나요?",
+          "answer": "전체 batch보다 계산이 빠르고, SGD보다 update가 안정적이어서 대규모 neural network training에 적합함."
+        },
+        {
+          "id": "me-570",
+          "question": "Gradient-based Optimization은 어떤 모델 학습에 사용되나요?",
+          "answer": "logistic regression, neural network training, support vector machine 등에 사용됨."
+        },
+        {
+          "id": "me-571",
+          "question": "Gradient-based Optimization의 한계는 무엇인가요?",
+          "answer": "local minimum에 빠질 수 있고, gradient 계산이 어렵거나 noisy하면 학습이 불안정할 수 있음."
+        },
+        {
+          "id": "me-572",
+          "question": "Bayesian Optimization이 무엇인지 설명해보세요.",
+          "answer": "objective function을 probabilistic model로 근사하고, 다음에 평가할 promising point를 선택해 최적해를 찾는 방법임."
+        },
+        {
+          "id": "me-573",
+          "question": "Bayesian Optimization은 어떤 문제에 유리한가요?",
+          "answer": "한 번 평가하는 비용이 큰 문제에 유리함. 예: hyperparameter tuning, 실험 설계, robotics optimization."
+        },
+        {
+          "id": "me-574",
+          "question": "Bayesian Optimization이 hyperparameter tuning에 적합한 이유는 무엇인가요?",
+          "answer": "모든 조합을 brute-force로 평가하지 않고 성능 개선 가능성이 높은 조합을 선택해 평가 횟수를 줄일 수 있기 때문임."
+        },
+        {
+          "id": "me-575",
+          "question": "Bayesian Optimization이 random search보다 유리한 이유는 무엇인가요?",
+          "answer": "이전 평가 결과를 바탕으로 다음 평가 위치를 선택하기 때문에 expensive function에서 더 효율적임."
+        },
+        {
+          "id": "me-576",
+          "question": "Reinforcement Learning을 optimization 관점에서 설명해보세요.",
+          "answer": "agent가 dynamic environment에서 action을 수행하고 reward를 받아 cumulative reward를 최대화하는 policy를 학습하는 최적화 기법임."
+        },
+        {
+          "id": "me-577",
+          "question": "Reinforcement Learning의 핵심 목표는 무엇인가요?",
+          "answer": "장기적으로 cumulative reward를 최대화하는 policy를 찾는 것임."
+        },
+        {
+          "id": "me-578",
+          "question": "Reinforcement Learning은 어떤 분야에 적합한가요?",
+          "answer": "automation, control, recommendation system처럼 순차적 의사결정과 feedback이 중요한 분야에 적합함."
+        },
+        {
+          "id": "me-579",
+          "question": "Q-learning이 무엇인지 설명해보세요.",
+          "answer": "state-action value를 학습해 각 state에서 장기 reward가 큰 action을 선택하는 reinforcement learning 알고리즘임."
+        },
+        {
+          "id": "me-580",
+          "question": "Actor-Critic method는 어떤 구조인가요?",
+          "answer": "Actor가 action을 선택하고 Critic이 그 action의 value를 평가하는 reinforcement learning 구조임."
+        },
+        {
+          "id": "me-581",
+          "question": "Neural Architecture Search가 무엇인지 설명해보세요.",
+          "answer": "neural network architecture 설계를 자동화해 특정 task에 가장 좋은 network 구조를 찾는 기법임."
+        },
+        {
+          "id": "me-582",
+          "question": "NAS의 기본 과정은 무엇인가요?",
+          "answer": "architecture search space 정의 → 후보 architecture 평가 → optimization method로 search refinement → best architecture 선택."
+        },
+        {
+          "id": "me-583",
+          "question": "NAS에서 search space란 무엇인가요?",
+          "answer": "탐색 가능한 network 구조의 범위임. 예: layer 수, filter 수, connection 방식, activation function."
+        },
+        {
+          "id": "me-584",
+          "question": "NAS는 어떤 최적화 방법을 사용할 수 있나요?",
+          "answer": "reinforcement learning, evolutionary algorithms, gradient-based techniques 등을 사용할 수 있음."
+        },
+        {
+          "id": "me-585",
+          "question": "NAS의 장점은 무엇인가요?",
+          "answer": "사람이 직접 설계한 architecture보다 좋은 성능을 낼 수 있고, 설계 시간과 전문 지식 의존도를 줄일 수 있음."
+        },
+        {
+          "id": "me-586",
+          "question": "NAS는 어떤 분야에 사용되나요?",
+          "answer": "image recognition, natural language processing, autonomous systems 등에 사용됨."
+        },
+        {
+          "id": "me-587",
+          "question": "NAS의 한계는 무엇인가요?",
+          "answer": "많은 후보 architecture를 평가해야 하므로 계산 비용이 클 수 있음."
+        },
+        {
+          "id": "me-588",
+          "question": "평가 비용이 큰 optimization problem에는 어떤 알고리즘이 적합한가요?",
+          "answer": "Bayesian Optimization이 적합함. probabilistic model로 promising point를 선택해 평가 횟수를 줄일 수 있기 때문임."
+        },
+        {
+          "id": "me-589",
+          "question": "Local optima가 많은 문제에는 어떤 알고리즘이 적합한가요?",
+          "answer": "Genetic Algorithm, PSO, Simulated Annealing 같은 stochastic/global search 계열이 적합함."
+        },
+        {
+          "id": "me-590",
+          "question": "Neural network training에는 어떤 optimization algorithm이 주로 쓰이나요?",
+          "answer": "Gradient Descent, SGD, Mini-batch Gradient Descent 같은 gradient-based optimization이 주로 사용됨."
+        },
+        {
+          "id": "me-591",
+          "question": "Manufacturing scheduling 문제에는 어떤 알고리즘이 적합할 수 있나요?",
+          "answer": "Simulated Annealing이나 Genetic Algorithm이 적합할 수 있음. 복잡한 조합과 local optima가 많기 때문임."
+        },
+        {
+          "id": "me-592",
+          "question": "Clustering 성능 개선에는 어떤 알고리즘이 활용될 수 있나요?",
+          "answer": "Particle Swarm Optimization을 활용해 cluster center나 objective를 최적화할 수 있음."
+        },
+        {
+          "id": "me-593",
+          "question": "Control system 최적화에는 어떤 알고리즘을 고려할 수 있나요?",
+          "answer": "Gradient-based optimization, Bayesian optimization, reinforcement learning을 고려할 수 있음. 특히 dynamic environment에서는 RL이 유리함."
+        },
+        {
+          "id": "me-594",
+          "question": "Optimization algorithm을 선택할 때 어떤 요소를 고려해야 하나요?",
+          "answer": "problem complexity, 변수 형태, constraints, objective 평가 비용, gradient 사용 가능성, local optima 여부, data 규모를 고려해야 함."
+        },
+        {
+          "id": "me-595",
+          "question": "Traditional optimization과 ML-based optimization의 차이는 무엇인가요?",
+          "answer": "Traditional optimization은 수학적 최적화 구조를 직접 활용하고, ML-based optimization은 학습·확률모델·reward 기반 방법으로 복잡한 고차원 문제를 다룸."
+        },
+        {
+          "id": "me-596",
+          "question": "실제 engineering 문제에서 하나의 optimization algorithm만으로 충분한가요?",
+          "answer": "항상 충분하지 않음. 문제 특성에 따라 surrogate model, stochastic search, gradient method, simulation 검증을 조합해야 할 수 있음."
+        },
+        {
+          "id": "me-597",
+          "question": "Optimization 결과를 실제 제품이나 공정에 적용하기 전에 무엇을 검증해야 하나요?",
+          "answer": "constraints 만족 여부, simulation/experiment validation, robustness, safety, manufacturability, 실제 환경 성능을 검증해야 함."
+        },
+        {
+          "id": "me-598",
+          "question": "Robotics에서 algorithm이 중요한 이유는 무엇인가요?",
+          "answer": "robot이 uncertain environment navigation, object manipulation, perception, decision making, swarm coordination 같은 complex task를 자율적으로 수행하게 하기 때문임."
+        },
+        {
+          "id": "me-599",
+          "question": "Robotics algorithm의 핵심 영역을 설명해보세요.",
+          "answer": "navigation/path planning, robot manipulation, localization/mapping, machine learning algorithms, swarm robotics algorithms로 구분 가능함."
+        },
+        {
+          "id": "me-600",
+          "question": "SLAM이 무엇인지 설명해보세요.",
+          "answer": "Simultaneous Localization and Mapping으로, robot이 주변 map을 만들면서 동시에 자신의 location을 추정하는 기술임."
+        },
+        {
+          "id": "me-601",
+          "question": "SLAM은 언제 중요한가요?",
+          "answer": "robot이 unknown environment에서 autonomous navigation을 수행해야 할 때 중요함."
+        },
+        {
+          "id": "me-602",
+          "question": "SLAM은 어떤 sensor data를 활용할 수 있나요?",
+          "answer": "LiDAR와 camera 같은 sensor data를 결합해 주변 환경 map을 생성함."
+        },
+        {
+          "id": "me-603",
+          "question": "A* algorithm은 어떤 path planning 방식인가요?",
+          "answer": "heuristic-based search algorithm으로, movement cost와 goal까지의 distance를 균형 있게 고려해 shortest path를 찾음."
+        },
+        {
+          "id": "me-604",
+          "question": "Dijkstra algorithm은 어떤 경우에 유용한가요?",
+          "answer": "fully mapped environment에서 가능한 path들을 탐색해 shortest path를 결정할 때 유용함."
+        },
+        {
+          "id": "me-605",
+          "question": "A*와 Dijkstra의 차이는 무엇인가요?",
+          "answer": "A*는 heuristic을 사용해 goal 방향성을 고려하고, Dijkstra는 가능한 path를 더 포괄적으로 탐색해 shortest path를 찾음."
+        },
+        {
+          "id": "me-606",
+          "question": "D* Lite는 어떤 문제를 해결하기 위한 알고리즘인가요?",
+          "answer": "dynamic environment에서 환경 변화가 생길 때 path를 실시간으로 업데이트하기 위한 알고리즘임."
+        },
+        {
+          "id": "me-607",
+          "question": "D* Lite가 real-time navigation에 적합한 이유는 무엇인가요?",
+          "answer": "환경 변화에 따라 기존 path를 업데이트할 수 있어 dynamic setting에서 유용하기 때문임."
+        },
+        {
+          "id": "me-608",
+          "question": "RRT는 무엇의 약자인가요?",
+          "answer": "Rapidly-exploring Random Trees임."
+        },
+        {
+          "id": "me-609",
+          "question": "PRM은 무엇의 약자인가요?",
+          "answer": "Probabilistic Road Maps임."
+        },
+        {
+          "id": "me-610",
+          "question": "RRT와 PRM은 어떤 문제에 사용되나요?",
+          "answer": "robotic arm movement처럼 high-dimensional space에서 motion planning과 collision avoidance에 사용됨."
+        },
+        {
+          "id": "me-611",
+          "question": "Robotic manipulation이란 무엇인가요?",
+          "answer": "robotic arm이나 gripper를 정밀하게 제어해 object와 상호작용하고 조작하는 기술임."
+        },
+        {
+          "id": "me-612",
+          "question": "Inverse kinematics가 무엇인지 설명해보세요.",
+          "answer": "원하는 end-effector position과 orientation을 만들기 위해 필요한 joint angle을 계산하는 알고리즘임."
+        },
+        {
+          "id": "me-613",
+          "question": "Inverse kinematics는 어떤 작업에 활용되나요?",
+          "answer": "welding, assembly, painting 같은 작업에 활용됨."
+        },
+        {
+          "id": "me-614",
+          "question": "Trajectory planning의 목적은 무엇인가요?",
+          "answer": "robot end-effector가 obstacle, velocity, acceleration 등을 고려해 smooth하고 accurate하게 움직이도록 path를 계산하는 것임."
+        },
+        {
+          "id": "me-615",
+          "question": "Spline-based trajectory planning이 중요한 이유는 무엇인가요?",
+          "answer": "interpolation을 통해 continuous하고 smooth한 movement를 만들 수 있어 delicate manipulation task에 중요함."
+        },
+        {
+          "id": "me-616",
+          "question": "Grasp planning은 무엇인가요?",
+          "answer": "object의 shape, size, material을 고려해 robot이 object를 어떻게 잡을지 결정하는 알고리즘임."
+        },
+        {
+          "id": "me-617",
+          "question": "Grasp planning에 sensor data와 machine learning이 필요한 이유는 무엇인가요?",
+          "answer": "다양한 형상이나 fragile object를 다룰 때 grip을 dynamic하게 조정하기 위해 필요함."
+        },
+        {
+          "id": "me-618",
+          "question": "Grasp planning의 두 주요 단계는 무엇인가요?",
+          "answer": "grasp skill recognition과 grasp synthesis임."
+        },
+        {
+          "id": "me-619",
+          "question": "Grasp skill recognition은 무엇을 수행하나요?",
+          "answer": "human demonstration을 기반으로 hand contact 위치와 approach direction을 인식함."
+        },
+        {
+          "id": "me-620",
+          "question": "Grasp synthesis 또는 grasp optimization은 무엇을 수행하나요?",
+          "answer": "gripper finger가 object surface와 contact region에 잘 맞도록 gripper pose를 조정함."
+        },
+        {
+          "id": "me-621",
+          "question": "Grasp planning에서 collision check가 필요한 이유는 무엇인가요?",
+          "answer": "생성된 grasp가 object나 주변 환경과 충돌하지 않는지 확인해야 안전한 manipulation이 가능하기 때문임."
+        },
+        {
+          "id": "me-622",
+          "question": "Collision이 발견되면 grasp planning은 어떻게 진행되나요?",
+          "answer": "gripper를 safe position으로 이동시키고 optimization process를 다시 수행해 새로운 safe grasp를 생성함."
+        },
+        {
+          "id": "me-623",
+          "question": "Localization은 무엇인가요?",
+          "answer": "robot이 known environment 안에서 자신의 position을 결정하는 과정임."
+        },
+        {
+          "id": "me-624",
+          "question": "SLAM과 localization의 차이는 무엇인가요?",
+          "answer": "SLAM은 unknown environment에서 map 생성과 위치 추정을 동시에 수행하고, localization은 known environment에서 position을 추정함."
+        },
+        {
+          "id": "me-625",
+          "question": "Filter 기반 localization은 왜 필요한가요?",
+          "answer": "sensor noise를 줄이고 더 정확한 position estimate를 얻기 위해 필요함."
+        },
+        {
+          "id": "me-626",
+          "question": "Particle filter는 어떤 환경에서 유용한가요?",
+          "answer": "nonlinear 및 non-Gaussian environment에서 유용함."
+        },
+        {
+          "id": "me-627",
+          "question": "Occupancy grid mapping이란 무엇인가요?",
+          "answer": "환경을 grid cell로 나누고 각 cell이 obstacle로 occupied될 가능성을 표현하는 mapping 방식임."
+        },
+        {
+          "id": "me-628",
+          "question": "Occupancy grid mapping은 왜 navigation에 중요한가요?",
+          "answer": "obstacle 위치를 grid 형태로 표현해 robot의 navigation과 planning에 활용할 수 있기 때문임."
+        },
+        {
+          "id": "me-629",
+          "question": "Machine learning은 robotics에서 어떤 역할을 하나요?",
+          "answer": "perception, decision making, adaptability를 향상시킴."
+        },
+        {
+          "id": "me-630",
+          "question": "Robotics에서 reinforcement learning은 어떻게 활용되나요?",
+          "answer": "robot이 environment와 상호작용하며 reward를 기준으로 action을 최적화하도록 학습함."
+        },
+        {
+          "id": "me-631",
+          "question": "Reinforcement learning은 어떤 setting에서 효과적인가요?",
+          "answer": "robot이 complex하고 changing behavior에 적응해야 하는 dynamic setting에서 효과적임."
+        },
+        {
+          "id": "me-632",
+          "question": "CNN은 robotics에서 어떤 역할을 하나요?",
+          "answer": "visual data를 처리해 object recognition, scene understanding, autonomous navigation을 가능하게 함."
+        },
+        {
+          "id": "me-633",
+          "question": "CNN이 autonomous driving에도 중요한 이유는 무엇인가요?",
+          "answer": "visual data를 기반으로 object와 주변 scene을 인식해야 하기 때문임."
+        },
+        {
+          "id": "me-634",
+          "question": "Imitation learning이란 무엇인가요?",
+          "answer": "robot이 human demonstration을 관찰해 task를 학습하는 방식임."
+        },
+        {
+          "id": "me-635",
+          "question": "Imitation learning이 complex task programming을 단순화하는 이유는 무엇인가요?",
+          "answer": "사람이 직접 세부 동작을 모두 programming하지 않아도 demonstration을 통해 task를 학습할 수 있기 때문임."
+        },
+        {
+          "id": "me-636",
+          "question": "Imitation learning은 어떤 robot에 특히 유용한가요?",
+          "answer": "human-like behavior가 필요한 service robot에 특히 유용함."
+        },
+        {
+          "id": "me-637",
+          "question": "Unsupervised learning은 robotics에서 어떤 역할을 하나요?",
+          "answer": "uncertain 또는 unpredictable environment에서 pattern을 식별하는 데 사용됨."
+        },
+        {
+          "id": "me-638",
+          "question": "Anomaly detection은 robotics에서 왜 중요한가요?",
+          "answer": "unusual event를 탐지해 robot이 더 안전하고 자율적으로 작동하도록 돕기 때문임."
+        },
+        {
+          "id": "me-639",
+          "question": "Swarm robotics에서 consensus algorithm의 역할은 무엇인가요?",
+          "answer": "여러 robot이 direction이나 task allocation 같은 parameter에 합의하도록 해 효율적인 협업을 가능하게 함."
+        },
+        {
+          "id": "me-640",
+          "question": "Boids algorithm은 무엇에서 영감을 받았나요?",
+          "answer": "birds의 flocking behavior에서 영감을 받음."
+        },
+        {
+          "id": "me-641",
+          "question": "Boids algorithm은 swarm robotics에서 어떤 역할을 하나요?",
+          "answer": "centralized control 없이 여러 robot의 collective movement와 coordinated action을 관리함."
+        },
+        {
+          "id": "me-642",
+          "question": "Centralized control 없이 swarm coordination이 가능한 이유는 무엇인가요?",
+          "answer": "각 robot이 단순한 규칙을 따르면서 전체적으로 coordinated behavior가 형성되기 때문임."
+        },
+        {
+          "id": "me-643",
+          "question": "Dynamic environment에서 robot navigation을 설계한다면 어떤 알고리즘을 고려하겠습니까?",
+          "answer": "환경 변화에 따라 path를 업데이트할 수 있는 D* Lite와, map/location 추정을 위한 SLAM을 고려함."
+        },
+        {
+          "id": "me-644",
+          "question": "Robotic arm의 collision-free motion planning에는 어떤 알고리즘이 적합한가요?",
+          "answer": "high-dimensional motion planning과 collision avoidance에 사용되는 RRT 또는 PRM을 고려함."
+        },
+        {
+          "id": "me-645",
+          "question": "Service robot이 사람 행동을 따라 배우게 하려면 어떤 학습 방법이 적합한가요?",
+          "answer": "human demonstration을 기반으로 task를 학습하는 imitation learning이 적합함."
+        },
+        {
+          "id": "me-646",
+          "question": "여러 robot이 공동 작업을 해야 할 때 필요한 알고리즘은 무엇인가요?",
+          "answer": "consensus algorithm과 Boids algorithm 같은 swarm robotics algorithm이 필요함."
+        },
+        {
+          "id": "me-647",
+          "question": "자율주행차의 알고리즘은 기능 기준으로 어떻게 분류할 수 있나요?",
+          "answer": "perception, localization, mapping, path planning, control, decision-making, communication으로 분류 가능함."
+        },
+        {
+          "id": "me-648",
+          "question": "Perception algorithm의 역할은 무엇인가요?",
+          "answer": "차량이 주변 환경을 이해하도록 object detection, semantic segmentation, sensor fusion을 수행함."
+        },
+        {
+          "id": "me-649",
+          "question": "자율주행에서 object detection이 중요한 이유는 무엇인가요?",
+          "answer": "pedestrian, vehicle, traffic sign 같은 road object를 인식해야 dynamic road condition에 대응할 수 있기 때문임."
+        },
+        {
+          "id": "me-650",
+          "question": "CNN은 자율주행 perception에서 어떤 역할을 하나요?",
+          "answer": "image data에서 pedestrian, vehicle, traffic sign 등을 detect/classify하는 데 사용됨."
+        },
+        {
+          "id": "me-651",
+          "question": "YOLO의 핵심 특징은 무엇인가요?",
+          "answer": "image나 video frame 전체를 한 번에 처리해 multiple object를 real-time으로 detect/classify함."
+        },
+        {
+          "id": "me-652",
+          "question": "YOLO가 자율주행에 유용한 이유는 무엇인가요?",
+          "answer": "실시간 object detection이 가능해 빠르게 변하는 도로 상황에 대응할 수 있기 때문임."
+        },
+        {
+          "id": "me-653",
+          "question": "Region-based CNN은 어떻게 object를 인식하나요?",
+          "answer": "image에서 region of interest를 찾고, 각 region에 CNN을 적용해 object를 classify함."
+        },
+        {
+          "id": "me-654",
+          "question": "YOLO와 Region-based CNN의 차이는 무엇인가요?",
+          "answer": "YOLO는 전체 image를 한 번에 처리하고, Region-based CNN은 관심 영역을 먼저 찾은 뒤 분류함."
+        },
+        {
+          "id": "me-655",
+          "question": "Semantic segmentation이란 무엇인가요?",
+          "answer": "image의 각 pixel을 class로 분류해 road, sidewalk, obstacle, car 등을 구분하는 방법임."
+        },
+        {
+          "id": "me-656",
+          "question": "DeepLab과 U-Net은 어떤 작업에 사용되나요?",
+          "answer": "pixel-level semantic segmentation에 사용됨."
+        },
+        {
+          "id": "me-657",
+          "question": "Pixel-level understanding이 자율주행에 중요한 이유는 무엇인가요?",
+          "answer": "road, sidewalk, obstacle의 정확한 경계를 이해해야 복잡한 환경에서 안전하게 navigation할 수 있기 때문임."
+        },
+        {
+          "id": "me-658",
+          "question": "Sensor fusion에 Kalman Filter와 Particle Filter를 사용하는 이유는 무엇인가요?",
+          "answer": "여러 sensor data의 noise와 uncertainty를 줄이고 decision making에 필요한 reliable data를 얻기 위함임."
+        },
+        {
+          "id": "me-659",
+          "question": "Kalman Filter는 무엇을 추적하나요?",
+          "answer": "system state estimate와 estimate uncertainty 또는 variance를 추적함."
+        },
+        {
+          "id": "me-660",
+          "question": "Kalman Filter의 prediction step은 무엇인가요?",
+          "answer": "이전 timestep의 state estimate를 사용해 현재 timestep의 state를 예측하는 단계임."
+        },
+        {
+          "id": "me-661",
+          "question": "Kalman Filter의 update step은 무엇인가요?",
+          "answer": "prediction과 measurement의 차이를 gain으로 조정해 state estimate를 개선하는 단계임."
+        },
+        {
+          "id": "me-662",
+          "question": "Particle Filter는 어떤 방식으로 state를 추정하나요?",
+          "answer": "weighted particles로 posterior distribution을 근사하고, measurement likelihood에 따라 weight를 업데이트함."
+        },
+        {
+          "id": "me-663",
+          "question": "Particle Filter에서 resampling을 하는 이유는 무엇인가요?",
+          "answer": "particle 다양성을 높이고 현재 timestep의 posterior distribution을 더 잘 반영하기 위함임."
+        },
+        {
+          "id": "me-664",
+          "question": "Localization algorithm의 역할은 무엇인가요?",
+          "answer": "차량이 현재 환경 안에서 자신의 precise location을 알 수 있게 하는 것임."
+        },
+        {
+          "id": "me-665",
+          "question": "SLAM이 자율주행에 중요한 이유는 무엇인가요?",
+          "answer": "차량이 주변 환경 map을 이해하면서 그 안에서 자신의 위치를 알아야 정확히 주행할 수 있기 때문임."
+        },
+        {
+          "id": "me-666",
+          "question": "EKF-SLAM은 어떤 목적에 사용되나요?",
+          "answer": "real-time mapping과 location tracking에 사용됨."
+        },
+        {
+          "id": "me-667",
+          "question": "Graph-based SLAM은 어떤 방식인가요?",
+          "answer": "환경을 graph 구조로 표현하고 node 기반으로 LiDAR point cloud를 누적해 map을 생성하는 방식임."
+        },
+        {
+          "id": "me-668",
+          "question": "Graph SLAM 예시에서 node strategy는 무엇을 하나요?",
+          "answer": "road를 node 집합으로 나누고, 각 node에서 LiDAR point cloud를 intensity/elevation image로 누적함."
+        },
+        {
+          "id": "me-669",
+          "question": "MCL이 무엇인지 설명해보세요.",
+          "answer": "Monte Carlo Localization으로, 여러 위치 hypothesis를 유지하며 probabilistic하게 차량 위치를 추정하는 방법임."
+        },
+        {
+          "id": "me-670",
+          "question": "MCL에서 particle은 무엇을 의미하나요?",
+          "answer": "차량이 있을 수 있는 possible state 또는 possible location을 의미함."
+        },
+        {
+          "id": "me-671",
+          "question": "MCL에서 차량이 이동하고 sensor data를 얻으면 어떤 일이 발생하나요?",
+          "answer": "particles가 점차 실제 위치 근처로 converge하며 위치 추정 정확도가 향상됨."
+        },
+        {
+          "id": "me-672",
+          "question": "Visual Odometry는 무엇인가요?",
+          "answer": "camera image에서 visual feature를 frame 간 tracking해 vehicle motion을 추정하는 방법임."
+        },
+        {
+          "id": "me-673",
+          "question": "ORB-SLAM과 Stereo Vision은 어떤 상황에서 중요하나요?",
+          "answer": "GPS signal이 unreliable한 환경에서 camera image 기반 localization을 수행할 때 중요함."
+        },
+        {
+          "id": "me-674",
+          "question": "Path planning algorithm의 역할은 무엇인가요?",
+          "answer": "차량이 목적지까지 안전하고 효율적으로 이동할 route와 trajectory를 결정함."
+        },
+        {
+          "id": "me-675",
+          "question": "Global path planning은 무엇을 결정하나요?",
+          "answer": "현재 위치에서 목적지까지의 전체 route를 계산함."
+        },
+        {
+          "id": "me-676",
+          "question": "A* algorithm은 어떤 방식으로 shortest path를 찾나요?",
+          "answer": "heuristic을 사용해 search를 최적화하며 shortest path를 탐색함."
+        },
+        {
+          "id": "me-677",
+          "question": "Dijkstra algorithm의 특징은 무엇인가요?",
+          "answer": "가능한 모든 route를 탐색해 shortest path를 보장함."
+        },
+        {
+          "id": "me-678",
+          "question": "Local path planning은 왜 필요한가요?",
+          "answer": "global path를 따라가면서도 주변 obstacle과 dynamic environment에 대응해야 하기 때문임."
+        },
+        {
+          "id": "me-679",
+          "question": "RRT는 자율주행에서 어떤 역할을 하나요?",
+          "answer": "real-time obstacle avoidance를 위한 local path planning에 사용됨."
+        },
+        {
+          "id": "me-680",
+          "question": "Dynamic Window Approach는 어떤 목적에 사용되나요?",
+          "answer": "dynamic environment에서 obstacle을 피하며 안전한 local motion을 선택하는 데 사용됨."
+        },
+        {
+          "id": "me-681",
+          "question": "MPC는 무엇인가요?",
+          "answer": "Model Predictive Control로, future state를 예측하고 trajectory를 계속 최적화하는 control/planning 기법임."
+        },
+        {
+          "id": "me-682",
+          "question": "MPC가 복잡한 주행 상황에 유리한 이유는 무엇인가요?",
+          "answer": "미래 상태를 예측해 path를 조정하므로 smooth, safe, efficient driving을 가능하게 하기 때문임."
+        },
+        {
+          "id": "me-683",
+          "question": "Control algorithm의 역할은 무엇인가요?",
+          "answer": "planned path를 실제 steering, acceleration, braking 명령으로 실행하는 것임."
+        },
+        {
+          "id": "me-684",
+          "question": "PID Control은 자율주행에서 어떤 작업에 사용되나요?",
+          "answer": "lane keeping과 speed regulation에 사용됨."
+        },
+        {
+          "id": "me-685",
+          "question": "PID Control의 핵심 목적은 무엇인가요?",
+          "answer": "desired trajectory와 actual path 사이의 error를 줄이는 것임."
+        },
+        {
+          "id": "me-686",
+          "question": "LQR은 어떤 역할을 하나요?",
+          "answer": "vehicle dynamics를 최적화하며 trajectory accuracy와 control effort 사이의 균형을 맞춤."
+        },
+        {
+          "id": "me-687",
+          "question": "LQR이 smoother driving에 기여하는 이유는 무엇인가요?",
+          "answer": "cost function을 최소화하면서 trajectory accuracy와 control effort를 함께 고려하기 때문임."
+        },
+        {
+          "id": "me-688",
+          "question": "Adaptive Cruise Control의 역할은 무엇인가요?",
+          "answer": "앞 차량과 safe following distance를 유지하도록 차량 속도를 조정함."
+        },
+        {
+          "id": "me-689",
+          "question": "Adaptive Cruise Control은 어떤 sensor를 사용하나요?",
+          "answer": "radar와 camera를 사용해 road condition과 앞 차량을 monitor함."
+        },
+        {
+          "id": "me-690",
+          "question": "Decision-making algorithm의 역할은 무엇인가요?",
+          "answer": "차량이 lane change, overtaking, stopping 같은 driving behavior를 어떻게 수행할지 결정함."
+        },
+        {
+          "id": "me-691",
+          "question": "Finite State Machine은 자율주행에서 어떻게 사용되나요?",
+          "answer": "현재 상황에 따라 driving mode를 전환하는 데 사용됨."
+        },
+        {
+          "id": "me-692",
+          "question": "FSM으로 표현할 수 있는 driving behavior는 무엇인가요?",
+          "answer": "lane changes, overtaking, stopping 등이 있음."
+        },
+        {
+          "id": "me-693",
+          "question": "Markov Decision Process는 어떤 역할을 하나요?",
+          "answer": "driving behavior를 확률적 decision process로 모델링해 상황별 action 선택에 활용됨."
+        },
+        {
+          "id": "me-694",
+          "question": "Deep Q-Network는 어떤 학습 방식인가요?",
+          "answer": "reinforcement learning의 한 종류로, trial and error와 reward를 통해 optimal driving strategy를 학습함."
+        },
+        {
+          "id": "me-695",
+          "question": "DQN이 complex dynamic environment에서 효과적인 이유는 무엇인가요?",
+          "answer": "predefined rule만으로 부족한 상황에서 reward 기반으로 더 적절한 strategy를 학습할 수 있기 때문임."
+        },
+        {
+          "id": "me-696",
+          "question": "Communication algorithm의 역할은 무엇인가요?",
+          "answer": "차량이 surrounding environment와 other vehicles와 상호작용할 수 있게 함."
+        },
+        {
+          "id": "me-697",
+          "question": "V2X란 무엇인가요?",
+          "answer": "Vehicle-to-Everything으로, 차량이 다른 차량, infrastructure, pedestrians와 통신하는 기술임."
+        },
+        {
+          "id": "me-698",
+          "question": "V2X가 safety에 기여하는 방식은 무엇인가요?",
+          "answer": "coordinated movement를 가능하게 해 accident risk를 줄임."
+        },
+        {
+          "id": "me-699",
+          "question": "V2X가 traffic flow 개선에 기여하는 이유는 무엇인가요?",
+          "answer": "차량과 인프라가 정보를 교환해 더 조화로운 이동과 traffic coordination이 가능하기 때문임."
+        },
+        {
+          "id": "me-700",
+          "question": "자율주행 알고리즘 전체 흐름을 설명해보세요.",
+          "answer": "perception으로 환경을 인식하고, localization/mapping으로 위치를 추정하며, path planning으로 경로를 만들고, control로 주행 명령을 실행하며, decision-making과 communication으로 상황 대응과 협조 주행을 수행함."
+        },
+        {
+          "id": "me-701",
+          "question": "자율주행에서 perception과 localization의 차이는 무엇인가요?",
+          "answer": "perception은 주변 object와 scene을 이해하는 것이고, localization은 차량 자신의 위치를 추정하는 것임."
+        },
+        {
+          "id": "me-702",
+          "question": "자율주행에서 planning과 control의 차이는 무엇인가요?",
+          "answer": "planning은 어디로 어떻게 갈지 경로를 정하는 것이고, control은 그 경로를 실제 차량 동작으로 실행하는 것임."
+        },
+        {
+          "id": "me-703",
+          "question": "자율주행 시스템에서 가장 중요한 통합 문제는 무엇인가요?",
+          "answer": "perception, localization, planning, control, decision-making, communication이 real time으로 안정적으로 연결되어야 한다는 점임."
         }
       ]
     }
