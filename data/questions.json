@@ -29,6 +29,411 @@
           "id": "sdv-005",
           "question": "자율주행에서 fail-safe 설계가 필요한 이유는 무엇인가요?",
           "answer": "sensor failure, model error, 통신 문제, 예측 불가능한 road user 등으로 인해 시스템이 정상 판단을 못할 수 있으므로 안전한 fallback behavior가 필요함."
+        },
+        {
+          "id": "sdv-006",
+          "question": "Self-driving car에서 visual perception이 왜 중요한가요?",
+          "answer": "주변 환경을 해석하고 object, road layout, traffic sign/signal을 인식해 driving decision을 지원하기 때문임."
+        },
+        {
+          "id": "sdv-007",
+          "question": "Visual perception이 주로 사용하는 sensor는 무엇인가요?",
+          "answer": "Monocular camera, stereo camera, fisheye camera가 primary sensor로 사용됨."
+        },
+        {
+          "id": "sdv-008",
+          "question": "Camera data를 LiDAR/radar와 결합하는 이유는 무엇인가요?",
+          "answer": "Visual data만으로 부족한 정보를 보완해 perception accuracy와 robustness를 높이기 위함임."
+        },
+        {
+          "id": "sdv-009",
+          "question": "Visual perception에서 real-time processing이 중요한 이유는 무엇인가요?",
+          "answer": "환경 변화에 즉시 반응해야 safety와 timely decision-making을 확보할 수 있기 때문임."
+        },
+        {
+          "id": "sdv-010",
+          "question": "Object detection의 목적은 무엇인가요?",
+          "answer": "Vehicle, pedestrian, cyclist, obstacle을 탐지하고 위치를 파악하는 것임."
+        },
+        {
+          "id": "sdv-011",
+          "question": "Object detection에 사용되는 대표 모델은 무엇인가요?",
+          "answer": "YOLO, SSD, Faster R-CNN이 있음."
+        },
+        {
+          "id": "sdv-012",
+          "question": "Object detection model의 출력은 무엇인가요?",
+          "answer": "Object class와 bounding box 위치 정보임."
+        },
+        {
+          "id": "sdv-013",
+          "question": "Bounding box localization이 중요한 이유는 무엇인가요?",
+          "answer": "Object가 scene 안에서 어디에 있는지 알아야 navigation과 obstacle avoidance에 활용할 수 있기 때문임."
+        },
+        {
+          "id": "sdv-014",
+          "question": "실제 driving environment에서 object detection이 어려운 이유는 무엇인가요?",
+          "answer": "Object가 다양한 scale과 distance로 나타나기 때문임."
+        },
+        {
+          "id": "sdv-015",
+          "question": "2D camera image에서 3D information을 추출하는 이유는 무엇인가요?",
+          "answer": "Object의 spatial arrangement와 distance를 이해해 obstacle avoidance와 navigation에 활용하기 위함임."
+        },
+        {
+          "id": "sdv-016",
+          "question": "Stereo vision은 depth를 어떻게 추정하나요?",
+          "answer": "두 camera image 사이의 disparity를 분석해 depth를 추정함."
+        },
+        {
+          "id": "sdv-017",
+          "question": "Stereo camera가 monocular camera보다 3D perception에 유리한 점은 무엇인가요?",
+          "answer": "두 image의 disparity를 활용할 수 있어 더 정확한 depth estimation이 가능함."
+        },
+        {
+          "id": "sdv-018",
+          "question": "Monocular depth estimation이란 무엇인가요?",
+          "answer": "Single camera image에서 object까지의 relative distance를 예측하는 방법임."
+        },
+        {
+          "id": "sdv-019",
+          "question": "Depth estimation이 obstacle avoidance에 중요한 이유는 무엇인가요?",
+          "answer": "Object와의 거리를 알아야 충돌 위험을 판단하고 회피 경로를 만들 수 있기 때문임."
+        },
+        {
+          "id": "sdv-020",
+          "question": "Visual depth estimate를 LiDAR data와 결합하는 이유는 무엇인가요?",
+          "answer": "Depth accuracy를 높이고 주변 환경을 더 종합적으로 이해하기 위함임."
+        },
+        {
+          "id": "sdv-021",
+          "question": "Semantic segmentation이 무엇인지 설명해보세요.",
+          "answer": "Image의 각 pixel을 road, sidewalk, vehicle, pedestrian 같은 category로 분류하는 perception task임."
+        },
+        {
+          "id": "sdv-022",
+          "question": "Semantic segmentation이 scene understanding에 중요한 이유는 무엇인가요?",
+          "answer": "Road layout과 object 영역을 pixel 단위로 이해해 주행 가능한 공간을 파악할 수 있기 때문임."
+        },
+        {
+          "id": "sdv-023",
+          "question": "Semantic segmentation에 사용되는 대표 모델은 무엇인가요?",
+          "answer": "U-Net, SegNet, DeepLab 등이 있음."
+        },
+        {
+          "id": "sdv-024",
+          "question": "Drivable area detection이 중요한 이유는 무엇인가요?",
+          "answer": "Vehicle이 안전하게 주행 가능한 path를 정의하고 course를 유지하기 위해 필요함."
+        },
+        {
+          "id": "sdv-025",
+          "question": "Lane detection은 어떤 역할을 하나요?",
+          "answer": "Lane boundary와 road marking을 인식해 vehicle trajectory 조정과 safe navigation을 지원함."
+        },
+        {
+          "id": "sdv-026",
+          "question": "Lane marking detection에는 어떤 기법이 사용되나요?",
+          "answer": "Edge detection과 CNN이 사용됨."
+        },
+        {
+          "id": "sdv-027",
+          "question": "Lane detection이 robust해야 하는 이유는 무엇인가요?",
+          "answer": "Lighting과 weather condition이 달라져도 일관된 성능을 유지해야 하기 때문임."
+        },
+        {
+          "id": "sdv-028",
+          "question": "Lane curvature와 road slope를 이해해야 하는 이유는 무엇인가요?",
+          "answer": "Vehicle trajectory를 도로 형상에 맞게 조정하기 위함임."
+        },
+        {
+          "id": "sdv-029",
+          "question": "Traffic sign recognition이 중요한 이유는 무엇인가요?",
+          "answer": "Stop sign, speed limit 등을 인식해야 법규 준수와 safe driving이 가능하기 때문임."
+        },
+        {
+          "id": "sdv-030",
+          "question": "Traffic sign detection/classification에는 어떤 모델이 활용되나요?",
+          "answer": "Large dataset으로 학습된 CNN 기반 AI model이 활용됨."
+        },
+        {
+          "id": "sdv-031",
+          "question": "Traffic light perception에서 어떤 정보를 추정해야 하나요?",
+          "answer": "Red, yellow, green 같은 traffic light state를 추정해야 함."
+        },
+        {
+          "id": "sdv-032",
+          "question": "Traffic light detection의 주요 난점은 무엇인가요?",
+          "answer": "Varying lighting condition과 occlusion이 있음."
+        },
+        {
+          "id": "sdv-033",
+          "question": "Low light condition에서 perception을 개선하는 방법은 무엇인가요?",
+          "answer": "Infrared camera 같은 specialized hardware를 사용할 수 있음."
+        },
+        {
+          "id": "sdv-034",
+          "question": "Adverse weather에서 AI model은 어떻게 대응하나요?",
+          "answer": "Weather condition을 인식하고 적응하도록 학습되어 consistent performance를 유지함."
+        },
+        {
+          "id": "sdv-035",
+          "question": "Occlusion 상황에서 AI perception이 중요한 이유는 무엇인가요?",
+          "answer": "Partially obscured object의 존재와 움직임을 예측해 visibility가 제한되어도 safety를 유지해야 하기 때문임."
+        },
+        {
+          "id": "sdv-036",
+          "question": "Model pruning은 왜 사용하나요?",
+          "answer": "Computational load를 줄여 real-time processing 속도를 높이기 위함임."
+        },
+        {
+          "id": "sdv-037",
+          "question": "Quantization은 왜 사용하나요?",
+          "answer": "Model 계산량을 줄여 on-board processing과 low-latency decision-making을 가능하게 하기 위함임."
+        },
+        {
+          "id": "sdv-038",
+          "question": "Edge computing이 self-driving car에서 중요한 이유는 무엇인가요?",
+          "answer": "차량 내부에서 빠르게 처리해야 latency를 줄이고 timely decision-making을 할 수 있기 때문임."
+        },
+        {
+          "id": "sdv-039",
+          "question": "AI-driven sensor fusion이 perception reliability를 높이는 이유는 무엇인가요?",
+          "answer": "Camera, LiDAR, radar 등 여러 sensor의 장점을 결합해 challenging condition에서도 안정적인 환경 인식이 가능하기 때문임."
+        },
+        {
+          "id": "sdv-040",
+          "question": "Visual perception system의 주요 과제는 무엇인가요?",
+          "answer": "다양한 environment에서 generalization을 확보하고 AI decision-making의 ethical consideration을 해결하는 것임."
+        },
+        {
+          "id": "sdv-041",
+          "question": "Visual perception이 autonomous driving safety에 기여하는 방식은 무엇인가요?",
+          "answer": "Object, lane, drivable area, sign/signal, hazard를 실시간으로 인식해 안전한 navigation과 decision-making을 지원함."
+        },
+        {
+          "id": "sdv-042",
+          "question": "Camera-only perception의 한계는 무엇인가요?",
+          "answer": "Lighting, weather, occlusion, depth ambiguity에 취약할 수 있어 LiDAR/radar와 결합이 필요함."
+        },
+        {
+          "id": "sdv-043",
+          "question": "Visual perception model을 실제 차량에 적용하기 전 확인해야 할 것은 무엇인가요?",
+          "answer": "Real-time speed, accuracy, robustness, 다양한 환경 generalization, sensor fusion reliability를 확인해야 함."
+        },
+        {
+          "id": "sdv-044",
+          "question": "State estimation이 무엇인지 설명해보세요.",
+          "answer": "Vehicle의 현재 position, velocity, orientation, dynamic parameters를 추정하는 과정임."
+        },
+        {
+          "id": "sdv-045",
+          "question": "Autonomous vehicle에서 state estimation이 중요한 이유는 무엇인가요?",
+          "answer": "Vehicle decision-making, control, safety 확보에 필수적인 현재 상태 정보를 제공하기 때문임."
+        },
+        {
+          "id": "sdv-046",
+          "question": "Localization이 무엇인지 설명해보세요.",
+          "answer": "Vehicle이 environment 안에서 자신의 precise location을 global/local 기준으로 파악하는 과정임."
+        },
+        {
+          "id": "sdv-047",
+          "question": "State estimation과 localization의 차이는 무엇인가요?",
+          "answer": "State estimation은 position뿐 아니라 velocity, orientation 등 dynamic state까지 추정하고, localization은 environment 안에서 vehicle 위치를 정밀하게 파악하는 데 초점이 있음."
+        },
+        {
+          "id": "sdv-048",
+          "question": "State estimation에 사용되는 sensor에는 무엇이 있나요?",
+          "answer": "GPS, IMU, LiDAR, camera, radar 등이 사용됨."
+        },
+        {
+          "id": "sdv-049",
+          "question": "AI-driven sensor fusion이 필요한 이유는 무엇인가요?",
+          "answer": "여러 sensor data를 지능적으로 결합해 state estimation의 reliability와 accuracy를 높이기 위함임."
+        },
+        {
+          "id": "sdv-050",
+          "question": "Machine learning이 real-time data fusion에 유리한 이유는 무엇인가요?",
+          "answer": "복잡한 multi-sensor data 관계를 처리해 vehicle state를 더 정확하고 빠르게 추정할 수 있기 때문임."
+        },
+        {
+          "id": "sdv-051",
+          "question": "Kalman filter는 어떤 목적으로 사용되나요?",
+          "answer": "State estimation에서 vehicle state를 예측하고 sensor measurement로 보정하는 데 사용됨."
+        },
+        {
+          "id": "sdv-052",
+          "question": "Extended Kalman Filter와 Unscented Kalman Filter는 어떤 상황에서 사용되나요?",
+          "answer": "Nonlinear scenario에서 state estimation을 수행할 때 사용됨."
+        },
+        {
+          "id": "sdv-053",
+          "question": "AI/ML이 Kalman filter를 어떻게 개선할 수 있나요?",
+          "answer": "Predictive step과 corrective step을 개선해 complex/dynamic environment에서 state estimate 정확도를 높일 수 있음."
+        },
+        {
+          "id": "sdv-054",
+          "question": "Particle filter는 어떤 상황에서 유용한가요?",
+          "answer": "Non-Gaussian noise나 highly nonlinear environment를 다룰 때 유용함."
+        },
+        {
+          "id": "sdv-055",
+          "question": "Deep learning이 particle filter에 기여하는 방식은 무엇인가요?",
+          "answer": "가장 probable한 state를 예측해 computational load를 줄이고 real-time performance를 향상시킴."
+        },
+        {
+          "id": "sdv-056",
+          "question": "Bayesian inference는 state estimation에서 어떤 역할을 하나요?",
+          "answer": "New sensor data를 기반으로 vehicle의 current state에 대한 belief를 update함."
+        },
+        {
+          "id": "sdv-057",
+          "question": "AI가 Bayesian inference를 개선하는 방식은 무엇인가요?",
+          "answer": "Likelihood function을 refine해 estimation process를 더 robust하고 adaptive하게 만듦."
+        },
+        {
+          "id": "sdv-058",
+          "question": "State estimation에서 error detection/correction이 중요한 이유는 무엇인가요?",
+          "answer": "Outlier, sensor inaccuracy, data association 문제가 발생해도 정확한 state estimation을 유지해야 하기 때문임."
+        },
+        {
+          "id": "sdv-059",
+          "question": "Machine learning은 state estimation error를 어떻게 보정할 수 있나요?",
+          "answer": "Outlier를 식별하고 sensor inaccuracies를 보정하며 data association problem을 처리할 수 있음."
+        },
+        {
+          "id": "sdv-060",
+          "question": "Global localization이란 무엇인가요?",
+          "answer": "Vehicle의 위치를 GPS 기반 등 전역 좌표계에서 파악하는 localization임."
+        },
+        {
+          "id": "sdv-061",
+          "question": "Local localization이란 무엇인가요?",
+          "answer": "Nearby object와 environmental feature를 기준으로 vehicle의 상대적 위치를 정밀하게 파악하는 localization임."
+        },
+        {
+          "id": "sdv-062",
+          "question": "GPS 기반 localization의 한계는 무엇인가요?",
+          "answer": "Signal loss와 multipath effect 같은 environmental factor의 영향을 받을 수 있음."
+        },
+        {
+          "id": "sdv-063",
+          "question": "AI는 GPS 기반 positioning을 어떻게 개선하나요?",
+          "answer": "GPS signal loss와 multipath effect 문제를 완화해 global localization 정확도를 높임."
+        },
+        {
+          "id": "sdv-064",
+          "question": "Urban environment에서 local localization이 중요한 이유는 무엇인가요?",
+          "answer": "주변 object와 feature가 복잡하고 traffic과 tall buildings가 많아 high precision 위치 추정이 필요하기 때문임."
+        },
+        {
+          "id": "sdv-065",
+          "question": "SLAM이 무엇인지 설명해보세요.",
+          "answer": "Vehicle이 environment map을 만들면서 동시에 자신의 location을 추정하는 기술임."
+        },
+        {
+          "id": "sdv-066",
+          "question": "AI와 deep learning이 SLAM을 어떻게 향상시키나요?",
+          "answer": "Environmental feature를 실시간으로 식별하고 학습해 map accuracy와 dynamic/unstructured environment navigation 성능을 높임."
+        },
+        {
+          "id": "sdv-067",
+          "question": "Differential GPS와 RTK positioning은 어떤 목적으로 활용되나요?",
+          "answer": "GPS 기반 localization 정확도를 높이기 위한 advanced positioning technique임."
+        },
+        {
+          "id": "sdv-068",
+          "question": "Machine learning은 DGPS와 RTK positioning에 어떤 도움을 주나요?",
+          "answer": "더 reliable한 positioning data를 제공하도록 accuracy를 향상시킴."
+        },
+        {
+          "id": "sdv-069",
+          "question": "LiDAR와 camera data는 localization에서 어떻게 활용되나요?",
+          "answer": "Known map 안에서 precise localization을 위해 sensor feature를 추출하고 matching하는 데 활용됨."
+        },
+        {
+          "id": "sdv-070",
+          "question": "ML model이 feature extraction/matching에 유리한 이유는 무엇인가요?",
+          "answer": "복잡한 urban environment에서도 sensor data에서 유의미한 feature를 추출하고 map과 정렬할 수 있기 때문임."
+        },
+        {
+          "id": "sdv-071",
+          "question": "Map matching이란 무엇인가요?",
+          "answer": "Sensor data를 pre-existing map과 정확히 align해 vehicle location을 추정하는 과정임."
+        },
+        {
+          "id": "sdv-072",
+          "question": "AI가 map matching을 개선하는 방식은 무엇인가요?",
+          "answer": "Sensor data와 existing map의 alignment를 더 정확하게 수행함."
+        },
+        {
+          "id": "sdv-073",
+          "question": "Landmark-based localization이란 무엇인가요?",
+          "answer": "Road sign, building 같은 landmark를 감지하고 활용해 vehicle 위치 정확도를 높이는 방법임."
+        },
+        {
+          "id": "sdv-074",
+          "question": "Landmark-based localization에서 AI의 역할은 무엇인가요?",
+          "answer": "Static/dynamic landmark를 detect하고 localization accuracy 향상에 활용함."
+        },
+        {
+          "id": "sdv-075",
+          "question": "Probabilistic localization이 필요한 이유는 무엇인가요?",
+          "answer": "Ambiguous 또는 featureless environment에서 가능한 위치들의 belief distribution을 유지하기 위함임."
+        },
+        {
+          "id": "sdv-076",
+          "question": "Particle filter 기반 probabilistic approach가 localization에 유용한 이유는 무엇인가요?",
+          "answer": "가능한 여러 location 후보를 확률적으로 유지해 traditional method가 어려워하는 환경에서도 localization을 지원함."
+        },
+        {
+          "id": "sdv-077",
+          "question": "Localization robustness를 높이기 위해 AI가 하는 역할은 무엇인가요?",
+          "answer": "Multiple sensors와 methods의 data를 통합해 challenging condition에서도 accurate localization을 유지함."
+        },
+        {
+          "id": "sdv-078",
+          "question": "Urban canyon 같은 환경에서 localization이 어려운 이유는 무엇인가요?",
+          "answer": "GPS signal이 약해지거나 multipath effect가 발생해 위치 추정 정확도가 떨어질 수 있기 때문임."
+        },
+        {
+          "id": "sdv-079",
+          "question": "AI 기반 state estimation과 localization이 self-driving system에 주는 가치는 무엇인가요?",
+          "answer": "더 accurate, reliable, efficient한 autonomous driving system을 가능하게 함."
+        },
+        {
+          "id": "sdv-080",
+          "question": "Dynamic environment에서 AI가 중요한 이유는 무엇인가요?",
+          "answer": "변화하는 sensor data와 주변 상황에 빠르게 적응해 state와 location을 안정적으로 추정해야 하기 때문임."
+        },
+        {
+          "id": "sdv-081",
+          "question": "AI-driven localization system의 주요 과제는 무엇인가요?",
+          "answer": "Real-time processing, computational efficiency, rapidly changing conditions에 대한 adaptation임."
+        },
+        {
+          "id": "sdv-082",
+          "question": "Autonomous vehicle에서 computational efficiency가 중요한 이유는 무엇인가요?",
+          "answer": "State estimation과 localization은 실시간으로 수행되어야 하므로 계산 지연이 safety와 control 성능에 직접 영향을 줄 수 있음."
+        },
+        {
+          "id": "sdv-083",
+          "question": "State estimation 결과가 부정확하면 어떤 문제가 발생할 수 있나요?",
+          "answer": "Vehicle control, decision-making, obstacle response가 잘못되어 safety risk가 증가할 수 있음."
+        },
+        {
+          "id": "sdv-084",
+          "question": "Localization 결과가 부정확하면 어떤 문제가 발생할 수 있나요?",
+          "answer": "Vehicle이 map과 실제 위치를 잘못 판단해 path planning과 navigation 오류가 발생할 수 있음."
+        },
+        {
+          "id": "sdv-085",
+          "question": "Sensor fusion과 map matching의 차이를 설명해보세요.",
+          "answer": "Sensor fusion은 multiple sensor data를 결합해 environment/state representation을 만들고, map matching은 sensor data를 existing map과 align해 위치를 추정함."
+        },
+        {
+          "id": "sdv-086",
+          "question": "State estimation과 localization을 함께 개선해야 하는 이유는 무엇인가요?",
+          "answer": "Vehicle의 위치와 동적 상태가 모두 정확해야 safe control과 reliable autonomous navigation이 가능하기 때문임."
         }
       ]
     },
@@ -4963,6 +5368,231 @@
           "id": "me-703",
           "question": "자율주행 시스템에서 가장 중요한 통합 문제는 무엇인가요?",
           "answer": "perception, localization, planning, control, decision-making, communication이 real time으로 안정적으로 연결되어야 한다는 점임."
+        },
+        {
+          "id": "me-704",
+          "question": "Autonomous robot에서 motion planning, perception, learning이 각각 어떤 역할을 하나요?",
+          "answer": "Motion planning은 goal까지의 path를 결정하고, perception은 주변 환경을 이해하며, learning은 경험과 feedback을 통해 robot behavior를 개선함."
+        },
+        {
+          "id": "me-705",
+          "question": "Motion planning이 중요한 이유는 무엇인가요?",
+          "answer": "Robot이 goal에 도달하면서 obstacle을 피하고, 다른 robot과 coordinate해야 하기 때문임."
+        },
+        {
+          "id": "me-706",
+          "question": "Path planning algorithm의 목적은 무엇인가요?",
+          "answer": "Robot이 현재 위치에서 목표 위치까지 이동할 수 있는 path를 찾는 것임."
+        },
+        {
+          "id": "me-707",
+          "question": "A*와 Dijkstra algorithm은 어떤 상황에 적합한가요?",
+          "answer": "Known environment에서 shortest path를 찾는 데 기본적인 algorithm으로 사용됨."
+        },
+        {
+          "id": "me-708",
+          "question": "Dynamic scenario에서는 어떤 planning method가 활용될 수 있나요?",
+          "answer": "Rapidly Exploring Random Trees, RRT 같은 AI-enhanced algorithm이 real-time으로 가능한 path를 탐색하며 환경 변화에 적응함."
+        },
+        {
+          "id": "me-709",
+          "question": "RRT가 dynamic environment에 유용한 이유는 무엇인가요?",
+          "answer": "Real-time으로 possible path를 탐색하고 환경 변화에 맞춰 적응할 수 있기 때문임."
+        },
+        {
+          "id": "me-710",
+          "question": "Optimization-based motion planning은 무엇인가요?",
+          "answer": "Robot dynamics 같은 constraints를 고려해 path를 refine하고, energy efficiency와 time 같은 요소를 균형화하는 방법임."
+        },
+        {
+          "id": "me-711",
+          "question": "Sequential Quadratic Programming은 어떤 맥락에서 사용되나요?",
+          "answer": "Optimization-based motion planning에서 robot dynamics constraints를 반영해 path를 개선하는 방법으로 언급됨."
+        },
+        {
+          "id": "me-712",
+          "question": "Motion planning에서 energy efficiency와 time을 동시에 고려해야 하는 이유는 무엇인가요?",
+          "answer": "빠른 이동만 추구하면 energy 사용이 커질 수 있고, energy만 줄이면 이동 효율이 낮아질 수 있어 균형이 필요함."
+        },
+        {
+          "id": "me-713",
+          "question": "Obstacle avoidance에서 AI collision detection이 중요한 이유는 무엇인가요?",
+          "answer": "Moving obstacle을 실시간으로 예측하고 대응해 smooth하고 safe한 navigation을 가능하게 함."
+        },
+        {
+          "id": "me-714",
+          "question": "Velocity obstacle layer는 어떤 역할을 하나요?",
+          "answer": "Moving obstacle의 velocity 정보를 반영해 local path planner가 collision-free trajectory를 만들 수 있게 함."
+        },
+        {
+          "id": "me-715",
+          "question": "Local path planner는 obstacle avoidance에서 무엇을 하나요?",
+          "answer": "실시간 obstacle 정보를 바탕으로 회피 trajectory를 동적으로 생성함."
+        },
+        {
+          "id": "me-716",
+          "question": "사람이 robot과 마주 오는 상황에서 robot은 어떻게 회피할 수 있나요?",
+          "answer": "Moving obstacle을 관찰하고 velocity 정보를 velocity obstacle layer에 추가한 뒤, local path planner가 arc-shaped trajectory를 생성해 피함."
+        },
+        {
+          "id": "me-717",
+          "question": "Trajectory generation에서 kinematic/dynamic constraints를 고려하는 이유는 무엇인가요?",
+          "answer": "Robot이 실제로 수행 가능한 smooth하고 efficient한 움직임을 만들기 위해 필요함."
+        },
+        {
+          "id": "me-718",
+          "question": "Time-parameterized trajectory는 왜 중요한가요?",
+          "answer": "Robot이 환경 안에서 smooth하고 efficient하게 움직이도록 시간 정보를 포함해 trajectory를 정의하기 때문임."
+        },
+        {
+          "id": "me-719",
+          "question": "AI가 traditional control system을 어떻게 개선할 수 있나요?",
+          "answer": "PID controller 같은 기존 control system에 real-time learning을 결합해 feedback 기반으로 움직임을 지속 조정함."
+        },
+        {
+          "id": "me-720",
+          "question": "Control integration이 precision과 reliability를 높이는 이유는 무엇인가요?",
+          "answer": "Robot이 feedback을 바탕으로 movement를 계속 조정할 수 있기 때문임."
+        },
+        {
+          "id": "me-721",
+          "question": "Multi-robot coordination이란 무엇인가요?",
+          "answer": "여러 robot이 communicate, coordinate, collaborate하며 shared task를 수행하는 것임."
+        },
+        {
+          "id": "me-722",
+          "question": "Swarm robotics에서 AI의 역할은 무엇인가요?",
+          "answer": "Multiple robots 간 interaction을 optimize해 dynamic environment에서도 효과적으로 협력하게 함."
+        },
+        {
+          "id": "me-723",
+          "question": "Perception이란 무엇인가요?",
+          "answer": "Robot이 주변 환경을 interpret하고 understand하는 과정임."
+        },
+        {
+          "id": "me-724",
+          "question": "Sensor fusion이 navigation과 obstacle avoidance에 중요한 이유는 무엇인가요?",
+          "answer": "단일 sensor보다 더 정확한 real-time environment representation을 제공하기 때문임."
+        },
+        {
+          "id": "me-725",
+          "question": "Perception에서 LiDAR, camera, IMU는 어떤 식으로 활용되나요?",
+          "answer": "여러 source의 data를 결합해 robot 주변 환경을 더 정확히 표현하는 데 사용됨."
+        },
+        {
+          "id": "me-726",
+          "question": "Object recognition과 tracking이 robot에 필요한 이유는 무엇인가요?",
+          "answer": "Object manipulation, collision avoidance, dynamic environment interaction에 필수적임."
+        },
+        {
+          "id": "me-727",
+          "question": "CNN은 robot perception에서 어떻게 활용되나요?",
+          "answer": "Object를 real-time으로 recognize하고 track하는 deep learning model로 활용됨."
+        },
+        {
+          "id": "me-728",
+          "question": "Region-based CNN의 기본 과정은 무엇인가요?",
+          "answer": "Input image를 여러 region proposal로 나누고, 각 region을 CNN에 통과시켜 classification함."
+        },
+        {
+          "id": "me-729",
+          "question": "SLAM이란 무엇인가요?",
+          "answer": "Robot이 environment의 3D map을 만들면서 동시에 자신의 위치를 추정하는 기술임."
+        },
+        {
+          "id": "me-730",
+          "question": "AI-driven SLAM의 장점은 무엇인가요?",
+          "answer": "Map accuracy를 향상시키고 surroundings 변화에 적응할 수 있게 함."
+        },
+        {
+          "id": "me-731",
+          "question": "Dynamic environment understanding이 중요한 이유는 무엇인가요?",
+          "answer": "Robot이 obstacle, human, potential hazard를 real-time으로 detect/predict해 더 안전하게 동작할 수 있기 때문임."
+        },
+        {
+          "id": "me-732",
+          "question": "Semantic understanding이란 무엇인가요?",
+          "answer": "Object와 environment를 classification해 context를 이해하고 decision-making에 활용하는 능력임."
+        },
+        {
+          "id": "me-733",
+          "question": "Robot이 table을 인식하는 것이 왜 도움이 되나요?",
+          "answer": "Table을 object를 놓을 수 있는 surface로 이해하면 environment와 더 자연스럽고 효율적으로 상호작용할 수 있음."
+        },
+        {
+          "id": "me-734",
+          "question": "Robot learning이 필요한 이유는 무엇인가요?",
+          "answer": "Robot이 새로운 task와 environment에 적응하고 시간이 지나며 성능을 개선해야 하기 때문임."
+        },
+        {
+          "id": "me-735",
+          "question": "Robot learning algorithm에는 어떤 것들이 있나요?",
+          "answer": "Reinforcement learning, supervised learning, unsupervised learning, adaptive learning, imitation learning, transfer learning이 있음."
+        },
+        {
+          "id": "me-736",
+          "question": "Reinforcement learning은 robot에게 어떤 장점이 있나요?",
+          "answer": "Robot이 여러 strategy를 탐색하고 experience에서 학습해 complex task를 autonomous하게 수행할 수 있음."
+        },
+        {
+          "id": "me-737",
+          "question": "Supervised learning은 robot에서 어떻게 사용되나요?",
+          "answer": "Labeled data로 object recognition 또는 manipulation 같은 specific task를 학습하는 데 사용됨."
+        },
+        {
+          "id": "me-738",
+          "question": "Supervised learning의 한계는 무엇인가요?",
+          "answer": "Large dataset과 significant computational resources가 필요할 수 있음."
+        },
+        {
+          "id": "me-739",
+          "question": "Unsupervised learning은 robot에서 어떤 역할을 하나요?",
+          "answer": "Label 없이 data pattern을 발견해 clustering과 anomaly detection 같은 task에 활용됨."
+        },
+        {
+          "id": "me-740",
+          "question": "Unsupervised learning이 unpredictable environment에서 중요한 이유는 무엇인가요?",
+          "answer": "Label이 없는 상황에서도 pattern과 anomaly를 찾아 robot이 환경을 이해하는 데 도움을 주기 때문임."
+        },
+        {
+          "id": "me-741",
+          "question": "Adaptive learning은 무엇인가요?",
+          "answer": "Robot이 real-time feedback을 기반으로 behavior를 계속 조정하고 개선하는 learning 방식임."
+        },
+        {
+          "id": "me-742",
+          "question": "Online learning이 robot에 유용한 이유는 무엇인가요?",
+          "answer": "Robot이 새로운 task와 environment에 시간이 지나며 적응할 수 있게 하기 때문임."
+        },
+        {
+          "id": "me-743",
+          "question": "Transfer learning은 robot learning에서 왜 유용한가요?",
+          "answer": "한 task에서 얻은 knowledge를 다른 task에 적용해 retraining 필요를 줄이고 학습 효율을 높임."
+        },
+        {
+          "id": "me-744",
+          "question": "Imitation learning은 무엇인가요?",
+          "answer": "Robot이 human action을 관찰하고 demonstration을 통해 new task를 학습하는 방법임."
+        },
+        {
+          "id": "me-745",
+          "question": "Imitation learning이 human-robot collaboration에 도움이 되는 이유는 무엇인가요?",
+          "answer": "Robot이 사람이 수행하는 동작을 관찰해 task를 배우므로 협업 상황에서 새 작업을 쉽게 습득할 수 있음."
+        },
+        {
+          "id": "me-746",
+          "question": "Perception과 motion planning은 어떻게 연결되나요?",
+          "answer": "Perception이 real-time environment data를 제공하면 motion planning이 이를 바탕으로 path를 동적으로 조정함."
+        },
+        {
+          "id": "me-747",
+          "question": "Learning은 motion planning과 perception을 어떻게 개선하나요?",
+          "answer": "Learning algorithm이 경험과 feedback을 통해 planning decision과 perception accuracy를 지속적으로 향상시킴."
+        },
+        {
+          "id": "me-748",
+          "question": "AI 통합이 autonomous robot에 주는 핵심 가치는 무엇인가요?",
+          "answer": "Perception, planning, learning 사이의 feedback loop를 만들어 robot이 더 autonomous하고 intelligent하게 동작하게 함."
         }
       ]
     }
